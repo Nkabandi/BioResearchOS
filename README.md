@@ -57,9 +57,8 @@ Python 3.10+ · pathlib · argparse · pandas · OpenTelemetry · Markdown repor
 ## Roadmap
 
 - [x] Pharmacogenomics Reporter (`pharmgx`)
-- [ ] **BioPaper AI** — literature review agent (PubMed / OpenAlex / arXiv) — *agent exists, packaging pending*
-- [ ] **BioIntel** — company intelligence agent (Exa / Firecrawl / Apify)
-- [ ] **BioData** — dataset assistant (DuckDB + pandas → tables/figures)
+- [x] **BioPaper AI** — literature review agent (PubMed / OpenAlex) — *v0.2*
+- [x] **BioData** — dataset analysis (CSV/TSV/XLSX → stats + figures + notebook) — *v0.3*
 - [ ] **BioLearn** — AI tutor: explanations, quizzes, flashcards
 - [ ] **BioOutreach** — company research → personalized outreach
 - [ ] Screenshots + one-minute demo GIF per project

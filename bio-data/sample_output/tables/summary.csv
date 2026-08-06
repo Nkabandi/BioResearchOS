@@ -1,0 +1,6 @@
+column,dtype,missing,missing_pct
+sample_id,str,0,0.0
+expression,float64,4,2.0
+response,float64,4,2.0
+dose,float64,4,2.0
+group,str,0,0.0

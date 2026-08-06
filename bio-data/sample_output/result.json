@@ -1,0 +1,24 @@
+{
+  "rows": 200,
+  "columns": 5,
+  "dtypes": {
+    "sample_id": "str",
+    "expression": "float64",
+    "response": "float64",
+    "dose": "float64",
+    "group": "str"
+  },
+  "missing_total": 12,
+  "numeric_columns": [
+    "expression",
+    "response",
+    "dose"
+  ],
+  "figures": [
+    "figures/hist_expression.png",
+    "figures/hist_response.png",
+    "figures/hist_dose.png",
+    "figures/correlation.png",
+    "figures/pca.png"
+  ]
+}

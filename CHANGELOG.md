@@ -2,6 +2,16 @@
 
 All notable changes to BioResearchOS. Semantic versioning: major.minor.patch.
 
+## [0.3.0] - 2026-08-06
+
+### Added
+- **BioData** (`bio-data/`) — dataset analysis skill
+  - CSV / TSV / XLSX input
+  - Missing-value report + descriptive statistics tables
+  - Distribution histograms, correlation heatmap, PCA
+  - report.md / report.html / result.json / notebook.ipynb
+  - Deterministic demo (seed=42) + sample input/output
+
 ## [0.2.0] - 2026-08-06
 
 ### Added
