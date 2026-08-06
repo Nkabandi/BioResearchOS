@@ -45,6 +45,9 @@ The demo needs no network and no setup. See `pharmgx/sample_output/` for a real 
 | `pharmgx/` | Pharmacogenomics Reporter — flagship project |
 | `pharmgx/sample_input/` | Demo genetic dataset |
 | `pharmgx/sample_output/` | Real generated report, JSON, reproducibility trail |
+| `bio-paper-ai/` | Literature review agent + sample review |
+| `bio-data/` | Dataset analysis: stats, figures, notebook |
+| `evidence/` | EvidenceTable — verified citations + client-ready evidence tables |
 | `docs/` | Architecture + workflow notes |
 | `notebooks/` | Analysis notebooks (bio-data) |
 | `data/` | Cleaned demo datasets (bio-data) |
@@ -59,6 +62,7 @@ Python 3.10+ · pathlib · argparse · pandas · OpenTelemetry · Markdown repor
 - [x] Pharmacogenomics Reporter (`pharmgx`)
 - [x] **BioPaper AI** — literature review agent (PubMed / OpenAlex) — *v0.2*
 - [x] **BioData** — dataset analysis (CSV/TSV/XLSX → stats + figures + notebook) — *v0.3*
+- [x] **EvidenceTable** — verified evidence tables + citation checker (Crossref) — *v0.4*
 - [ ] **BioLearn** — AI tutor: explanations, quizzes, flashcards
 - [ ] **BioOutreach** — company research → personalized outreach
 - [ ] Screenshots + one-minute demo GIF per project

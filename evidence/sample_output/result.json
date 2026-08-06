@@ -1,0 +1,16 @@
+{
+  "total": 10,
+  "verified": 8,
+  "rejects": [
+    {
+      "doi": "9.9999/does.not.exist",
+      "status": "NOT_FOUND",
+      "reason": "Crossref lookup failed / DOI unregistered."
+    },
+    {
+      "doi": "10.1111/ghost.FakeVol.001",
+      "status": "NOT_FOUND",
+      "reason": "Crossref lookup failed / DOI unregistered."
+    }
+  ]
+}

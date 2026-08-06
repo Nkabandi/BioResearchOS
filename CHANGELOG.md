@@ -2,6 +2,14 @@
 
 All notable changes to BioResearchOS. Semantic versioning: major.minor.patch.
 
+## [0.4.0] - 2026-08-07
+
+### Added
+- **EvidenceTable** (`evidence/`) — verified evidence tables + citation checker
+  - Every DOI checked against Crossref; hallucinated/mistyped citations flagged
+  - `evidence_table.md` (client handout), `citation_check.csv`, `rejections.md`, `result.json`
+  - Demo: 8/8 real DOIs verified (2 deliberate fakes rejected)
+
 ## [0.3.0] - 2026-08-06
 
 ### Added
