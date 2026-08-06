@@ -75,3 +75,4 @@ MIT — see `LICENSE`.
 ## Related
 
 - [ClawBio](https://github.com/OpenClaw/ClawBio) — the underlying skill library
+- [Service site](https://nkabandi.github.io/BioResearchOS/) — one-page offer/portfolio (source: `docs/index.html`)
