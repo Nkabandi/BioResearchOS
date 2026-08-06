@@ -48,6 +48,10 @@ The demo needs no network and no setup. See `pharmgx/sample_output/` for a real 
 | `bio-paper-ai/` | Literature review agent + sample review |
 | `bio-data/` | Dataset analysis: stats, figures, notebook |
 | `evidence/` | EvidenceTable — verified citations + client-ready evidence tables |
+| `reports/` | Report Generator — consulting report.md + report.html (print-to-PDF) |
+| `projects/` | Project template + intake form per engagement |
+| `portfolio/` | Working example report built on verified evidence |
+| `docs/` | Architecture + docs |
 | `docs/` | Architecture + workflow notes |
 | `notebooks/` | Analysis notebooks (bio-data) |
 | `data/` | Cleaned demo datasets (bio-data) |
@@ -63,6 +67,8 @@ Python 3.10+ · pathlib · argparse · pandas · OpenTelemetry · Markdown repor
 - [x] **BioPaper AI** — literature review agent (PubMed / OpenAlex) — *v0.2*
 - [x] **BioData** — dataset analysis (CSV/TSV/XLSX → stats + figures + notebook) — *v0.3*
 - [x] **EvidenceTable** — verified evidence tables + citation checker (Crossref) — *v0.4*
+- [x] **Report Generator** — consulting-grade report (cover → exec summary → evidence) — *v0.5*
+- [x] **Project Template + Intake Form** — every project starts the same way — *v0.5*
 - [ ] **BioLearn** — AI tutor: explanations, quizzes, flashcards
 - [ ] **BioOutreach** — company research → personalized outreach
 - [ ] Screenshots + one-minute demo GIF per project

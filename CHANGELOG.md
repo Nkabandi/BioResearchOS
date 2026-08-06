@@ -2,6 +2,16 @@
 
 All notable changes to BioResearchOS. Semantic versioning: major.minor.patch.
 
+## [0.5.0] - 2026-08-07
+
+### Added
+- **Report Generator** (`reports/`) — wraps EvidenceTable into a consulting report
+  - Cover → Executive Summary → Research Question → Methods → Evidence Table → Key Findings → Research Gaps → Limitations → References
+  - `report.md` + self-contained `report.html` (File→Print→Save as PDF)
+- **Project Template** (`projects/TEMPLATE/`) — standardized folder layout per engagement
+- **Intake Form** (`projects/TEMPLATE/intake_form.md`) — question, purpose, deliverables, citation style, budget
+- **Portfolio** (`portfolio/`) — working demo report on real verified evidence (sales material)
+
 ## [0.4.0] - 2026-08-07
 
 ### Added
