@@ -5,6 +5,10 @@
     "sources": 2,
     "verified": true,
     "confidence": "High",
+    "study_types": [
+      "meta-analysis/review",
+      "other"
+    ],
     "dois": [
       "10.4102/ajlm.v5i1.432",
       "10.4102/ajlm.v7i2.796"
@@ -16,6 +20,10 @@
     "sources": 2,
     "verified": true,
     "confidence": "High",
+    "study_types": [
+      "meta-analysis/review",
+      "other"
+    ],
     "dois": [
       "10.1371/journal.pone.0145632",
       "10.4102/ajlm.v7i2.796"
@@ -27,6 +35,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1186/s13756-025-01662-y"
     ]
@@ -37,6 +48,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1186/s13756-025-01662-y"
     ]
@@ -47,6 +61,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1186/s13756-025-01662-y"
     ]
@@ -57,6 +74,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.4102/ajlm.v5i1.432"
     ]
@@ -67,6 +87,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1371/journal.pone.0145632"
     ]
@@ -77,6 +100,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1371/journal.pone.0145632"
     ]
@@ -87,6 +113,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "meta-analysis/review"
+    ],
     "dois": [
       "10.4102/ajlm.v7i2.796"
     ]
@@ -97,6 +126,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "meta-analysis/review"
+    ],
     "dois": [
       "10.4102/ajlm.v7i2.796"
     ]
@@ -107,6 +139,10 @@
     "sources": 3,
     "verified": true,
     "confidence": "High",
+    "study_types": [
+      "other",
+      "review"
+    ],
     "dois": [
       "10.1016/S1473-3099(24)00141-5",
       "10.1016/j.mib.2022.102193",
@@ -119,6 +155,10 @@
     "sources": 3,
     "verified": true,
     "confidence": "High",
+    "study_types": [
+      "meta-analysis/review",
+      "other"
+    ],
     "dois": [
       "10.1186/s12936-021-03987-6",
       "10.1186/s12936-025-05447-x",
@@ -131,6 +171,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1016/S1473-3099(24)00141-5"
     ]
@@ -141,6 +184,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1186/s12936-025-05447-x"
     ]
@@ -151,6 +197,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1186/s12936-025-05447-x"
     ]
@@ -161,6 +210,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1186/s12936-025-05447-x"
     ]
@@ -171,6 +223,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "meta-analysis/review"
+    ],
     "dois": [
       "10.1371/journal.pone.0354429"
     ]
@@ -181,6 +236,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "meta-analysis/review"
+    ],
     "dois": [
       "10.1371/journal.pone.0354429"
     ]
@@ -191,6 +249,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1186/s12936-021-03987-6"
     ]
@@ -201,6 +262,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.4269/ajtmh.25-0114"
     ]
@@ -211,6 +275,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.4269/ajtmh.25-0114"
     ]
@@ -221,6 +288,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.4269/ajtmh.25-0114"
     ]
@@ -231,6 +301,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.7554/eLife.105544"
     ]
@@ -241,6 +314,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "review"
+    ],
     "dois": [
       "10.1016/j.mib.2022.102193"
     ]
@@ -250,7 +326,11 @@
     "claim": "Portable lab-in-tube RPA+CRISPR-Cas12a assay detected MTB DNA with 81% sensitivity vs culture (68% GeneXpert) and 94% specificity, meeting WHO TPP for non-sputu",
     "sources": 4,
     "verified": true,
-    "confidence": "High",
+    "confidence": "Medium",
+    "study_types": [
+      "other",
+      "review"
+    ],
     "dois": [
       "10.1016/S2666-5247(22)00087-8",
       "10.1016/j.tube.2023.102340",
@@ -264,6 +344,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1126/scitranslmed.adp6411"
     ]
@@ -274,6 +357,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1016/S2666-5247(22)00087-8"
     ]
@@ -284,6 +370,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1016/S2666-5247(22)00087-8"
     ]
@@ -294,6 +383,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1016/S2666-5247(22)00087-8"
     ]
@@ -304,6 +396,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1016/S2666-5247(22)00087-8"
     ]
@@ -314,6 +409,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1038/s41467-023-37183-8"
     ]
@@ -324,6 +422,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1128/spectrum.02652-24"
     ]
@@ -334,6 +435,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1016/j.aca.2026.345085"
     ]
@@ -344,6 +448,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1016/j.aca.2026.345085"
     ]
@@ -354,6 +461,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "other"
+    ],
     "dois": [
       "10.1016/j.aca.2026.345085"
     ]
@@ -364,6 +474,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "review"
+    ],
     "dois": [
       "10.1016/j.tube.2023.102340"
     ]
@@ -373,7 +486,12 @@
     "claim": "Standardised survey methods required to map the ongoing CMD pandemic, because whitefly (Bemisia tabaci) dynamics govern epidemic spread",
     "sources": 4,
     "verified": true,
-    "confidence": "High",
+    "confidence": "Medium",
+    "study_types": [
+      "other",
+      "review",
+      "survey"
+    ],
     "dois": [
       "10.1016/j.jafr.2025.101827",
       "10.1016/j.virusres.2003.12.021",
@@ -386,6 +504,9 @@
     "sources": 2,
     "verified": true,
     "confidence": "High",
+    "study_types": [
+      "survey"
+    ],
     "dois": [
       "10.3390/v16111691",
       "10.3390/v18030319"
@@ -397,6 +518,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "survey"
+    ],
     "dois": [
       "10.3390/v16111691"
     ]
@@ -407,6 +531,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "survey"
+    ],
     "dois": [
       "10.3390/v16111691"
     ]
@@ -417,6 +544,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "survey"
+    ],
     "dois": [
       "10.3390/v16111691"
     ]
@@ -427,6 +557,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "review"
+    ],
     "dois": [
       "10.1016/j.coviro.2018.08.016"
     ]
@@ -437,6 +570,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "review"
+    ],
     "dois": [
       "10.1016/j.coviro.2018.08.016"
     ]
@@ -447,6 +583,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "review"
+    ],
     "dois": [
       "10.1016/bs.aivir.2014.10.001"
     ]
@@ -457,6 +596,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "review"
+    ],
     "dois": [
       "10.1016/bs.aivir.2014.10.001"
     ]
@@ -467,6 +609,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "review"
+    ],
     "dois": [
       "10.1016/bs.aivir.2014.10.001"
     ]
@@ -477,6 +622,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "survey"
+    ],
     "dois": [
       "10.3390/v16091469"
     ]
@@ -487,6 +635,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "survey"
+    ],
     "dois": [
       "10.3390/v18030319"
     ]
@@ -497,6 +648,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "survey"
+    ],
     "dois": [
       "10.3390/v18030319"
     ]
@@ -507,6 +661,9 @@
     "sources": 1,
     "verified": true,
     "confidence": "Medium",
+    "study_types": [
+      "survey"
+    ],
     "dois": [
       "10.3390/v18030319"
     ]
