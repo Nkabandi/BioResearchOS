@@ -1,11 +1,11 @@
-metric,claim,sources,verified,confidence,max_tier,study_types,dois
-MRSA,MRSA 2.6-4%,2,y,High,9,meta-analysis/review other,10.4102/ajlm.v5i1.432 10.4102/ajlm.v7i2.796
-ESBL,first report of community-acquired ESBL Enterobacteriaceae bloodstream infections in Zanzibar,2,y,High,9,meta-analysis/review other,10.1371/journal.pone.0145632 10.4102/ajlm.v7i2.796
-AMR,Progress on sustainable AMR-NAP implementation ranges 7% (Burundi) to 94% (Kenya),1,y,Medium,9,other,10.1186/s13756-025-01662-y
-WHO,WHO AMR-surveillance checklist completion 44-100%,1,y,Medium,9,other,10.1186/s13756-025-01662-y
-gaps lab capacity,"gaps in lab capacity, representativeness, integration and financing",1,y,Medium,9,other,10.1186/s13756-025-01662-y
-high resistance first,"High resistance to first-line drugs 50-100% (ampicillin, cotrimoxazole), emerging ceftriaxone resist",1,y,Medium,9,other,10.4102/ajlm.v5i1.432
-pathogenic bacteria patients,Pathogenic bacteria in 14% of patients,1,y,Medium,9,other,10.1371/journal.pone.0145632
-salmonella typhi isolates,6/7 Salmonella Typhi isolates multidrug resistant,1,y,Medium,9,other,10.1371/journal.pone.0145632
-HCAI,"HCAI driven by Klebsiella, S. aureus, E. coli, Pseudomonas",1,y,Medium,9,meta-analysis/review,10.4102/ajlm.v7i2.796
-surveillance sparse,surveillance sparse,1,y,Medium,9,meta-analysis/review,10.4102/ajlm.v7i2.796
+metric,claim,sources,verified,status,confidence,conf_score,ev_weight,max_tier,study_types,dois
+MRSA,MRSA 2.6-4%,2,y,VERIFIED,High,0.85,9,9,other systematic review,10.4102/ajlm.v5i1.432 10.4102/ajlm.v7i2.796
+ESBL,first report of community-acquired ESBL Enterobacteriaceae bloodstream infections in Zanzibar,2,y,VERIFIED,High,0.85,9,9,other systematic review,10.1371/journal.pone.0145632 10.4102/ajlm.v7i2.796
+AMR,Progress on sustainable AMR-NAP implementation ranges 7% (Burundi) to 94% (Kenya),1,y,VERIFIED,Medium,0.6,1,9,expert opinion,10.1186/s13756-025-01662-y
+WHO,WHO AMR-surveillance checklist completion 44-100%,1,y,VERIFIED,Medium,0.6,1,9,expert opinion,10.1186/s13756-025-01662-y
+gaps lab capacity,"gaps in lab capacity, representativeness, integration and financing",1,y,VERIFIED,Medium,0.6,1,9,expert opinion,10.1186/s13756-025-01662-y
+high resistance first,"High resistance to first-line drugs 50-100% (ampicillin, cotrimoxazole), emerging ceftriaxone resist",1,y,VERIFIED,Medium,0.6,4,9,other,10.4102/ajlm.v5i1.432
+pathogenic bacteria patients,Pathogenic bacteria in 14% of patients,1,y,VERIFIED,Medium,0.6,4,9,other,10.1371/journal.pone.0145632
+salmonella typhi isolates,6/7 Salmonella Typhi isolates multidrug resistant,1,y,VERIFIED,Medium,0.6,4,9,other,10.1371/journal.pone.0145632
+HCAI,"HCAI driven by Klebsiella, S. aureus, E. coli, Pseudomonas",1,y,VERIFIED,Medium,0.6,9,9,systematic review,10.4102/ajlm.v7i2.796
+surveillance sparse,surveillance sparse,1,y,VERIFIED,Medium,0.6,9,9,systematic review,10.4102/ajlm.v7i2.796

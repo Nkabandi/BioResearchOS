@@ -45,18 +45,28 @@ def tier(venue: str) -> int:
 
 
 _PCT = re.compile(r"(\d{1,3}(?:\.\d+)?)(?:-(\d{1,3}(?:\.\d+)?))?%")
-_STUDY = [
-    (("meta-?analysis", "systematic review"), "meta-analysis/review"),
-    (("rct", "randomized", "randomised", "controlled trial"), "RCT"),
-    (("cohort",), "cohort"),
-    (("survey",), "survey"),
-    (("review of", "literature review"), "review"),
+# Evidence grade: label + weight, ordered strongest-first (meta-analysis > sys-review
+# > RCT > cohort > case-control > cross-sectional > review > case report > opinion).
+_GRADE = [
+    (("meta-?analysis",), ("meta-analysis", 10)),
+    (("systematic review",), ("systematic review", 9)),
+    (("rct", "randomized", "randomised", "controlled trial"), ("RCT", 8)),
+    (("cohort",), ("cohort", 6)),
+    (("case[- ]control",), ("case-control", 5)),
+    (("cross[- ]sectional", "survey"), ("cross-sectional", 4)),
+    (("case report", "single patient"), ("case report", 2)),
+    (("expert", "expert panel"), ("expert opinion", 1)),
+    (("review of", "literature review"), ("review", 3)),
+    ((), ("other", 4)),  # peer-reviewed row with no declared design
 ]
 
 
-def study_types(seg: str) -> list[str]:
+def study_grade(seg: str) -> tuple[str, int]:
     s = (seg or "").lower()
-    return [label for pats, label in _STUDY if any(re.search(p, s) for p in pats)] or ["other"]
+    for pats, grade in _GRADE:
+        if any(re.search(p, s) for p in pats):
+            return grade
+    return ("other", 4)
 _ACR = re.compile(r"\b([A-Z][A-Z0-9]{1,12})\b")
 _WORD = re.compile(r"[a-z]{3,}")
 
@@ -95,7 +105,7 @@ def verify(ev_path: Path) -> dict:
         doi = doi_m.group(0) if doi_m else ""
         verified = checks.get(doi) == "VERIFIED"
         t = tier(src)
-        mtype = study_types(row.get("Method") or "")
+        grade, weight = study_grade(row.get("Method") or "")
         for seg in (row.get("Finding") or "").split(";"):
             seg = seg.strip()
             if not seg:
@@ -104,7 +114,7 @@ def verify(ev_path: Path) -> dict:
             if acr:
                 metrics[acr].append({"seg": seg, "pcts": _pcts(seg), "tier": t,
                                      "verified": verified, "doi": doi, "source": src,
-                                     "type": mtype})
+                                     "grade": grade, "weight": weight})
 
     # Contradiction: same acronym, non-overlapping numeric ranges.
     conflicts = []
@@ -121,23 +131,32 @@ def verify(ev_path: Path) -> dict:
             conflicts.append({"metric": acr, "range": f"{min(lows)}–{max(highs)}%",
                               "sources": [c["source"].split("(")[0].strip() for c in group]})
 
-    # Confidence: High = verified, >=2 independent sources, no contradiction;
-    # Medium = verified but 1 source or conflict-flagged ("consistent results"
-    # qualifier per report_generator confidence framework); Low = unverified.
+    # Confidence: High = verified, >=2 independent sources, no contradiction,
+    # strongest evidence grade >= RCT (weight 8); Medium = verified but 1 source,
+    # conflict-flagged, or weaker evidence design; Low = unverified.
     conflict_acrs = {x["metric"] for x in conflicts}
     claims = []
     for acr, group in metrics.items():
         n = len(group)
         verified = any(c["verified"] for c in group)
-        conf = "High" if (verified and n >= 2 and acr not in conflict_acrs) \
+        best = max(c["weight"] for c in group)
+        conf = "High" if (verified and n >= 2 and acr not in conflict_acrs and best >= 8) \
             else ("Medium" if verified else "Low")
+        # Calibrated numeric confidence, capped at 0.85: mirrors the "verified
+        # claim" ceiling from the calibration spec — no pipeline claims >0.85
+        # against ground truth (that would require a fact-checker we don't have).
+        conf_scores = {"High": 0.85, "Medium": 0.6, "Low": 0.3}
         types: list[str] = []
+        weights: list[int] = []
         for c in group:
-            types.extend(c["type"])
+            types.append(c["grade"])
+            weights.append(c["weight"])
         claims.append({"metric": acr, "claim": group[0]["seg"], "sources": n,
                        "verified": verified, "dois": sorted({c["doi"] for c in group if c["doi"]}),
-                       "confidence": conf, "max_tier": max(c["tier"] for c in group),
-                       "study_types": sorted(set(types))})
+                       "confidence": conf, "conf_score": conf_scores[conf],
+                       "status": "VERIFIED" if verified else "CIRCULATING",
+                       "max_tier": max(c["tier"] for c in group),
+                       "study_types": sorted(set(types)), "ev_weight": best})
 
     return {"claims": sorted(claims, key=lambda c: -c["sources"]), "conflicts": conflicts}
 
@@ -152,11 +171,13 @@ def main():
     out = ev_path / "verification.csv"
     with open(out, "w", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["metric", "claim", "sources", "verified", "confidence", "max_tier", "study_types", "dois"])
+        w.writerow(["metric", "claim", "sources", "verified", "status", "confidence", "conf_score",
+                    "ev_weight", "max_tier", "study_types", "dois"])
         for c in result["claims"]:
             w.writerow([c["metric"], c["claim"][:100], c["sources"],
-                        "y" if c["verified"] else "n", c["confidence"],
-                        c["max_tier"], " ".join(c["study_types"]), " ".join(c["dois"])])
+                        "y" if c["verified"] else "n", c["status"], c["confidence"],
+                        c["conf_score"], c["ev_weight"], c["max_tier"], " ".join(c["study_types"]),
+                        " ".join(c["dois"])])
     print(f"wrote {out}")
 
     mem_path = Path(__file__).resolve().parent / "knowledge" / "memory.json"
@@ -168,6 +189,7 @@ def main():
             continue
         mem.append({"metric": c["metric"], "claim": c["claim"][:160], "sources": c["sources"],
                     "verified": c["verified"], "confidence": c["confidence"],
+                    "conf_score": c["conf_score"], "ev_weight": c["ev_weight"],
                     "study_types": c["study_types"], "dois": c["dois"]})
         seen.add(key)
     mem_path.parent.mkdir(parents=True, exist_ok=True)
@@ -180,7 +202,7 @@ def main():
         print(f"  ! {x['metric']} — {x['range']}")
     for c in result["claims"]:
         print(f"  {'OK' if c['verified'] else '!!'} {c['metric']:>10} [{c['confidence']}] "
-              f"x{c['sources']} tier{c['max_tier']}")
+              f"x{c['sources']} w{c['ev_weight']} tier{c['max_tier']}")
     print(f"memory: {len(mem)} claims")
 
 

@@ -1,15 +1,15 @@
-metric,claim,sources,verified,confidence,max_tier,study_types,dois
-ART,ART-R has emerged in multiple East African countries and is now a priority,3,y,High,9,other review,10.1016/S1473-3099(24)00141-5 10.1016/j.mib.2022.102193 10.7554/eLife.105544
-R561H,"7.0% non-synonymous Pfk13 mutations incl. WHO-validated R561H (2 patients, 2022)",3,y,High,9,meta-analysis/review other,10.1186/s12936-021-03987-6 10.1186/s12936-025-05447-x 10.1371/journal.pone.0354429
-recommended expansion genomic,"recommended expansion of genomic surveillance, clinical efficacy trials, ex-vivo susceptibility test",1,y,Medium,9,other,10.1016/S1473-3099(24)00141-5
-N86,pfmdr1 N86 invariable,1,y,Medium,9,other,10.1186/s12936-025-05447-x
-MOI,mean MOI 1.5,1,y,Medium,9,other,10.1186/s12936-025-05447-x
-suggests emerging lumefantrine,suggests emerging lumefantrine tolerance,1,y,Medium,9,other,10.1186/s12936-025-05447-x
-pooled non synonymous,Pooled non-synonymous PfKelch13 prevalence 5.0% (Cl 3.0-7.0%),1,y,Medium,9,meta-analysis/review,10.1371/journal.pone.0354429
-OR,mutations associated with higher risk of treatment failure (log OR -2.06),1,y,Medium,9,meta-analysis/review,10.1371/journal.pone.0354429
-distribution central east,distribution central to East Africa,1,y,Medium,9,other,10.1186/s12936-021-03987-6
-R622I,Validated ART-R marker pfk13 R622I in ~2/174 (1.1%),1,y,Medium,9,other,10.4269/ajtmh.25-0114
-pfmdr pattern consistent,pfmdr1 pattern consistent with reduced lumen sensitivity,1,y,Medium,9,other,10.4269/ajtmh.25-0114
-HRP2,"high HRP2/3-deletion prevalence (HRP2 del 24%, HRP3 del 79%, dual 22.7%)",1,y,Medium,9,other,10.4269/ajtmh.25-0114
-kelch data aggregated,kelch13 data aggregated into a single surveillance resource with focus on East Africa,1,y,Medium,9,other,10.7554/eLife.105544
-acts remain effective,ACTs remain effective but partner-drug vulnerabilities and regional spread of markers demand continu,1,y,Medium,9,review,10.1016/j.mib.2022.102193
+metric,claim,sources,verified,status,confidence,conf_score,ev_weight,max_tier,study_types,dois
+ART,ART-R has emerged in multiple East African countries and is now a priority,3,y,VERIFIED,Medium,0.6,4,9,other review,10.1016/S1473-3099(24)00141-5 10.1016/j.mib.2022.102193 10.7554/eLife.105544
+R561H,"7.0% non-synonymous Pfk13 mutations incl. WHO-validated R561H (2 patients, 2022)",3,y,VERIFIED,High,0.85,10,9,meta-analysis other,10.1186/s12936-021-03987-6 10.1186/s12936-025-05447-x 10.1371/journal.pone.0354429
+recommended expansion genomic,"recommended expansion of genomic surveillance, clinical efficacy trials, ex-vivo susceptibility test",1,y,VERIFIED,Medium,0.6,4,9,other,10.1016/S1473-3099(24)00141-5
+N86,pfmdr1 N86 invariable,1,y,VERIFIED,Medium,0.6,4,9,other,10.1186/s12936-025-05447-x
+MOI,mean MOI 1.5,1,y,VERIFIED,Medium,0.6,4,9,other,10.1186/s12936-025-05447-x
+suggests emerging lumefantrine,suggests emerging lumefantrine tolerance,1,y,VERIFIED,Medium,0.6,4,9,other,10.1186/s12936-025-05447-x
+pooled non synonymous,Pooled non-synonymous PfKelch13 prevalence 5.0% (Cl 3.0-7.0%),1,y,VERIFIED,Medium,0.6,10,9,meta-analysis,10.1371/journal.pone.0354429
+OR,mutations associated with higher risk of treatment failure (log OR -2.06),1,y,VERIFIED,Medium,0.6,10,9,meta-analysis,10.1371/journal.pone.0354429
+distribution central east,distribution central to East Africa,1,y,VERIFIED,Medium,0.6,4,9,other,10.1186/s12936-021-03987-6
+R622I,Validated ART-R marker pfk13 R622I in ~2/174 (1.1%),1,y,VERIFIED,Medium,0.6,4,9,other,10.4269/ajtmh.25-0114
+pfmdr pattern consistent,pfmdr1 pattern consistent with reduced lumen sensitivity,1,y,VERIFIED,Medium,0.6,4,9,other,10.4269/ajtmh.25-0114
+HRP2,"high HRP2/3-deletion prevalence (HRP2 del 24%, HRP3 del 79%, dual 22.7%)",1,y,VERIFIED,Medium,0.6,4,9,other,10.4269/ajtmh.25-0114
+kelch data aggregated,kelch13 data aggregated into a single surveillance resource with focus on East Africa,1,y,VERIFIED,Medium,0.6,4,9,other,10.7554/eLife.105544
+acts remain effective,ACTs remain effective but partner-drug vulnerabilities and regional spread of markers demand continu,1,y,VERIFIED,Medium,0.6,3,9,review,10.1016/j.mib.2022.102193

@@ -150,8 +150,9 @@ def build_md(a) -> str:
         md.append(f"{i}. {r['Reference']}")
     md += ["", "## Appendix C — Methodology Notes", "",
            "- AI-assisted drafting was used; every claim traces to a screened source and was human-reviewed.",
-           "- Confidence framework: High = multiple independent studies/consistent results; "
-           "Medium = limited studies or wide ranges; Low = sparse or single-centre data.",
+           "- Confidence framework: High = verified in >=2 independent sources, consistent results, "
+           "strongest evidence grade meta-analysis/RCT; Medium = verified but single source, weaker "
+           "evidence design, or contradiction-flagged; Low = sparse or unverified data.",
            "- This report is intended for research; it is not a medical device and does not provide "
            "clinical diagnoses or regulatory advice. Consult a qualified professional before acting.", "", "---", ""]
     return "\n".join(md)

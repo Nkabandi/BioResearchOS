@@ -23,8 +23,8 @@ ee = importlib.import_module("evidence_engine")
 TABLE = "Paper,Status,Reference,Sample,Method,Finding,Limitations\n"
 
 ROWS = [
-    "mrsa1,VERIFIED,African Journal of Laboratory Medicine 10.1000/mrsa1,,lab cohort,MRSA resistance 40-60%,small n",
-    "mrsa2,VERIFIED,PLOS ONE 10.1000/mrsa2,,,MRSA resistance 45-55%,",
+    "mrsa1,VERIFIED,African Journal of Laboratory Medicine 10.1000/mrsa1,,,MRSA resistance 40-60%,small n",
+    "mrsa2,VERIFIED,PLOS ONE 10.1000/mrsa2,,systematic review + meta-analysis,MRSA resistance 45-55%,",
     "esbl,VERIFIED,Lancet 10.1000/esbl1,,systematic review + meta-analysis of 24 studies,ESBL resistance 40%,ok",
     "hdy1,VERIFIED,Nature 10.1000/hdy1,,,HDY 90-95%,",
     "hdy2,VERIFIED,Science 10.1000/hdy2,,,HDY 10-15%,",
@@ -52,6 +52,8 @@ def main():
 
         assert claims["MRSA"]["confidence"] == "High"
         assert claims["MRSA"]["sources"] == 2
+        assert claims["MRSA"]["conf_score"] == 0.85
+        assert claims["MRSA"]["status"] == "VERIFIED"
         assert not any(x["metric"] == "MRSA" for x in res["conflicts"])
 
         assert claims["ESBL"]["confidence"] == "Medium"
@@ -59,8 +61,10 @@ def main():
         assert claims["ESBL"]["sources"] == 1
         assert claims["ESBL"]["dois"] == ["10.1000/esbl1"]
 
-        assert "meta-analysis/review" in claims["ESBL"]["study_types"]
+        assert "meta-analysis" in claims["ESBL"]["study_types"]
         assert "RCT" in claims["TRX"]["study_types"]
+        assert claims["MRSA"]["ev_weight"] >= 8
+        assert claims["ESBL"]["ev_weight"] == 10
 
         assert any(x["metric"] == "HDY" for x in res["conflicts"])
         hdy = next(x for x in res["conflicts"] if x["metric"] == "HDY")
@@ -69,6 +73,8 @@ def main():
 
         assert claims["TRX"]["verified"] is False
         assert claims["TRX"]["confidence"] == "Low"
+        assert claims["TRX"]["status"] == "CIRCULATING"
+        assert claims["TRX"]["conf_score"] == 0.3
 
         assert claims["FCT"]["confidence"] == "Low"
         assert claims["FCT"]["verified"] is False
