@@ -67,6 +67,12 @@ def load_verif(ev: Path) -> tuple[list[dict], dict]:
         c["sources_n"] = int(c["sources"])
         c["verified"] = c["verified"] == "y"
         c["provenance"] = [s for d in c["dois"] for s in prov.get(d.lower(), [])]
+        c["components"] = {k: (int(v) if v.strip() else None)
+                           for k, v in ({"quality": c.get("quality", ""),
+                                         "agreement": c.get("agreement", ""),
+                                         "sample": c.get("sample", ""),
+                                         "recency": c.get("recency", ""),
+                                         "overall": c.get("overall", "")}).items()}
     return table, prov
 
 
@@ -85,6 +91,7 @@ def build(spec: list[tuple[Path, str]]) -> dict:
                            "study_types": row["study_types"].split(),
                            "sources_n": row["sources_n"], "dois": row["dois"],
                            "contradiction": row["contradiction"],
+                           "components": row["components"],
                            "provenance": row["provenance"]})
             for d in row["dois"]:
                 by_doi.setdefault(d.lower(), []).append(nid)   # claim -> doi
@@ -129,13 +136,18 @@ def build_md(nb: dict) -> str:
     lines = ["# BioResearchOS — Science Report", "",
              f"*{date.today().isoformat()} · {len(nb['claims'])} claims · "
              f"topics: {', '.join(sorted({c['topic'] for c in nb['claims']}))}*", "",
+             "Components: Evidence quality · Agreement · Sample size · Recency · Overall. "
+             "Overall is the weighted mean of available components (quality .45, agreement .30, "
+             "sample .15, recency .10); missing sample size drops that factor.", "",
              "## Claim Verdicts", "", "| Claim | Topic | Confidence | Weight | Grades | "
-             "Fails if | Review flag |", "|---|---|---|---|---|---|---|"]
+             "Components | Fails if | Review flag |", "|---|---|---|---|---|---|---|---|"]
     for c in sorted(nb["claims"], key=lambda x: (x["topic"], -x["conf_score"])):
         flagged = "; ".join(review_flags(c)) or "—"
+        comp = c["components"]
+        comp_s = f"q{comp['quality']}/a{comp['agreement']}/n{comp['sample'] or '?'}/r{comp['recency']}/{comp['overall']}"
         lines.append(f"| {c['claim'][:80]} | {c['topic']} | {c['confidence']} "
                      f"({c['conf_score']}) | {c['ev_weight']} | {', '.join(c['study_types'])} | "
-                     f"{falsified(c)} | {flagged} |")
+                     f"{comp_s} | {falsified(c)} | {flagged} |")
     lines += ["", "## Provenance", "",
               "Every claim traces to its source rows: study, DOI, population, "
               "method, and stated limitations.", ""]

@@ -66,6 +66,12 @@ def main():
         assert claims["MRSA"]["ev_weight"] >= 8
         assert claims["ESBL"]["ev_weight"] == 10
 
+        comp = claims["MRSA"]["components"]
+        assert comp["quality"] == 95          # meta-analysis (best grade)
+        assert comp["agreement"] == 90        # 2 sources, no contradiction
+        assert comp["sample"] is None         # no N in the mock method/sample
+        assert 0 <= comp["overall"] <= 100
+
         assert any(x["metric"] == "HDY" for x in res["conflicts"])
         hdy = next(x for x in res["conflicts"] if x["metric"] == "HDY")
         assert "10.0–95.0%" in hdy["range"]

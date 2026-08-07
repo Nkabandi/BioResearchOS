@@ -20,6 +20,13 @@
         "10.4102/ajlm.v7i2.796"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 90,
+        "agreement": 90,
+        "sample": null,
+        "recency": 70,
+        "overall": 88
+      },
       "provenance": [
         {
           "paper": "A review of antimicrobial resistance in East Africa",
@@ -63,6 +70,13 @@
         "10.4102/ajlm.v7i2.796"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 90,
+        "agreement": 90,
+        "sample": null,
+        "recency": 70,
+        "overall": 88
+      },
       "provenance": [
         {
           "paper": "Prevalence and Antimicrobial Resistance of Microbes Causing Bloodstream Infections in Unguja, Zanzibar",
@@ -104,6 +118,13 @@
         "10.1186/s13756-025-01662-y"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 40,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 52
+      },
       "provenance": [
         {
           "paper": "Strategies and challenges in containing antimicrobial resistance in East Africa: a focus on laboratory-based surveillance",
@@ -135,6 +156,13 @@
         "10.1186/s13756-025-01662-y"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 40,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 52
+      },
       "provenance": [
         {
           "paper": "Strategies and challenges in containing antimicrobial resistance in East Africa: a focus on laboratory-based surveillance",
@@ -166,6 +194,13 @@
         "10.1186/s13756-025-01662-y"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 40,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 52
+      },
       "provenance": [
         {
           "paper": "Strategies and challenges in containing antimicrobial resistance in East Africa: a focus on laboratory-based surveillance",
@@ -196,6 +231,13 @@
         "10.4102/ajlm.v5i1.432"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 70,
+        "overall": 59
+      },
       "provenance": [
         {
           "paper": "A review of antimicrobial resistance in East Africa",
@@ -226,6 +268,13 @@
         "10.1371/journal.pone.0145632"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 50,
+        "overall": 57
+      },
       "provenance": [
         {
           "paper": "Prevalence and Antimicrobial Resistance of Microbes Causing Bloodstream Infections in Unguja, Zanzibar",
@@ -256,6 +305,13 @@
         "10.1371/journal.pone.0145632"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 50,
+        "overall": 57
+      },
       "provenance": [
         {
           "paper": "Prevalence and Antimicrobial Resistance of Microbes Causing Bloodstream Infections in Unguja, Zanzibar",
@@ -287,6 +343,13 @@
         "10.4102/ajlm.v7i2.796"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 90,
+        "agreement": 55,
+        "sample": null,
+        "recency": 70,
+        "overall": 75
+      },
       "provenance": [
         {
           "paper": "A systematic review of healthcare-associated infections in Africa: An antimicrobial resistance perspective",
@@ -318,6 +381,13 @@
         "10.4102/ajlm.v7i2.796"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 90,
+        "agreement": 55,
+        "sample": null,
+        "recency": 70,
+        "overall": 75
+      },
       "provenance": [
         {
           "paper": "A systematic review of healthcare-associated infections in Africa: An antimicrobial resistance perspective",
@@ -351,6 +421,13 @@
         "10.7554/eLife.105544"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 90,
+        "sample": null,
+        "recency": 95,
+        "overall": 75
+      },
       "provenance": [
         {
           "paper": "The emergence of artemisinin partial resistance in Africa: how do we respond?",
@@ -404,6 +481,13 @@
         "10.1371/journal.pone.0354429"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 95,
+        "agreement": 90,
+        "sample": 60,
+        "recency": 95,
+        "overall": 88
+      },
       "provenance": [
         {
           "paper": "Prevalence of potential mediators of artemisinin resistance in African isolates of Plasmodium falciparum",
@@ -454,6 +538,13 @@
         "10.1016/S1473-3099(24)00141-5"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 62
+      },
       "provenance": [
         {
           "paper": "The emergence of artemisinin partial resistance in Africa: how do we respond?",
@@ -484,6 +575,13 @@
         "10.1186/s12936-025-05447-x"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 62
+      },
       "provenance": [
         {
           "paper": "Artemisinin and partner drug resistance markers in Plasmodium falciparum from Tanzanian paediatric malaria patients, 2016\u20132022",
@@ -514,6 +612,13 @@
         "10.1186/s12936-025-05447-x"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 62
+      },
       "provenance": [
         {
           "paper": "Artemisinin and partner drug resistance markers in Plasmodium falciparum from Tanzanian paediatric malaria patients, 2016\u20132022",
@@ -544,6 +649,13 @@
         "10.1186/s12936-025-05447-x"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 62
+      },
       "provenance": [
         {
           "paper": "Artemisinin and partner drug resistance markers in Plasmodium falciparum from Tanzanian paediatric malaria patients, 2016\u20132022",
@@ -574,6 +686,13 @@
         "10.1371/journal.pone.0354429"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 95,
+        "agreement": 55,
+        "sample": 60,
+        "recency": 95,
+        "overall": 78
+      },
       "provenance": [
         {
           "paper": "Plasmodium falciparum non-synonymous Kelch13 mutations mediating artemisinin resistance in East Africa: A systematic review and meta-analysis: 2014\u20132024",
@@ -604,6 +723,13 @@
         "10.1371/journal.pone.0354429"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 95,
+        "agreement": 55,
+        "sample": 60,
+        "recency": 95,
+        "overall": 78
+      },
       "provenance": [
         {
           "paper": "Plasmodium falciparum non-synonymous Kelch13 mutations mediating artemisinin resistance in East Africa: A systematic review and meta-analysis: 2014\u20132024",
@@ -634,6 +760,13 @@
         "10.1186/s12936-021-03987-6"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": 60,
+        "recency": 85,
+        "overall": 61
+      },
       "provenance": [
         {
           "paper": "Prevalence of potential mediators of artemisinin resistance in African isolates of Plasmodium falciparum",
@@ -664,6 +797,13 @@
         "10.4269/ajtmh.25-0114"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": 72,
+        "recency": 95,
+        "overall": 64
+      },
       "provenance": [
         {
           "paper": "Plasmodium falciparum Kelch13 Variants and Histidine-Rich Protein 2/3 Deletions in Central Ethiopia, 2023",
@@ -694,6 +834,13 @@
         "10.4269/ajtmh.25-0114"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": 72,
+        "recency": 95,
+        "overall": 64
+      },
       "provenance": [
         {
           "paper": "Plasmodium falciparum Kelch13 Variants and Histidine-Rich Protein 2/3 Deletions in Central Ethiopia, 2023",
@@ -724,6 +871,13 @@
         "10.4269/ajtmh.25-0114"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": 72,
+        "recency": 95,
+        "overall": 64
+      },
       "provenance": [
         {
           "paper": "Plasmodium falciparum Kelch13 Variants and Histidine-Rich Protein 2/3 Deletions in Central Ethiopia, 2023",
@@ -754,6 +908,13 @@
         "10.7554/eLife.105544"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 62
+      },
       "provenance": [
         {
           "paper": "Understanding the global rise of artemisinin resistance: Insights from over 100,000 Plasmodium falciparum samples",
@@ -784,6 +945,13 @@
         "10.1016/j.mib.2022.102193"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 55,
+        "agreement": 55,
+        "sample": null,
+        "recency": 85,
+        "overall": 59
+      },
       "provenance": [
         {
           "paper": "Plasmodium falciparum resistance to artemisinin-based combination therapies",
@@ -818,6 +986,13 @@
         "10.1128/spectrum.02652-24"
       ],
       "contradiction": true,
+      "components": {
+        "quality": 60,
+        "agreement": 45,
+        "sample": null,
+        "recency": 95,
+        "overall": 59
+      },
       "provenance": [
         {
           "paper": "CRISPR detection of circulating cell-free Mycobacterium tuberculosis DNA in adults and children, including children with HIV: a molecular diagnostics study",
@@ -878,6 +1053,13 @@
         "10.1126/scitranslmed.adp6411"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 62
+      },
       "provenance": [
         {
           "paper": "Rapid tuberculosis diagnosis from respiratory or blood samples by a low cost, portable lab-in-tube assay",
@@ -908,6 +1090,13 @@
         "10.1016/S2666-5247(22)00087-8"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 85,
+        "overall": 61
+      },
       "provenance": [
         {
           "paper": "CRISPR detection of circulating cell-free Mycobacterium tuberculosis DNA in adults and children, including children with HIV: a molecular diagnostics study",
@@ -938,6 +1127,13 @@
         "10.1016/S2666-5247(22)00087-8"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 85,
+        "overall": 61
+      },
       "provenance": [
         {
           "paper": "CRISPR detection of circulating cell-free Mycobacterium tuberculosis DNA in adults and children, including children with HIV: a molecular diagnostics study",
@@ -968,6 +1164,13 @@
         "10.1016/S2666-5247(22)00087-8"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 85,
+        "overall": 61
+      },
       "provenance": [
         {
           "paper": "CRISPR detection of circulating cell-free Mycobacterium tuberculosis DNA in adults and children, including children with HIV: a molecular diagnostics study",
@@ -998,6 +1201,13 @@
         "10.1016/S2666-5247(22)00087-8"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 85,
+        "overall": 61
+      },
       "provenance": [
         {
           "paper": "CRISPR detection of circulating cell-free Mycobacterium tuberculosis DNA in adults and children, including children with HIV: a molecular diagnostics study",
@@ -1028,6 +1238,13 @@
         "10.1038/s41467-023-37183-8"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 85,
+        "overall": 61
+      },
       "provenance": [
         {
           "paper": "Genome-wide tiled detection of circulating Mycobacterium tuberculosis cell-free DNA using Cas13",
@@ -1058,6 +1275,13 @@
         "10.1128/spectrum.02652-24"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 62
+      },
       "provenance": [
         {
           "paper": "Rapid and sensitive detection of\n                    <i>Mycobacterium tuberculosis</i>\n                    using the RPA/Cas12f1_ge4.1 system with fluorescence and lateral flow readouts",
@@ -1088,6 +1312,13 @@
         "10.1016/j.aca.2026.345085"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 62
+      },
       "provenance": [
         {
           "paper": "CADEM: Species-level detection of mycobacterial cfDNA via CRISPR for pulmonary disease diagnosis",
@@ -1118,6 +1349,13 @@
         "10.1016/j.aca.2026.345085"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 62
+      },
       "provenance": [
         {
           "paper": "CADEM: Species-level detection of mycobacterial cfDNA via CRISPR for pulmonary disease diagnosis",
@@ -1148,6 +1386,13 @@
         "10.1016/j.aca.2026.345085"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 60,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 62
+      },
       "provenance": [
         {
           "paper": "CADEM: Species-level detection of mycobacterial cfDNA via CRISPR for pulmonary disease diagnosis",
@@ -1178,6 +1423,13 @@
         "10.1016/j.tube.2023.102340"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 55,
+        "agreement": 55,
+        "sample": null,
+        "recency": 85,
+        "overall": 59
+      },
       "provenance": [
         {
           "paper": "Evolution of tuberculosis diagnostics: From molecular strategies to nanodiagnostics",
@@ -1211,6 +1463,13 @@
         "10.3390/v16091469"
       ],
       "contradiction": true,
+      "components": {
+        "quality": 64,
+        "agreement": 45,
+        "sample": 72,
+        "recency": 95,
+        "overall": 63
+      },
       "provenance": [
         {
           "paper": "Towards sustainable management of cassava mosaic disease: The impact of awareness campaigns in Benin",
@@ -1262,6 +1521,13 @@
         "10.3390/v18030319"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 64,
+        "agreement": 90,
+        "sample": null,
+        "recency": 95,
+        "overall": 77
+      },
       "provenance": [
         {
           "paper": "An Alarming Eastward Front of Cassava Mosaic Disease in Development in West Africa",
@@ -1302,6 +1568,13 @@
         "10.3390/v16111691"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 64,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 64
+      },
       "provenance": [
         {
           "paper": "An Alarming Eastward Front of Cassava Mosaic Disease in Development in West Africa",
@@ -1332,6 +1605,13 @@
         "10.3390/v16111691"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 64,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 64
+      },
       "provenance": [
         {
           "paper": "An Alarming Eastward Front of Cassava Mosaic Disease in Development in West Africa",
@@ -1362,6 +1642,13 @@
         "10.3390/v16111691"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 64,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 64
+      },
       "provenance": [
         {
           "paper": "An Alarming Eastward Front of Cassava Mosaic Disease in Development in West Africa",
@@ -1392,6 +1679,13 @@
         "10.1016/j.coviro.2018.08.016"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 55,
+        "agreement": 55,
+        "sample": null,
+        "recency": 70,
+        "overall": 57
+      },
       "provenance": [
         {
           "paper": "Whitefly-transmitted viruses threatening cassava production in Africa",
@@ -1422,6 +1716,13 @@
         "10.1016/j.coviro.2018.08.016"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 55,
+        "agreement": 55,
+        "sample": null,
+        "recency": 70,
+        "overall": 57
+      },
       "provenance": [
         {
           "paper": "Whitefly-transmitted viruses threatening cassava production in Africa",
@@ -1452,6 +1753,13 @@
         "10.1016/bs.aivir.2014.10.001"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 55,
+        "agreement": 55,
+        "sample": null,
+        "recency": 50,
+        "overall": 54
+      },
       "provenance": [
         {
           "paper": "Cassava Virus Diseases",
@@ -1482,6 +1790,13 @@
         "10.1016/bs.aivir.2014.10.001"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 55,
+        "agreement": 55,
+        "sample": null,
+        "recency": 50,
+        "overall": 54
+      },
       "provenance": [
         {
           "paper": "Cassava Virus Diseases",
@@ -1512,6 +1827,13 @@
         "10.1016/bs.aivir.2014.10.001"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 55,
+        "agreement": 55,
+        "sample": null,
+        "recency": 50,
+        "overall": 54
+      },
       "provenance": [
         {
           "paper": "Cassava Virus Diseases",
@@ -1542,6 +1864,13 @@
         "10.3390/v16091469"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 64,
+        "agreement": 55,
+        "sample": 60,
+        "recency": 95,
+        "overall": 64
+      },
       "provenance": [
         {
           "paper": "Occurrence and Distribution of Major Cassava Pests and Diseases in Cultivated Cassava Varieties in Western Kenya",
@@ -1572,6 +1901,13 @@
         "10.3390/v18030319"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 64,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 64
+      },
       "provenance": [
         {
           "paper": "The Alarming Eastward Front of Cassava Mosaic Disease Reported in Guinea and Sierra Leone Reaches Western C\u00f4te d\u2019Ivoire",
@@ -1602,6 +1938,13 @@
         "10.3390/v18030319"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 64,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 64
+      },
       "provenance": [
         {
           "paper": "The Alarming Eastward Front of Cassava Mosaic Disease Reported in Guinea and Sierra Leone Reaches Western C\u00f4te d\u2019Ivoire",
@@ -1632,6 +1975,13 @@
         "10.3390/v18030319"
       ],
       "contradiction": false,
+      "components": {
+        "quality": 64,
+        "agreement": 55,
+        "sample": null,
+        "recency": 95,
+        "overall": 64
+      },
       "provenance": [
         {
           "paper": "The Alarming Eastward Front of Cassava Mosaic Disease Reported in Guinea and Sierra Leone Reaches Western C\u00f4te d\u2019Ivoire",

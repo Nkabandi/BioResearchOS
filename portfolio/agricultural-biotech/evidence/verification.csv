@@ -1,15 +1,15 @@
-metric,claim,sources,verified,status,confidence,conf_score,ev_weight,max_tier,study_types,dois
-CMD,"Standardised survey methods required to map the ongoing CMD pandemic, because whitefly (Bemisia taba",4,y,VERIFIED,Medium,0.6,4,9,cross-sectional other,10.1016/j.jafr.2025.101827 10.1016/j.virusres.2003.12.021 10.3390/v16091469
-EACMV,EACMV-Ug (Uganda 1990s pandemic strain) detected across Guinea and Sierra Leone,2,y,VERIFIED,Medium,0.6,4,9,cross-sectional,10.3390/v16111691 10.3390/v18030319
-spread via infected,spread via infected cuttings,1,y,VERIFIED,Medium,0.6,4,9,cross-sectional,10.3390/v16111691
-all cultivated accessions,all 63 cultivated accessions susceptible,1,y,VERIFIED,Medium,0.6,4,9,cross-sectional,10.3390/v16111691
-established eastward front,established eastward front developing in West Africa,1,y,VERIFIED,Medium,0.6,4,9,cross-sectional,10.3390/v16111691
-CBSV,Separateness and superabundant whitefly populations drive CMG/CBSV pandemic evolution,1,y,VERIFIED,Medium,0.6,3,9,review,10.1016/j.coviro.2018.08.016
-southern diversity and,southern diversity and complex interactions need integrated surveillance,1,y,VERIFIED,Medium,0.6,3,9,review,10.1016/j.coviro.2018.08.016
-cassava mosaic disease,Cassava mosaic disease caused by begomoviruses,1,y,VERIFIED,Medium,0.6,3,9,review,10.1016/bs.aivir.2014.10.001
-pandemic spread linked,pandemic spread linked to recombinates and high vector abundance,1,y,VERIFIED,Medium,0.6,3,9,review,10.1016/bs.aivir.2014.10.001
-management via diagnostics,"management via diagnostics, phytosanitation, breeding resistant or immune varieties",1,y,VERIFIED,Medium,0.6,3,9,review,10.1016/bs.aivir.2014.10.001
-whitefly mediated transmission,whitefly-mediated transmission share rose to 50.6% in 2023,1,y,VERIFIED,Medium,0.6,4,9,cross-sectional,10.3390/v16091469
-higher infection along,higher infection along Liberia border (28.85%) than Guinea border (17.07%),1,y,VERIFIED,Medium,0.6,4,9,cross-sectional,10.3390/v18030319
-all varieties susceptible,all varieties susceptible,1,y,VERIFIED,Medium,0.6,4,9,cross-sectional,10.3390/v18030319
-cuttings main route,cuttings main route,1,y,VERIFIED,Medium,0.6,4,9,cross-sectional,10.3390/v18030319
+metric,claim,sources,verified,status,confidence,conf_score,ev_weight,max_tier,study_types,dois,quality,agreement,sample,recency,overall
+CMD,"Standardised survey methods required to map the ongoing CMD pandemic, because whitefly (Bemisia taba",4,y,VERIFIED,Medium,0.6,4,9,cross-sectional other,10.1016/j.jafr.2025.101827 10.1016/j.virusres.2003.12.021 10.3390/v16091469,64,45,72,95,63
+EACMV,EACMV-Ug (Uganda 1990s pandemic strain) detected across Guinea and Sierra Leone,2,y,VERIFIED,Medium,0.6,4,9,cross-sectional,10.3390/v16111691 10.3390/v18030319,64,90,,95,77
+spread via infected,spread via infected cuttings,1,y,VERIFIED,Medium,0.6,4,9,cross-sectional,10.3390/v16111691,64,55,,95,64
+all cultivated accessions,all 63 cultivated accessions susceptible,1,y,VERIFIED,Medium,0.6,4,9,cross-sectional,10.3390/v16111691,64,55,,95,64
+established eastward front,established eastward front developing in West Africa,1,y,VERIFIED,Medium,0.6,4,9,cross-sectional,10.3390/v16111691,64,55,,95,64
+CBSV,Separateness and superabundant whitefly populations drive CMG/CBSV pandemic evolution,1,y,VERIFIED,Medium,0.6,3,9,review,10.1016/j.coviro.2018.08.016,55,55,,70,57
+southern diversity and,southern diversity and complex interactions need integrated surveillance,1,y,VERIFIED,Medium,0.6,3,9,review,10.1016/j.coviro.2018.08.016,55,55,,70,57
+cassava mosaic disease,Cassava mosaic disease caused by begomoviruses,1,y,VERIFIED,Medium,0.6,3,9,review,10.1016/bs.aivir.2014.10.001,55,55,,50,54
+pandemic spread linked,pandemic spread linked to recombinates and high vector abundance,1,y,VERIFIED,Medium,0.6,3,9,review,10.1016/bs.aivir.2014.10.001,55,55,,50,54
+management via diagnostics,"management via diagnostics, phytosanitation, breeding resistant or immune varieties",1,y,VERIFIED,Medium,0.6,3,9,review,10.1016/bs.aivir.2014.10.001,55,55,,50,54
+whitefly mediated transmission,whitefly-mediated transmission share rose to 50.6% in 2023,1,y,VERIFIED,Medium,0.6,4,9,cross-sectional,10.3390/v16091469,64,55,60,95,64
+higher infection along,higher infection along Liberia border (28.85%) than Guinea border (17.07%),1,y,VERIFIED,Medium,0.6,4,9,cross-sectional,10.3390/v18030319,64,55,,95,64
+all varieties susceptible,all varieties susceptible,1,y,VERIFIED,Medium,0.6,4,9,cross-sectional,10.3390/v18030319,64,55,,95,64
+cuttings main route,cuttings main route,1,y,VERIFIED,Medium,0.6,4,9,cross-sectional,10.3390/v18030319,64,55,,95,64
