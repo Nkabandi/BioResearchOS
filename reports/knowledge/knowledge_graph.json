@@ -19,7 +19,29 @@
         "10.4102/ajlm.v5i1.432",
         "10.4102/ajlm.v7i2.796"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "A review of antimicrobial resistance in East Africa",
+          "doi": "10.4102/ajlm.v5i1.432",
+          "reference": "African Journal of Laboratory Medicine (2016) 10.4102/ajlm.v5i1.432",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "12 East African studies (2005+, PubMed + AJOL), mostly bloodstream infections",
+          "population": "",
+          "limitations": "Small body of heterogeneous studies; not a meta-analysis"
+        },
+        {
+          "paper": "A systematic review of healthcare-associated infections in Africa: An antimicrobial resistance perspective",
+          "doi": "10.4102/ajlm.v7i2.796",
+          "reference": "African Journal of Laboratory Medicine (2018) 10.4102/ajlm.v7i2.796",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Systematic review 2010-2017, 35 African studies (>60% East Africa)",
+          "population": "",
+          "limitations": "Heterogeneous primary studies; review not meta-analysis"
+        }
+      ]
     },
     {
       "id": "amr-east-africa:ESBL",
@@ -40,7 +62,29 @@
         "10.1371/journal.pone.0145632",
         "10.4102/ajlm.v7i2.796"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Prevalence and Antimicrobial Resistance of Microbes Causing Bloodstream Infections in Unguja, Zanzibar",
+          "doi": "10.1371/journal.pone.0145632",
+          "reference": "PLOS ONE (2015) 10.1371/journal.pone.0145632",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "469 consecutively enrolled patients, Mnazi Mmoja Hospital, Zanzibar",
+          "population": "",
+          "limitations": "Single-centre study; small number of ESBL isolates"
+        },
+        {
+          "paper": "A systematic review of healthcare-associated infections in Africa: An antimicrobial resistance perspective",
+          "doi": "10.4102/ajlm.v7i2.796",
+          "reference": "African Journal of Laboratory Medicine (2018) 10.4102/ajlm.v7i2.796",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Systematic review 2010-2017, 35 African studies (>60% East Africa)",
+          "population": "",
+          "limitations": "Heterogeneous primary studies; review not meta-analysis"
+        }
+      ]
     },
     {
       "id": "amr-east-africa:AMR",
@@ -59,7 +103,19 @@
       "dois": [
         "10.1186/s13756-025-01662-y"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Strategies and challenges in containing antimicrobial resistance in East Africa: a focus on laboratory-based surveillance",
+          "doi": "10.1186/s13756-025-01662-y",
+          "reference": "Antimicrobial Resistance &amp; Infection Control (2025) 10.1186/s13756-025-01662-y",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "EAC national public health labs / expert panel (Burundi, Kenya, Rwanda, South Sudan, Tanzania, Uganda)",
+          "population": "",
+          "limitations": "Qualitative NAP/report synthesis by expert panel; no quantitative outcomes"
+        }
+      ]
     },
     {
       "id": "amr-east-africa:WHO",
@@ -78,7 +134,19 @@
       "dois": [
         "10.1186/s13756-025-01662-y"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Strategies and challenges in containing antimicrobial resistance in East Africa: a focus on laboratory-based surveillance",
+          "doi": "10.1186/s13756-025-01662-y",
+          "reference": "Antimicrobial Resistance &amp; Infection Control (2025) 10.1186/s13756-025-01662-y",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "EAC national public health labs / expert panel (Burundi, Kenya, Rwanda, South Sudan, Tanzania, Uganda)",
+          "population": "",
+          "limitations": "Qualitative NAP/report synthesis by expert panel; no quantitative outcomes"
+        }
+      ]
     },
     {
       "id": "amr-east-africa:gaps lab capacity",
@@ -97,7 +165,19 @@
       "dois": [
         "10.1186/s13756-025-01662-y"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Strategies and challenges in containing antimicrobial resistance in East Africa: a focus on laboratory-based surveillance",
+          "doi": "10.1186/s13756-025-01662-y",
+          "reference": "Antimicrobial Resistance &amp; Infection Control (2025) 10.1186/s13756-025-01662-y",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "EAC national public health labs / expert panel (Burundi, Kenya, Rwanda, South Sudan, Tanzania, Uganda)",
+          "population": "",
+          "limitations": "Qualitative NAP/report synthesis by expert panel; no quantitative outcomes"
+        }
+      ]
     },
     {
       "id": "amr-east-africa:high resistance first",
@@ -115,7 +195,19 @@
       "dois": [
         "10.4102/ajlm.v5i1.432"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "A review of antimicrobial resistance in East Africa",
+          "doi": "10.4102/ajlm.v5i1.432",
+          "reference": "African Journal of Laboratory Medicine (2016) 10.4102/ajlm.v5i1.432",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "12 East African studies (2005+, PubMed + AJOL), mostly bloodstream infections",
+          "population": "",
+          "limitations": "Small body of heterogeneous studies; not a meta-analysis"
+        }
+      ]
     },
     {
       "id": "amr-east-africa:pathogenic bacteria patients",
@@ -133,7 +225,19 @@
       "dois": [
         "10.1371/journal.pone.0145632"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Prevalence and Antimicrobial Resistance of Microbes Causing Bloodstream Infections in Unguja, Zanzibar",
+          "doi": "10.1371/journal.pone.0145632",
+          "reference": "PLOS ONE (2015) 10.1371/journal.pone.0145632",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "469 consecutively enrolled patients, Mnazi Mmoja Hospital, Zanzibar",
+          "population": "",
+          "limitations": "Single-centre study; small number of ESBL isolates"
+        }
+      ]
     },
     {
       "id": "amr-east-africa:salmonella typhi isolates",
@@ -151,7 +255,19 @@
       "dois": [
         "10.1371/journal.pone.0145632"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Prevalence and Antimicrobial Resistance of Microbes Causing Bloodstream Infections in Unguja, Zanzibar",
+          "doi": "10.1371/journal.pone.0145632",
+          "reference": "PLOS ONE (2015) 10.1371/journal.pone.0145632",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "469 consecutively enrolled patients, Mnazi Mmoja Hospital, Zanzibar",
+          "population": "",
+          "limitations": "Single-centre study; small number of ESBL isolates"
+        }
+      ]
     },
     {
       "id": "amr-east-africa:HCAI",
@@ -170,7 +286,19 @@
       "dois": [
         "10.4102/ajlm.v7i2.796"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "A systematic review of healthcare-associated infections in Africa: An antimicrobial resistance perspective",
+          "doi": "10.4102/ajlm.v7i2.796",
+          "reference": "African Journal of Laboratory Medicine (2018) 10.4102/ajlm.v7i2.796",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Systematic review 2010-2017, 35 African studies (>60% East Africa)",
+          "population": "",
+          "limitations": "Heterogeneous primary studies; review not meta-analysis"
+        }
+      ]
     },
     {
       "id": "amr-east-africa:surveillance sparse",
@@ -189,7 +317,19 @@
       "dois": [
         "10.4102/ajlm.v7i2.796"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "A systematic review of healthcare-associated infections in Africa: An antimicrobial resistance perspective",
+          "doi": "10.4102/ajlm.v7i2.796",
+          "reference": "African Journal of Laboratory Medicine (2018) 10.4102/ajlm.v7i2.796",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Systematic review 2010-2017, 35 African studies (>60% East Africa)",
+          "population": "",
+          "limitations": "Heterogeneous primary studies; review not meta-analysis"
+        }
+      ]
     },
     {
       "id": "malaria-resistance:ART",
@@ -210,7 +350,39 @@
         "10.1016/j.mib.2022.102193",
         "10.7554/eLife.105544"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "The emergence of artemisinin partial resistance in Africa: how do we respond?",
+          "doi": "10.1016/s1473-3099(24)00141-5",
+          "reference": "The Lancet Infectious Diseases (2024) 10.1016/S1473-3099(24)00141-5",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Multi-institution review incl. WHO (Rossert HQ colleagues, Uganda/Tanzania/Rwanda)",
+          "population": "",
+          "limitations": "Review / recommendation piece, no new primary data"
+        },
+        {
+          "paper": "Plasmodium falciparum resistance to artemisinin-based combination therapies",
+          "doi": "10.1016/j.mib.2022.102193",
+          "reference": "Current Opinion in Microbiology (2022) 10.1016/j.mib.2022.102193",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Review of artemisinin-based combination therapy resistance (Pfk13, partner drugs)",
+          "population": "",
+          "limitations": "Review perspective; necessarily summary-level"
+        },
+        {
+          "paper": "Understanding the global rise of artemisinin resistance: Insights from over 100,000 Plasmodium falciparum samples",
+          "doi": "10.7554/elife.105544",
+          "reference": "eLife (2025) 10.7554/eLife.105544",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Aggregation of 112,933 P. falciparum samples (1980-2023), review",
+          "population": "",
+          "limitations": "Depends on public metadata quality"
+        }
+      ]
     },
     {
       "id": "malaria-resistance:R561H",
@@ -231,7 +403,39 @@
         "10.1186/s12936-025-05447-x",
         "10.1371/journal.pone.0354429"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Prevalence of potential mediators of artemisinin resistance in African isolates of Plasmodium falciparum",
+          "doi": "10.1186/s12936-021-03987-6",
+          "reference": "Malaria Journal (2021) 10.1186/s12936-021-03987-6",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "87 studies, 37,864 isolates across 29 African countries",
+          "population": "",
+          "limitations": "Aggregation of heterogeneous surveillance studies"
+        },
+        {
+          "paper": "Artemisinin and partner drug resistance markers in Plasmodium falciparum from Tanzanian paediatric malaria patients, 2016\u20132022",
+          "doi": "10.1186/s12936-025-05447-x",
+          "reference": "Malaria Journal (2025) 10.1186/s12936-025-05447-x",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "173 P. falciparum-positive children, Mwanza, Tanzania (2016-2022), 143 Pfk13 sequenced",
+          "population": "",
+          "limitations": "Single site; Sanger sequencing"
+        },
+        {
+          "paper": "Plasmodium falciparum non-synonymous Kelch13 mutations mediating artemisinin resistance in East Africa: A systematic review and meta-analysis: 2014\u20132024",
+          "doi": "10.1371/journal.pone.0354429",
+          "reference": "PLOS One (2026) 10.1371/journal.pone.0354429",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Systematic review + meta-analysis of 24 studies (2014-2024), East Africa",
+          "population": "",
+          "limitations": "High between-study heterogeneity"
+        }
+      ]
     },
     {
       "id": "malaria-resistance:recommended expansion genomic",
@@ -249,7 +453,19 @@
       "dois": [
         "10.1016/S1473-3099(24)00141-5"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "The emergence of artemisinin partial resistance in Africa: how do we respond?",
+          "doi": "10.1016/s1473-3099(24)00141-5",
+          "reference": "The Lancet Infectious Diseases (2024) 10.1016/S1473-3099(24)00141-5",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Multi-institution review incl. WHO (Rossert HQ colleagues, Uganda/Tanzania/Rwanda)",
+          "population": "",
+          "limitations": "Review / recommendation piece, no new primary data"
+        }
+      ]
     },
     {
       "id": "malaria-resistance:N86",
@@ -267,7 +483,19 @@
       "dois": [
         "10.1186/s12936-025-05447-x"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Artemisinin and partner drug resistance markers in Plasmodium falciparum from Tanzanian paediatric malaria patients, 2016\u20132022",
+          "doi": "10.1186/s12936-025-05447-x",
+          "reference": "Malaria Journal (2025) 10.1186/s12936-025-05447-x",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "173 P. falciparum-positive children, Mwanza, Tanzania (2016-2022), 143 Pfk13 sequenced",
+          "population": "",
+          "limitations": "Single site; Sanger sequencing"
+        }
+      ]
     },
     {
       "id": "malaria-resistance:MOI",
@@ -285,7 +513,19 @@
       "dois": [
         "10.1186/s12936-025-05447-x"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Artemisinin and partner drug resistance markers in Plasmodium falciparum from Tanzanian paediatric malaria patients, 2016\u20132022",
+          "doi": "10.1186/s12936-025-05447-x",
+          "reference": "Malaria Journal (2025) 10.1186/s12936-025-05447-x",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "173 P. falciparum-positive children, Mwanza, Tanzania (2016-2022), 143 Pfk13 sequenced",
+          "population": "",
+          "limitations": "Single site; Sanger sequencing"
+        }
+      ]
     },
     {
       "id": "malaria-resistance:suggests emerging lumefantrine",
@@ -303,7 +543,19 @@
       "dois": [
         "10.1186/s12936-025-05447-x"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Artemisinin and partner drug resistance markers in Plasmodium falciparum from Tanzanian paediatric malaria patients, 2016\u20132022",
+          "doi": "10.1186/s12936-025-05447-x",
+          "reference": "Malaria Journal (2025) 10.1186/s12936-025-05447-x",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "173 P. falciparum-positive children, Mwanza, Tanzania (2016-2022), 143 Pfk13 sequenced",
+          "population": "",
+          "limitations": "Single site; Sanger sequencing"
+        }
+      ]
     },
     {
       "id": "malaria-resistance:pooled non synonymous",
@@ -321,7 +573,19 @@
       "dois": [
         "10.1371/journal.pone.0354429"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Plasmodium falciparum non-synonymous Kelch13 mutations mediating artemisinin resistance in East Africa: A systematic review and meta-analysis: 2014\u20132024",
+          "doi": "10.1371/journal.pone.0354429",
+          "reference": "PLOS One (2026) 10.1371/journal.pone.0354429",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Systematic review + meta-analysis of 24 studies (2014-2024), East Africa",
+          "population": "",
+          "limitations": "High between-study heterogeneity"
+        }
+      ]
     },
     {
       "id": "malaria-resistance:OR",
@@ -339,7 +603,19 @@
       "dois": [
         "10.1371/journal.pone.0354429"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Plasmodium falciparum non-synonymous Kelch13 mutations mediating artemisinin resistance in East Africa: A systematic review and meta-analysis: 2014\u20132024",
+          "doi": "10.1371/journal.pone.0354429",
+          "reference": "PLOS One (2026) 10.1371/journal.pone.0354429",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Systematic review + meta-analysis of 24 studies (2014-2024), East Africa",
+          "population": "",
+          "limitations": "High between-study heterogeneity"
+        }
+      ]
     },
     {
       "id": "malaria-resistance:distribution central east",
@@ -357,7 +633,19 @@
       "dois": [
         "10.1186/s12936-021-03987-6"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Prevalence of potential mediators of artemisinin resistance in African isolates of Plasmodium falciparum",
+          "doi": "10.1186/s12936-021-03987-6",
+          "reference": "Malaria Journal (2021) 10.1186/s12936-021-03987-6",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "87 studies, 37,864 isolates across 29 African countries",
+          "population": "",
+          "limitations": "Aggregation of heterogeneous surveillance studies"
+        }
+      ]
     },
     {
       "id": "malaria-resistance:R622I",
@@ -375,7 +663,19 @@
       "dois": [
         "10.4269/ajtmh.25-0114"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Plasmodium falciparum Kelch13 Variants and Histidine-Rich Protein 2/3 Deletions in Central Ethiopia, 2023",
+          "doi": "10.4269/ajtmh.25-0114",
+          "reference": "The American Journal of Tropical Medicine and Hygiene (2025) 10.4269/ajtmh.25-0114",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Symptomatic malaria patients at primary centres, central Ethiopia, 2023 (220 isolates)",
+          "population": "",
+          "limitations": "Limited genotyping denominators; season-emergency only"
+        }
+      ]
     },
     {
       "id": "malaria-resistance:pfmdr pattern consistent",
@@ -393,7 +693,19 @@
       "dois": [
         "10.4269/ajtmh.25-0114"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Plasmodium falciparum Kelch13 Variants and Histidine-Rich Protein 2/3 Deletions in Central Ethiopia, 2023",
+          "doi": "10.4269/ajtmh.25-0114",
+          "reference": "The American Journal of Tropical Medicine and Hygiene (2025) 10.4269/ajtmh.25-0114",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Symptomatic malaria patients at primary centres, central Ethiopia, 2023 (220 isolates)",
+          "population": "",
+          "limitations": "Limited genotyping denominators; season-emergency only"
+        }
+      ]
     },
     {
       "id": "malaria-resistance:HRP2",
@@ -411,7 +723,19 @@
       "dois": [
         "10.4269/ajtmh.25-0114"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Plasmodium falciparum Kelch13 Variants and Histidine-Rich Protein 2/3 Deletions in Central Ethiopia, 2023",
+          "doi": "10.4269/ajtmh.25-0114",
+          "reference": "The American Journal of Tropical Medicine and Hygiene (2025) 10.4269/ajtmh.25-0114",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Symptomatic malaria patients at primary centres, central Ethiopia, 2023 (220 isolates)",
+          "population": "",
+          "limitations": "Limited genotyping denominators; season-emergency only"
+        }
+      ]
     },
     {
       "id": "malaria-resistance:kelch data aggregated",
@@ -429,7 +753,19 @@
       "dois": [
         "10.7554/eLife.105544"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Understanding the global rise of artemisinin resistance: Insights from over 100,000 Plasmodium falciparum samples",
+          "doi": "10.7554/elife.105544",
+          "reference": "eLife (2025) 10.7554/eLife.105544",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Aggregation of 112,933 P. falciparum samples (1980-2023), review",
+          "population": "",
+          "limitations": "Depends on public metadata quality"
+        }
+      ]
     },
     {
       "id": "malaria-resistance:acts remain effective",
@@ -447,7 +783,19 @@
       "dois": [
         "10.1016/j.mib.2022.102193"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Plasmodium falciparum resistance to artemisinin-based combination therapies",
+          "doi": "10.1016/j.mib.2022.102193",
+          "reference": "Current Opinion in Microbiology (2022) 10.1016/j.mib.2022.102193",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Review of artemisinin-based combination therapy resistance (Pfk13, partner drugs)",
+          "population": "",
+          "limitations": "Review perspective; necessarily summary-level"
+        }
+      ]
     },
     {
       "id": "tb-diagnostics:CRISPR",
@@ -469,7 +817,49 @@
         "10.1126/scitranslmed.adp6411",
         "10.1128/spectrum.02652-24"
       ],
-      "contradiction": true
+      "contradiction": true,
+      "provenance": [
+        {
+          "paper": "CRISPR detection of circulating cell-free Mycobacterium tuberculosis DNA in adults and children, including children with HIV: a molecular diagnostics study",
+          "doi": "10.1016/s2666-5247(22)00087-8",
+          "reference": "The Lancet Microbe (2022) 10.1016/S2666-5247(22)00087-8",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Adults, children incl. HIV-positive, Eswatini + Kenya (archived serum)",
+          "population": "",
+          "limitations": "Retrospective archived serum; segmented cohorts"
+        },
+        {
+          "paper": "Evolution of tuberculosis diagnostics: From molecular strategies to nanodiagnostics",
+          "doi": "10.1016/j.tube.2023.102340",
+          "reference": "Tuberculosis (2023) 10.1016/j.tube.2023.102340",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Review of TB diagnostics (conventional to molecular/nano)",
+          "population": "",
+          "limitations": "Review; several technologies pre-clinical"
+        },
+        {
+          "paper": "Rapid tuberculosis diagnosis from respiratory or blood samples by a low cost, portable lab-in-tube assay",
+          "doi": "10.1126/scitranslmed.adp6411",
+          "reference": "Science Translational Medicine (2025) 10.1126/scitranslmed.adp6411",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Children 1-16y (serum cfDNA) + adults (sputum/saliva)",
+          "population": "",
+          "limitations": "Adult/child validation; needs field-scale confirmation"
+        },
+        {
+          "paper": "Rapid and sensitive detection of\n                    <i>Mycobacterium tuberculosis</i>\n                    using the RPA/Cas12f1_ge4.1 system with fluorescence and lateral flow readouts",
+          "doi": "10.1128/spectrum.02652-24",
+          "reference": "Microbiology Spectrum (2025) 10.1128/spectrum.02652-24",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Clinical sputum: 73 true positive samples + 40 negative controls",
+          "population": "",
+          "limitations": "Moderate cohort; dual-readout validation required on-site"
+        }
+      ]
     },
     {
       "id": "tb-diagnostics:result within",
@@ -487,7 +877,19 @@
       "dois": [
         "10.1126/scitranslmed.adp6411"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Rapid tuberculosis diagnosis from respiratory or blood samples by a low cost, portable lab-in-tube assay",
+          "doi": "10.1126/scitranslmed.adp6411",
+          "reference": "Science Translational Medicine (2025) 10.1126/scitranslmed.adp6411",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Children 1-16y (serum cfDNA) + adults (sputum/saliva)",
+          "population": "",
+          "limitations": "Adult/child validation; needs field-scale confirmation"
+        }
+      ]
     },
     {
       "id": "tb-diagnostics:children",
@@ -505,7 +907,19 @@
       "dois": [
         "10.1016/S2666-5247(22)00087-8"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "CRISPR detection of circulating cell-free Mycobacterium tuberculosis DNA in adults and children, including children with HIV: a molecular diagnostics study",
+          "doi": "10.1016/s2666-5247(22)00087-8",
+          "reference": "The Lancet Microbe (2022) 10.1016/S2666-5247(22)00087-8",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Adults, children incl. HIV-positive, Eswatini + Kenya (archived serum)",
+          "population": "",
+          "limitations": "Retrospective archived serum; segmented cohorts"
+        }
+      ]
     },
     {
       "id": "tb-diagnostics:CLHIV",
@@ -523,7 +937,19 @@
       "dois": [
         "10.1016/S2666-5247(22)00087-8"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "CRISPR detection of circulating cell-free Mycobacterium tuberculosis DNA in adults and children, including children with HIV: a molecular diagnostics study",
+          "doi": "10.1016/s2666-5247(22)00087-8",
+          "reference": "The Lancet Microbe (2022) 10.1016/S2666-5247(22)00087-8",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Adults, children incl. HIV-positive, Eswatini + Kenya (archived serum)",
+          "population": "",
+          "limitations": "Retrospective archived serum; segmented cohorts"
+        }
+      ]
     },
     {
       "id": "tb-diagnostics:seropositivity positively hazard",
@@ -541,7 +967,19 @@
       "dois": [
         "10.1016/S2666-5247(22)00087-8"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "CRISPR detection of circulating cell-free Mycobacterium tuberculosis DNA in adults and children, including children with HIV: a molecular diagnostics study",
+          "doi": "10.1016/s2666-5247(22)00087-8",
+          "reference": "The Lancet Microbe (2022) 10.1016/S2666-5247(22)00087-8",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Adults, children incl. HIV-positive, Eswatini + Kenya (archived serum)",
+          "population": "",
+          "limitations": "Retrospective archived serum; segmented cohorts"
+        }
+      ]
     },
     {
       "id": "tb-diagnostics:signal cleared months",
@@ -559,7 +997,19 @@
       "dois": [
         "10.1016/S2666-5247(22)00087-8"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "CRISPR detection of circulating cell-free Mycobacterium tuberculosis DNA in adults and children, including children with HIV: a molecular diagnostics study",
+          "doi": "10.1016/s2666-5247(22)00087-8",
+          "reference": "The Lancet Microbe (2022) 10.1016/S2666-5247(22)00087-8",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Adults, children incl. HIV-positive, Eswatini + Kenya (archived serum)",
+          "population": "",
+          "limitations": "Retrospective archived serum; segmented cohorts"
+        }
+      ]
     },
     {
       "id": "tb-diagnostics:WATSON",
@@ -577,7 +1027,19 @@
       "dois": [
         "10.1038/s41467-023-37183-8"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Genome-wide tiled detection of circulating Mycobacterium tuberculosis cell-free DNA using Cas13",
+          "doi": "10.1038/s41467-023-37183-8",
+          "reference": "Nature Communications (2023) 10.1038/s41467-023-37183-8",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Plasma from active pulmonary TB patients (proof-of-concept)",
+          "population": "",
+          "limitations": "Proof-of-feasibility laboratory assay"
+        }
+      ]
     },
     {
       "id": "tb-diagnostics:sensitivity qpcr with",
@@ -595,7 +1057,19 @@
       "dois": [
         "10.1128/spectrum.02652-24"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Rapid and sensitive detection of\n                    <i>Mycobacterium tuberculosis</i>\n                    using the RPA/Cas12f1_ge4.1 system with fluorescence and lateral flow readouts",
+          "doi": "10.1128/spectrum.02652-24",
+          "reference": "Microbiology Spectrum (2025) 10.1128/spectrum.02652-24",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Clinical sputum: 73 true positive samples + 40 negative controls",
+          "population": "",
+          "limitations": "Moderate cohort; dual-readout validation required on-site"
+        }
+      ]
     },
     {
       "id": "tb-diagnostics:MTB",
@@ -613,7 +1087,19 @@
       "dois": [
         "10.1016/j.aca.2026.345085"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "CADEM: Species-level detection of mycobacterial cfDNA via CRISPR for pulmonary disease diagnosis",
+          "doi": "10.1016/j.aca.2026.345085",
+          "reference": "Analytica Chimica Acta (2026) 10.1016/j.aca.2026.345085",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "microfluidic cfDNA enrichment + CRISPR/Cas12a, 20 clinical specimens (7 NTM/MTB, 13 controls)",
+          "population": "",
+          "limitations": "Very small validation set; assay-level not yet clinical routine"
+        }
+      ]
     },
     {
       "id": "tb-diagnostics:all mycobacterial positives",
@@ -631,7 +1117,19 @@
       "dois": [
         "10.1016/j.aca.2026.345085"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "CADEM: Species-level detection of mycobacterial cfDNA via CRISPR for pulmonary disease diagnosis",
+          "doi": "10.1016/j.aca.2026.345085",
+          "reference": "Analytica Chimica Acta (2026) 10.1016/j.aca.2026.345085",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "microfluidic cfDNA enrichment + CRISPR/Cas12a, 20 clinical specimens (7 NTM/MTB, 13 controls)",
+          "population": "",
+          "limitations": "Very small validation set; assay-level not yet clinical routine"
+        }
+      ]
     },
     {
       "id": "tb-diagnostics:hour workflow",
@@ -649,7 +1147,19 @@
       "dois": [
         "10.1016/j.aca.2026.345085"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "CADEM: Species-level detection of mycobacterial cfDNA via CRISPR for pulmonary disease diagnosis",
+          "doi": "10.1016/j.aca.2026.345085",
+          "reference": "Analytica Chimica Acta (2026) 10.1016/j.aca.2026.345085",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "microfluidic cfDNA enrichment + CRISPR/Cas12a, 20 clinical specimens (7 NTM/MTB, 13 controls)",
+          "population": "",
+          "limitations": "Very small validation set; assay-level not yet clinical routine"
+        }
+      ]
     },
     {
       "id": "tb-diagnostics:PPD",
@@ -667,7 +1177,19 @@
       "dois": [
         "10.1016/j.tube.2023.102340"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Evolution of tuberculosis diagnostics: From molecular strategies to nanodiagnostics",
+          "doi": "10.1016/j.tube.2023.102340",
+          "reference": "Tuberculosis (2023) 10.1016/j.tube.2023.102340",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Review of TB diagnostics (conventional to molecular/nano)",
+          "population": "",
+          "limitations": "Review; several technologies pre-clinical"
+        }
+      ]
     },
     {
       "id": "agricultural-biotech:CMD",
@@ -688,7 +1210,39 @@
         "10.1016/j.virusres.2003.12.021",
         "10.3390/v16091469"
       ],
-      "contradiction": true
+      "contradiction": true,
+      "provenance": [
+        {
+          "paper": "Towards sustainable management of cassava mosaic disease: The impact of awareness campaigns in Benin",
+          "doi": "10.1016/j.jafr.2025.101827",
+          "reference": "Journal of Agriculture and Food Research (2025) 10.1016/j.jafr.2025.101827",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "305 farmers + 77 fields, Benin; PSM analysis",
+          "population": "",
+          "limitations": "PSM observational; residual confounding possible"
+        },
+        {
+          "paper": "Methods of surveying the incidence and severity of cassava mosaic disease and whitefly vector populations on cassava in Africa: a review",
+          "doi": "10.1016/j.virusres.2003.12.021",
+          "reference": "Virus Research (2004) 10.1016/j.virusres.2003.12.021",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Review of field survey methods, whitefly IPM across Africa",
+          "population": "",
+          "limitations": "Methods review; not incidence data"
+        },
+        {
+          "paper": "Occurrence and Distribution of Major Cassava Pests and Diseases in Cultivated Cassava Varieties in Western Kenya",
+          "doi": "10.3390/v16091469",
+          "reference": "Viruses (2024) 10.3390/v16091469",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Field surveys 2022-2023 in six western Kenya counties; 29 varieties recorded",
+          "population": "",
+          "limitations": "Observational survey; multi-year variation"
+        }
+      ]
     },
     {
       "id": "agricultural-biotech:EACMV",
@@ -707,7 +1261,29 @@
         "10.3390/v16111691",
         "10.3390/v18030319"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "An Alarming Eastward Front of Cassava Mosaic Disease in Development in West Africa",
+          "doi": "10.3390/v16111691",
+          "reference": "Viruses (2024) 10.3390/v16111691",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "country-wide survey, Guinea April 2024; + 2022 Kambia (Sierra Leone) samples",
+          "population": "",
+          "limitations": "Single-country scope; survey not controlled trial"
+        },
+        {
+          "paper": "The Alarming Eastward Front of Cassava Mosaic Disease Reported in Guinea and Sierra Leone Reaches Western C\u00f4te d\u2019Ivoire",
+          "doi": "10.3390/v18030319",
+          "reference": "Viruses (2026) 10.3390/v18030319",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "C\u00f4te d'Ivoire border surveys 2022 + 2025 (west border)",
+          "population": "",
+          "limitations": "Recent-detection report; broader survey recommended"
+        }
+      ]
     },
     {
       "id": "agricultural-biotech:spread via infected",
@@ -725,7 +1301,19 @@
       "dois": [
         "10.3390/v16111691"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "An Alarming Eastward Front of Cassava Mosaic Disease in Development in West Africa",
+          "doi": "10.3390/v16111691",
+          "reference": "Viruses (2024) 10.3390/v16111691",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "country-wide survey, Guinea April 2024; + 2022 Kambia (Sierra Leone) samples",
+          "population": "",
+          "limitations": "Single-country scope; survey not controlled trial"
+        }
+      ]
     },
     {
       "id": "agricultural-biotech:all cultivated accessions",
@@ -743,7 +1331,19 @@
       "dois": [
         "10.3390/v16111691"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "An Alarming Eastward Front of Cassava Mosaic Disease in Development in West Africa",
+          "doi": "10.3390/v16111691",
+          "reference": "Viruses (2024) 10.3390/v16111691",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "country-wide survey, Guinea April 2024; + 2022 Kambia (Sierra Leone) samples",
+          "population": "",
+          "limitations": "Single-country scope; survey not controlled trial"
+        }
+      ]
     },
     {
       "id": "agricultural-biotech:established eastward front",
@@ -761,7 +1361,19 @@
       "dois": [
         "10.3390/v16111691"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "An Alarming Eastward Front of Cassava Mosaic Disease in Development in West Africa",
+          "doi": "10.3390/v16111691",
+          "reference": "Viruses (2024) 10.3390/v16111691",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "country-wide survey, Guinea April 2024; + 2022 Kambia (Sierra Leone) samples",
+          "population": "",
+          "limitations": "Single-country scope; survey not controlled trial"
+        }
+      ]
     },
     {
       "id": "agricultural-biotech:CBSV",
@@ -779,7 +1391,19 @@
       "dois": [
         "10.1016/j.coviro.2018.08.016"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Whitefly-transmitted viruses threatening cassava production in Africa",
+          "doi": "10.1016/j.coviro.2018.08.016",
+          "reference": "Current Opinion in Virology (2018) 10.1016/j.coviro.2018.08.016",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Review of whitefly-transmitted viruses (CMG & CBSV), endosymbiont work",
+          "population": "",
+          "limitations": "Review opinion focus"
+        }
+      ]
     },
     {
       "id": "agricultural-biotech:southern diversity and",
@@ -797,7 +1421,19 @@
       "dois": [
         "10.1016/j.coviro.2018.08.016"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Whitefly-transmitted viruses threatening cassava production in Africa",
+          "doi": "10.1016/j.coviro.2018.08.016",
+          "reference": "Current Opinion in Virology (2018) 10.1016/j.coviro.2018.08.016",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Review of whitefly-transmitted viruses (CMG & CBSV), endosymbiont work",
+          "population": "",
+          "limitations": "Review opinion focus"
+        }
+      ]
     },
     {
       "id": "agricultural-biotech:cassava mosaic disease",
@@ -815,7 +1451,19 @@
       "dois": [
         "10.1016/bs.aivir.2014.10.001"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Cassava Virus Diseases",
+          "doi": "10.1016/bs.aivir.2014.10.001",
+          "reference": "Advances in Virus Research (2015) 10.1016/bs.aivir.2014.10.001",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Comprehensive review of cassava virus biology, epidemiology, management",
+          "population": "",
+          "limitations": "Global scope; regional data variable"
+        }
+      ]
     },
     {
       "id": "agricultural-biotech:pandemic spread linked",
@@ -833,7 +1481,19 @@
       "dois": [
         "10.1016/bs.aivir.2014.10.001"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Cassava Virus Diseases",
+          "doi": "10.1016/bs.aivir.2014.10.001",
+          "reference": "Advances in Virus Research (2015) 10.1016/bs.aivir.2014.10.001",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Comprehensive review of cassava virus biology, epidemiology, management",
+          "population": "",
+          "limitations": "Global scope; regional data variable"
+        }
+      ]
     },
     {
       "id": "agricultural-biotech:management via diagnostics",
@@ -851,7 +1511,19 @@
       "dois": [
         "10.1016/bs.aivir.2014.10.001"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Cassava Virus Diseases",
+          "doi": "10.1016/bs.aivir.2014.10.001",
+          "reference": "Advances in Virus Research (2015) 10.1016/bs.aivir.2014.10.001",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Comprehensive review of cassava virus biology, epidemiology, management",
+          "population": "",
+          "limitations": "Global scope; regional data variable"
+        }
+      ]
     },
     {
       "id": "agricultural-biotech:whitefly mediated transmission",
@@ -869,7 +1541,19 @@
       "dois": [
         "10.3390/v16091469"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Occurrence and Distribution of Major Cassava Pests and Diseases in Cultivated Cassava Varieties in Western Kenya",
+          "doi": "10.3390/v16091469",
+          "reference": "Viruses (2024) 10.3390/v16091469",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Field surveys 2022-2023 in six western Kenya counties; 29 varieties recorded",
+          "population": "",
+          "limitations": "Observational survey; multi-year variation"
+        }
+      ]
     },
     {
       "id": "agricultural-biotech:higher infection along",
@@ -887,7 +1571,19 @@
       "dois": [
         "10.3390/v18030319"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "The Alarming Eastward Front of Cassava Mosaic Disease Reported in Guinea and Sierra Leone Reaches Western C\u00f4te d\u2019Ivoire",
+          "doi": "10.3390/v18030319",
+          "reference": "Viruses (2026) 10.3390/v18030319",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "C\u00f4te d'Ivoire border surveys 2022 + 2025 (west border)",
+          "population": "",
+          "limitations": "Recent-detection report; broader survey recommended"
+        }
+      ]
     },
     {
       "id": "agricultural-biotech:all varieties susceptible",
@@ -905,7 +1601,19 @@
       "dois": [
         "10.3390/v18030319"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "The Alarming Eastward Front of Cassava Mosaic Disease Reported in Guinea and Sierra Leone Reaches Western C\u00f4te d\u2019Ivoire",
+          "doi": "10.3390/v18030319",
+          "reference": "Viruses (2026) 10.3390/v18030319",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "C\u00f4te d'Ivoire border surveys 2022 + 2025 (west border)",
+          "population": "",
+          "limitations": "Recent-detection report; broader survey recommended"
+        }
+      ]
     },
     {
       "id": "agricultural-biotech:cuttings main route",
@@ -923,7 +1631,19 @@
       "dois": [
         "10.3390/v18030319"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "The Alarming Eastward Front of Cassava Mosaic Disease Reported in Guinea and Sierra Leone Reaches Western C\u00f4te d\u2019Ivoire",
+          "doi": "10.3390/v18030319",
+          "reference": "Viruses (2026) 10.3390/v18030319",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "C\u00f4te d'Ivoire border surveys 2022 + 2025 (west border)",
+          "population": "",
+          "limitations": "Recent-detection report; broader survey recommended"
+        }
+      ]
     }
   ],
   "edges": [

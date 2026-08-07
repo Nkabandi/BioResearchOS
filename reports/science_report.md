@@ -57,6 +57,350 @@
 | 2-hour workflow | tb-diagnostics | Medium (0.6) | 4 | other | No numeric range — cannot test against screened sources. | Single source — needs a second independent study |
 | Conventional microscure/X-ray/PPD limitations | tb-diagnostics | Medium (0.6) | 3 | review | No numeric range — cannot test against screened sources. | Single source — needs a second independent study |
 
+## Provenance
+
+Every claim traces to its source rows: study, DOI, population, method, and stated limitations.
+
+### CBSV — Separateness and superabundant whitefly populations drive CMG/CBSV pandemic evolution
+
+- **Whitefly-transmitted viruses threatening cassava production in Africa** · `10.1016/j.coviro.2018.08.016` · VERIFIED
+  - Method: Review of whitefly-transmitted viruses (CMG & CBSV), endosymbiont work
+  - Limitations: Review opinion focus
+
+### CMD — Standardised survey methods required to map the ongoing CMD pandemic, because whitefly (Bemisia taba
+
+- **Towards sustainable management of cassava mosaic disease: The impact of awareness campaign** · `10.1016/j.jafr.2025.101827` · VERIFIED
+  - Method: 305 farmers + 77 fields, Benin; PSM analysis
+  - Limitations: PSM observational; residual confounding possible
+- **Methods of surveying the incidence and severity of cassava mosaic disease and whitefly vec** · `10.1016/j.virusres.2003.12.021` · VERIFIED
+  - Method: Review of field survey methods, whitefly IPM across Africa
+  - Limitations: Methods review; not incidence data
+- **Occurrence and Distribution of Major Cassava Pests and Diseases in Cultivated Cassava Vari** · `10.3390/v16091469` · VERIFIED
+  - Method: Field surveys 2022-2023 in six western Kenya counties; 29 varieties recorded
+  - Limitations: Observational survey; multi-year variation
+
+### EACMV — EACMV-Ug (Uganda 1990s pandemic strain) detected across Guinea and Sierra Leone
+
+- **An Alarming Eastward Front of Cassava Mosaic Disease in Development in West Africa** · `10.3390/v16111691` · VERIFIED
+  - Method: country-wide survey, Guinea April 2024; + 2022 Kambia (Sierra Leone) samples
+  - Limitations: Single-country scope; survey not controlled trial
+- **The Alarming Eastward Front of Cassava Mosaic Disease Reported in Guinea and Sierra Leone ** · `10.3390/v18030319` · VERIFIED
+  - Method: Côte d'Ivoire border surveys 2022 + 2025 (west border)
+  - Limitations: Recent-detection report; broader survey recommended
+
+### all cultivated accessions — all 63 cultivated accessions susceptible
+
+- **An Alarming Eastward Front of Cassava Mosaic Disease in Development in West Africa** · `10.3390/v16111691` · VERIFIED
+  - Method: country-wide survey, Guinea April 2024; + 2022 Kambia (Sierra Leone) samples
+  - Limitations: Single-country scope; survey not controlled trial
+
+### all varieties susceptible — all varieties susceptible
+
+- **The Alarming Eastward Front of Cassava Mosaic Disease Reported in Guinea and Sierra Leone ** · `10.3390/v18030319` · VERIFIED
+  - Method: Côte d'Ivoire border surveys 2022 + 2025 (west border)
+  - Limitations: Recent-detection report; broader survey recommended
+
+### cassava mosaic disease — Cassava mosaic disease caused by begomoviruses
+
+- **Cassava Virus Diseases** · `10.1016/bs.aivir.2014.10.001` · VERIFIED
+  - Method: Comprehensive review of cassava virus biology, epidemiology, management
+  - Limitations: Global scope; regional data variable
+
+### cuttings main route — cuttings main route
+
+- **The Alarming Eastward Front of Cassava Mosaic Disease Reported in Guinea and Sierra Leone ** · `10.3390/v18030319` · VERIFIED
+  - Method: Côte d'Ivoire border surveys 2022 + 2025 (west border)
+  - Limitations: Recent-detection report; broader survey recommended
+
+### established eastward front — established eastward front developing in West Africa
+
+- **An Alarming Eastward Front of Cassava Mosaic Disease in Development in West Africa** · `10.3390/v16111691` · VERIFIED
+  - Method: country-wide survey, Guinea April 2024; + 2022 Kambia (Sierra Leone) samples
+  - Limitations: Single-country scope; survey not controlled trial
+
+### higher infection along — higher infection along Liberia border (28.85%) than Guinea border (17.07%)
+
+- **The Alarming Eastward Front of Cassava Mosaic Disease Reported in Guinea and Sierra Leone ** · `10.3390/v18030319` · VERIFIED
+  - Method: Côte d'Ivoire border surveys 2022 + 2025 (west border)
+  - Limitations: Recent-detection report; broader survey recommended
+
+### management via diagnostics — management via diagnostics, phytosanitation, breeding resistant or immune varieties
+
+- **Cassava Virus Diseases** · `10.1016/bs.aivir.2014.10.001` · VERIFIED
+  - Method: Comprehensive review of cassava virus biology, epidemiology, management
+  - Limitations: Global scope; regional data variable
+
+### pandemic spread linked — pandemic spread linked to recombinates and high vector abundance
+
+- **Cassava Virus Diseases** · `10.1016/bs.aivir.2014.10.001` · VERIFIED
+  - Method: Comprehensive review of cassava virus biology, epidemiology, management
+  - Limitations: Global scope; regional data variable
+
+### southern diversity and — southern diversity and complex interactions need integrated surveillance
+
+- **Whitefly-transmitted viruses threatening cassava production in Africa** · `10.1016/j.coviro.2018.08.016` · VERIFIED
+  - Method: Review of whitefly-transmitted viruses (CMG & CBSV), endosymbiont work
+  - Limitations: Review opinion focus
+
+### spread via infected — spread via infected cuttings
+
+- **An Alarming Eastward Front of Cassava Mosaic Disease in Development in West Africa** · `10.3390/v16111691` · VERIFIED
+  - Method: country-wide survey, Guinea April 2024; + 2022 Kambia (Sierra Leone) samples
+  - Limitations: Single-country scope; survey not controlled trial
+
+### whitefly mediated transmission — whitefly-mediated transmission share rose to 50.6% in 2023
+
+- **Occurrence and Distribution of Major Cassava Pests and Diseases in Cultivated Cassava Vari** · `10.3390/v16091469` · VERIFIED
+  - Method: Field surveys 2022-2023 in six western Kenya counties; 29 varieties recorded
+  - Limitations: Observational survey; multi-year variation
+
+### AMR — Progress on sustainable AMR-NAP implementation ranges 7% (Burundi) to 94% (Kenya)
+
+- **Strategies and challenges in containing antimicrobial resistance in East Africa: a focus o** · `10.1186/s13756-025-01662-y` · VERIFIED
+  - Method: EAC national public health labs / expert panel (Burundi, Kenya, Rwanda, South Sudan, Tanzania, Uganda)
+  - Limitations: Qualitative NAP/report synthesis by expert panel; no quantitative outcomes
+
+### ESBL — first report of community-acquired ESBL Enterobacteriaceae bloodstream infections in Zanzibar
+
+- **Prevalence and Antimicrobial Resistance of Microbes Causing Bloodstream Infections in Ungu** · `10.1371/journal.pone.0145632` · VERIFIED
+  - Method: 469 consecutively enrolled patients, Mnazi Mmoja Hospital, Zanzibar
+  - Limitations: Single-centre study; small number of ESBL isolates
+- **A systematic review of healthcare-associated infections in Africa: An antimicrobial resist** · `10.4102/ajlm.v7i2.796` · VERIFIED
+  - Method: Systematic review 2010-2017, 35 African studies (>60% East Africa)
+  - Limitations: Heterogeneous primary studies; review not meta-analysis
+
+### HCAI — HCAI driven by Klebsiella, S. aureus, E. coli, Pseudomonas
+
+- **A systematic review of healthcare-associated infections in Africa: An antimicrobial resist** · `10.4102/ajlm.v7i2.796` · VERIFIED
+  - Method: Systematic review 2010-2017, 35 African studies (>60% East Africa)
+  - Limitations: Heterogeneous primary studies; review not meta-analysis
+
+### MRSA — MRSA 2.6-4%
+
+- **A review of antimicrobial resistance in East Africa** · `10.4102/ajlm.v5i1.432` · VERIFIED
+  - Method: 12 East African studies (2005+, PubMed + AJOL), mostly bloodstream infections
+  - Limitations: Small body of heterogeneous studies; not a meta-analysis
+- **A systematic review of healthcare-associated infections in Africa: An antimicrobial resist** · `10.4102/ajlm.v7i2.796` · VERIFIED
+  - Method: Systematic review 2010-2017, 35 African studies (>60% East Africa)
+  - Limitations: Heterogeneous primary studies; review not meta-analysis
+
+### WHO — WHO AMR-surveillance checklist completion 44-100%
+
+- **Strategies and challenges in containing antimicrobial resistance in East Africa: a focus o** · `10.1186/s13756-025-01662-y` · VERIFIED
+  - Method: EAC national public health labs / expert panel (Burundi, Kenya, Rwanda, South Sudan, Tanzania, Uganda)
+  - Limitations: Qualitative NAP/report synthesis by expert panel; no quantitative outcomes
+
+### gaps lab capacity — gaps in lab capacity, representativeness, integration and financing
+
+- **Strategies and challenges in containing antimicrobial resistance in East Africa: a focus o** · `10.1186/s13756-025-01662-y` · VERIFIED
+  - Method: EAC national public health labs / expert panel (Burundi, Kenya, Rwanda, South Sudan, Tanzania, Uganda)
+  - Limitations: Qualitative NAP/report synthesis by expert panel; no quantitative outcomes
+
+### high resistance first — High resistance to first-line drugs 50-100% (ampicillin, cotrimoxazole), emerging ceftriaxone resist
+
+- **A review of antimicrobial resistance in East Africa** · `10.4102/ajlm.v5i1.432` · VERIFIED
+  - Method: 12 East African studies (2005+, PubMed + AJOL), mostly bloodstream infections
+  - Limitations: Small body of heterogeneous studies; not a meta-analysis
+
+### pathogenic bacteria patients — Pathogenic bacteria in 14% of patients
+
+- **Prevalence and Antimicrobial Resistance of Microbes Causing Bloodstream Infections in Ungu** · `10.1371/journal.pone.0145632` · VERIFIED
+  - Method: 469 consecutively enrolled patients, Mnazi Mmoja Hospital, Zanzibar
+  - Limitations: Single-centre study; small number of ESBL isolates
+
+### salmonella typhi isolates — 6/7 Salmonella Typhi isolates multidrug resistant
+
+- **Prevalence and Antimicrobial Resistance of Microbes Causing Bloodstream Infections in Ungu** · `10.1371/journal.pone.0145632` · VERIFIED
+  - Method: 469 consecutively enrolled patients, Mnazi Mmoja Hospital, Zanzibar
+  - Limitations: Single-centre study; small number of ESBL isolates
+
+### surveillance sparse — surveillance sparse
+
+- **A systematic review of healthcare-associated infections in Africa: An antimicrobial resist** · `10.4102/ajlm.v7i2.796` · VERIFIED
+  - Method: Systematic review 2010-2017, 35 African studies (>60% East Africa)
+  - Limitations: Heterogeneous primary studies; review not meta-analysis
+
+### ART — ART-R has emerged in multiple East African countries and is now a priority
+
+- **The emergence of artemisinin partial resistance in Africa: how do we respond?** · `10.1016/s1473-3099(24)00141-5` · VERIFIED
+  - Method: Multi-institution review incl. WHO (Rossert HQ colleagues, Uganda/Tanzania/Rwanda)
+  - Limitations: Review / recommendation piece, no new primary data
+- **Plasmodium falciparum resistance to artemisinin-based combination therapies** · `10.1016/j.mib.2022.102193` · VERIFIED
+  - Method: Review of artemisinin-based combination therapy resistance (Pfk13, partner drugs)
+  - Limitations: Review perspective; necessarily summary-level
+- **Understanding the global rise of artemisinin resistance: Insights from over 100,000 Plasmo** · `10.7554/elife.105544` · VERIFIED
+  - Method: Aggregation of 112,933 P. falciparum samples (1980-2023), review
+  - Limitations: Depends on public metadata quality
+
+### HRP2 — high HRP2/3-deletion prevalence (HRP2 del 24%, HRP3 del 79%, dual 22.7%)
+
+- **Plasmodium falciparum Kelch13 Variants and Histidine-Rich Protein 2/3 Deletions in Central** · `10.4269/ajtmh.25-0114` · VERIFIED
+  - Method: Symptomatic malaria patients at primary centres, central Ethiopia, 2023 (220 isolates)
+  - Limitations: Limited genotyping denominators; season-emergency only
+
+### MOI — mean MOI 1.5
+
+- **Artemisinin and partner drug resistance markers in Plasmodium falciparum from Tanzanian pa** · `10.1186/s12936-025-05447-x` · VERIFIED
+  - Method: 173 P. falciparum-positive children, Mwanza, Tanzania (2016-2022), 143 Pfk13 sequenced
+  - Limitations: Single site; Sanger sequencing
+
+### N86 — pfmdr1 N86 invariable
+
+- **Artemisinin and partner drug resistance markers in Plasmodium falciparum from Tanzanian pa** · `10.1186/s12936-025-05447-x` · VERIFIED
+  - Method: 173 P. falciparum-positive children, Mwanza, Tanzania (2016-2022), 143 Pfk13 sequenced
+  - Limitations: Single site; Sanger sequencing
+
+### OR — mutations associated with higher risk of treatment failure (log OR -2.06)
+
+- **Plasmodium falciparum non-synonymous Kelch13 mutations mediating artemisinin resistance in** · `10.1371/journal.pone.0354429` · VERIFIED
+  - Method: Systematic review + meta-analysis of 24 studies (2014-2024), East Africa
+  - Limitations: High between-study heterogeneity
+
+### R561H — 7.0% non-synonymous Pfk13 mutations incl. WHO-validated R561H (2 patients, 2022)
+
+- **Prevalence of potential mediators of artemisinin resistance in African isolates of Plasmod** · `10.1186/s12936-021-03987-6` · VERIFIED
+  - Method: 87 studies, 37,864 isolates across 29 African countries
+  - Limitations: Aggregation of heterogeneous surveillance studies
+- **Artemisinin and partner drug resistance markers in Plasmodium falciparum from Tanzanian pa** · `10.1186/s12936-025-05447-x` · VERIFIED
+  - Method: 173 P. falciparum-positive children, Mwanza, Tanzania (2016-2022), 143 Pfk13 sequenced
+  - Limitations: Single site; Sanger sequencing
+- **Plasmodium falciparum non-synonymous Kelch13 mutations mediating artemisinin resistance in** · `10.1371/journal.pone.0354429` · VERIFIED
+  - Method: Systematic review + meta-analysis of 24 studies (2014-2024), East Africa
+  - Limitations: High between-study heterogeneity
+
+### R622I — Validated ART-R marker pfk13 R622I in ~2/174 (1.1%)
+
+- **Plasmodium falciparum Kelch13 Variants and Histidine-Rich Protein 2/3 Deletions in Central** · `10.4269/ajtmh.25-0114` · VERIFIED
+  - Method: Symptomatic malaria patients at primary centres, central Ethiopia, 2023 (220 isolates)
+  - Limitations: Limited genotyping denominators; season-emergency only
+
+### acts remain effective — ACTs remain effective but partner-drug vulnerabilities and regional spread of markers demand continu
+
+- **Plasmodium falciparum resistance to artemisinin-based combination therapies** · `10.1016/j.mib.2022.102193` · VERIFIED
+  - Method: Review of artemisinin-based combination therapy resistance (Pfk13, partner drugs)
+  - Limitations: Review perspective; necessarily summary-level
+
+### distribution central east — distribution central to East Africa
+
+- **Prevalence of potential mediators of artemisinin resistance in African isolates of Plasmod** · `10.1186/s12936-021-03987-6` · VERIFIED
+  - Method: 87 studies, 37,864 isolates across 29 African countries
+  - Limitations: Aggregation of heterogeneous surveillance studies
+
+### kelch data aggregated — kelch13 data aggregated into a single surveillance resource with focus on East Africa
+
+- **Understanding the global rise of artemisinin resistance: Insights from over 100,000 Plasmo** · `10.7554/elife.105544` · VERIFIED
+  - Method: Aggregation of 112,933 P. falciparum samples (1980-2023), review
+  - Limitations: Depends on public metadata quality
+
+### pfmdr pattern consistent — pfmdr1 pattern consistent with reduced lumen sensitivity
+
+- **Plasmodium falciparum Kelch13 Variants and Histidine-Rich Protein 2/3 Deletions in Central** · `10.4269/ajtmh.25-0114` · VERIFIED
+  - Method: Symptomatic malaria patients at primary centres, central Ethiopia, 2023 (220 isolates)
+  - Limitations: Limited genotyping denominators; season-emergency only
+
+### pooled non synonymous — Pooled non-synonymous PfKelch13 prevalence 5.0% (Cl 3.0-7.0%)
+
+- **Plasmodium falciparum non-synonymous Kelch13 mutations mediating artemisinin resistance in** · `10.1371/journal.pone.0354429` · VERIFIED
+  - Method: Systematic review + meta-analysis of 24 studies (2014-2024), East Africa
+  - Limitations: High between-study heterogeneity
+
+### recommended expansion genomic — recommended expansion of genomic surveillance, clinical efficacy trials, ex-vivo susceptibility test
+
+- **The emergence of artemisinin partial resistance in Africa: how do we respond?** · `10.1016/s1473-3099(24)00141-5` · VERIFIED
+  - Method: Multi-institution review incl. WHO (Rossert HQ colleagues, Uganda/Tanzania/Rwanda)
+  - Limitations: Review / recommendation piece, no new primary data
+
+### suggests emerging lumefantrine — suggests emerging lumefantrine tolerance
+
+- **Artemisinin and partner drug resistance markers in Plasmodium falciparum from Tanzanian pa** · `10.1186/s12936-025-05447-x` · VERIFIED
+  - Method: 173 P. falciparum-positive children, Mwanza, Tanzania (2016-2022), 143 Pfk13 sequenced
+  - Limitations: Single site; Sanger sequencing
+
+### CLHIV — 100% in CLHIV
+
+- **CRISPR detection of circulating cell-free Mycobacterium tuberculosis DNA in adults and chi** · `10.1016/s2666-5247(22)00087-8` · VERIFIED
+  - Method: Adults, children incl. HIV-positive, Eswatini + Kenya (archived serum)
+  - Limitations: Retrospective archived serum; segmented cohorts
+
+### CRISPR — Portable lab-in-tube RPA+CRISPR-Cas12a assay detected MTB DNA with 81% sensitivity vs culture (68% G
+
+- **CRISPR detection of circulating cell-free Mycobacterium tuberculosis DNA in adults and chi** · `10.1016/s2666-5247(22)00087-8` · VERIFIED
+  - Method: Adults, children incl. HIV-positive, Eswatini + Kenya (archived serum)
+  - Limitations: Retrospective archived serum; segmented cohorts
+- **Evolution of tuberculosis diagnostics: From molecular strategies to nanodiagnostics** · `10.1016/j.tube.2023.102340` · VERIFIED
+  - Method: Review of TB diagnostics (conventional to molecular/nano)
+  - Limitations: Review; several technologies pre-clinical
+- **Rapid tuberculosis diagnosis from respiratory or blood samples by a low cost, portable lab** · `10.1126/scitranslmed.adp6411` · VERIFIED
+  - Method: Children 1-16y (serum cfDNA) + adults (sputum/saliva)
+  - Limitations: Adult/child validation; needs field-scale confirmation
+- **Rapid and sensitive detection of
+                    <i>Mycobacterium tuberculosis</i>
+   ** · `10.1128/spectrum.02652-24` · VERIFIED
+  - Method: Clinical sputum: 73 true positive samples + 40 negative controls
+  - Limitations: Moderate cohort; dual-readout validation required on-site
+
+### MTB — Species-level MTB/MAC/MAB differentiation
+
+- **CADEM: Species-level detection of mycobacterial cfDNA via CRISPR for pulmonary disease dia** · `10.1016/j.aca.2026.345085` · VERIFIED
+  - Method: microfluidic cfDNA enrichment + CRISPR/Cas12a, 20 clinical specimens (7 NTM/MTB, 13 controls)
+  - Limitations: Very small validation set; assay-level not yet clinical routine
+
+### PPD — Conventional microscure/X-ray/PPD limitations
+
+- **Evolution of tuberculosis diagnostics: From molecular strategies to nanodiagnostics** · `10.1016/j.tube.2023.102340` · VERIFIED
+  - Method: Review of TB diagnostics (conventional to molecular/nano)
+  - Limitations: Review; several technologies pre-clinical
+
+### WATSON — WATSON (pooled genomic tiling + CRISPR/Cas13) detects Mtb-cfDNA with higher sensitivity than singlet
+
+- **Genome-wide tiled detection of circulating Mycobacterium tuberculosis cell-free DNA using ** · `10.1038/s41467-023-37183-8` · VERIFIED
+  - Method: Plasma from active pulmonary TB patients (proof-of-concept)
+  - Limitations: Proof-of-feasibility laboratory assay
+
+### all mycobacterial positives — all mycobacterial positives called correctly, no false positives
+
+- **CADEM: Species-level detection of mycobacterial cfDNA via CRISPR for pulmonary disease dia** · `10.1016/j.aca.2026.345085` · VERIFIED
+  - Method: microfluidic cfDNA enrichment + CRISPR/Cas12a, 20 clinical specimens (7 NTM/MTB, 13 controls)
+  - Limitations: Very small validation set; assay-level not yet clinical routine
+
+### children — 83%/95% children
+
+- **CRISPR detection of circulating cell-free Mycobacterium tuberculosis DNA in adults and chi** · `10.1016/s2666-5247(22)00087-8` · VERIFIED
+  - Method: Adults, children incl. HIV-positive, Eswatini + Kenya (archived serum)
+  - Limitations: Retrospective archived serum; segmented cohorts
+
+### hour workflow — 2-hour workflow
+
+- **CADEM: Species-level detection of mycobacterial cfDNA via CRISPR for pulmonary disease dia** · `10.1016/j.aca.2026.345085` · VERIFIED
+  - Method: microfluidic cfDNA enrichment + CRISPR/Cas12a, 20 clinical specimens (7 NTM/MTB, 13 controls)
+  - Limitations: Very small validation set; assay-level not yet clinical routine
+
+### result within — result within 1 h
+
+- **Rapid tuberculosis diagnosis from respiratory or blood samples by a low cost, portable lab** · `10.1126/scitranslmed.adp6411` · VERIFIED
+  - Method: Children 1-16y (serum cfDNA) + adults (sputum/saliva)
+  - Limitations: Adult/child validation; needs field-scale confirmation
+
+### sensitivity qpcr with — sensitivity vs qPCR 94.5-91.4 with 100% specificity
+
+- **Rapid and sensitive detection of
+                    <i>Mycobacterium tuberculosis</i>
+   ** · `10.1128/spectrum.02652-24` · VERIFIED
+  - Method: Clinical sputum: 73 true positive samples + 40 negative controls
+  - Limitations: Moderate cohort; dual-readout validation required on-site
+
+### seropositivity positively hazard — seropositivity positively hazard
+
+- **CRISPR detection of circulating cell-free Mycobacterium tuberculosis DNA in adults and chi** · `10.1016/s2666-5247(22)00087-8` · VERIFIED
+  - Method: Adults, children incl. HIV-positive, Eswatini + Kenya (archived serum)
+  - Limitations: Retrospective archived serum; segmented cohorts
+
+### signal cleared months — signal cleared by 6 months of treatment
+
+- **CRISPR detection of circulating cell-free Mycobacterium tuberculosis DNA in adults and chi** · `10.1016/s2666-5247(22)00087-8` · VERIFIED
+  - Method: Adults, children incl. HIV-positive, Eswatini + Kenya (archived serum)
+  - Limitations: Retrospective archived serum; segmented cohorts
+
 ## Knowledge Graph
 
 162 edges: claim→topic, claim→DOI, shared-DOI links.
@@ -83,7 +427,29 @@
         "10.4102/ajlm.v5i1.432",
         "10.4102/ajlm.v7i2.796"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "A review of antimicrobial resistance in East Africa",
+          "doi": "10.4102/ajlm.v5i1.432",
+          "reference": "African Journal of Laboratory Medicine (2016) 10.4102/ajlm.v5i1.432",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "12 East African studies (2005+, PubMed + AJOL), mostly bloodstream infections",
+          "population": "",
+          "limitations": "Small body of heterogeneous studies; not a meta-analysis"
+        },
+        {
+          "paper": "A systematic review of healthcare-associated infections in Africa: An antimicrobial resistance perspective",
+          "doi": "10.4102/ajlm.v7i2.796",
+          "reference": "African Journal of Laboratory Medicine (2018) 10.4102/ajlm.v7i2.796",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Systematic review 2010-2017, 35 African studies (>60% East Africa)",
+          "population": "",
+          "limitations": "Heterogeneous primary studies; review not meta-analysis"
+        }
+      ]
     },
     {
       "id": "amr-east-africa:ESBL",
@@ -104,7 +470,29 @@
         "10.1371/journal.pone.0145632",
         "10.4102/ajlm.v7i2.796"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Prevalence and Antimicrobial Resistance of Microbes Causing Bloodstream Infections in Unguja, Zanzibar",
+          "doi": "10.1371/journal.pone.0145632",
+          "reference": "PLOS ONE (2015) 10.1371/journal.pone.0145632",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "469 consecutively enrolled patients, Mnazi Mmoja Hospital, Zanzibar",
+          "population": "",
+          "limitations": "Single-centre study; small number of ESBL isolates"
+        },
+        {
+          "paper": "A systematic review of healthcare-associated infections in Africa: An antimicrobial resistance perspective",
+          "doi": "10.4102/ajlm.v7i2.796",
+          "reference": "African Journal of Laboratory Medicine (2018) 10.4102/ajlm.v7i2.796",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "Systematic review 2010-2017, 35 African studies (>60% East Africa)",
+          "population": "",
+          "limitations": "Heterogeneous primary studies; review not meta-analysis"
+        }
+      ]
     },
     {
       "id": "amr-east-africa:AMR",
@@ -123,7 +511,19 @@
       "dois": [
         "10.1186/s13756-025-01662-y"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Strategies and challenges in containing antimicrobial resistance in East Africa: a focus on laboratory-based surveillance",
+          "doi": "10.1186/s13756-025-01662-y",
+          "reference": "Antimicrobial Resistance &amp; Infection Control (2025) 10.1186/s13756-025-01662-y",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "EAC national public health labs / expert panel (Burundi, Kenya, Rwanda, South Sudan, Tanzania, Uganda)",
+          "population": "",
+          "limitations": "Qualitative NAP/report synthesis by expert panel; no quantitative outcomes"
+        }
+      ]
     },
     {
       "id": "amr-east-africa:WHO",
@@ -142,7 +542,19 @@
       "dois": [
         "10.1186/s13756-025-01662-y"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Strategies and challenges in containing antimicrobial resistance in East Africa: a focus on laboratory-based surveillance",
+          "doi": "10.1186/s13756-025-01662-y",
+          "reference": "Antimicrobial Resistance &amp; Infection Control (2025) 10.1186/s13756-025-01662-y",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "EAC national public health labs / expert panel (Burundi, Kenya, Rwanda, South Sudan, Tanzania, Uganda)",
+          "population": "",
+          "limitations": "Qualitative NAP/report synthesis by expert panel; no quantitative outcomes"
+        }
+      ]
     },
     {
       "id": "amr-east-africa:gaps lab capacity",
@@ -161,7 +573,19 @@
       "dois": [
         "10.1186/s13756-025-01662-y"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "Strategies and challenges in containing antimicrobial resistance in East Africa: a focus on laboratory-based surveillance",
+          "doi": "10.1186/s13756-025-01662-y",
+          "reference": "Antimicrobial Resistance &amp; Infection Control (2025) 10.1186/s13756-025-01662-y",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "EAC national public health labs / expert panel (Burundi, Kenya, Rwanda, South Sudan, Tanzania, Uganda)",
+          "population": "",
+          "limitations": "Qualitative NAP/report synthesis by expert panel; no quantitative outcomes"
+        }
+      ]
     },
     {
       "id": "amr-east-africa:high resistance first",
@@ -179,7 +603,19 @@
       "dois": [
         "10.4102/ajlm.v5i1.432"
       ],
-      "contradiction": false
+      "contradiction": false,
+      "provenance": [
+        {
+          "paper": "A review of antimicrobial resistance in East Africa",
+          "doi": "10.4102/ajlm.v5i1.432",
+          "reference": "African Journal of Laboratory Medicine (2016) 10.4102/ajlm.v5i1.432",
+          "status": "VERIFIED",
+          "sample": "",
+          "method": "12 East African studies (2005+, PubMed + AJOL), mostly bloodstream infections",
+          "population": "",
+          "limitations": "Small body of heterogeneous studies; not a meta-analysis"
+        }
+      ]
     },
     {
       "id": "amr-east-africa:pathogenic bacteria patients",
@@ -190,188 +626,5 @@
       "confidence": "Medium",
       "conf_score": 0.6,
       "ev_weight": 4,
-      "study_types": [
-        "other"
-      ],
-      "sources_n": 1,
-      "dois": [
-        "10.1371/journal.pone.0145632"
-      ],
-      "contradiction": false
-    },
-    {
-      "id": "amr-east-africa:salmonella typhi isolates",
-      "topic": "amr-east-africa",
-      "metric": "salmonella typhi isolates",
-      "claim": "6/7 Salmonella Typhi isolates multidrug resistant",
-      "verified": true,
-      "confidence": "Medium",
-      "conf_score": 0.6,
-      "ev_weight": 4,
-      "study_types": [
-        "other"
-      ],
-      "sources_n": 1,
-      "dois": [
-        "10.1371/journal.pone.0145632"
-      ],
-      "contradiction": false
-    },
-    {
-      "id": "amr-east-africa:HCAI",
-      "topic": "amr-east-africa",
-      "metric": "HCAI",
-      "claim": "HCAI driven by Klebsiella, S. aureus, E. coli, Pseudomonas",
-      "verified": true,
-      "confidence": "Medium",
-      "conf_score": 0.6,
-      "ev_weight": 9,
-      "study_types": [
-        "systematic",
-        "review"
-      ],
-      "sources_n": 1,
-      "dois": [
-        "10.4102/ajlm.v7i2.796"
-      ],
-      "contradiction": false
-    },
-    {
-      "id": "amr-east-africa:surveillance sparse",
-      "topic": "amr-east-africa",
-      "metric": "surveillance sparse",
-      "claim": "surveillance sparse",
-      "verified": true,
-      "confidence": "Medium",
-      "conf_score": 0.6,
-      "ev_weight": 9,
-      "study_types": [
-        "systematic",
-        "review"
-      ],
-      "sources_n": 1,
-      "dois": [
-        "10.4102/ajlm.v7i2.796"
-      ],
-      "contradiction": false
-    },
-    {
-      "id": "malaria-resistance:ART",
-      "topic": "malaria-resistance",
-      "metric": "ART",
-      "claim": "ART-R has emerged in multiple East African countries and is now a priority",
-      "verified": true,
-      "confidence": "Medium",
-      "conf_score": 0.6,
-      "ev_weight": 4,
-      "study_types": [
-        "other",
-        "review"
-      ],
-      "sources_n": 3,
-      "dois": [
-        "10.1016/S1473-3099(24)00141-5",
-        "10.1016/j.mib.2022.102193",
-        "10.7554/eLife.105544"
-      ],
-      "contradiction": false
-    },
-    {
-      "id": "malaria-resistance:R561H",
-      "topic": "malaria-resistance",
-      "metric": "R561H",
-      "claim": "7.0% non-synonymous Pfk13 mutations incl. WHO-validated R561H (2 patients, 2022)",
-      "verified": true,
-      "confidence": "High",
-      "conf_score": 0.85,
-      "ev_weight": 10,
-      "study_types": [
-        "meta-analysis",
-        "other"
-      ],
-      "sources_n": 3,
-      "dois": [
-        "10.1186/s12936-021-03987-6",
-        "10.1186/s12936-025-05447-x",
-        "10.1371/journal.pone.0354429"
-      ],
-      "contradiction": false
-    },
-    {
-      "id": "malaria-resistance:recommended expansion genomic",
-      "topic": "malaria-resistance",
-      "metric": "recommended expansion genomic",
-      "claim": "recommended expansion of genomic surveillance, clinical efficacy trials, ex-vivo susceptibility test",
-      "verified": true,
-      "confidence": "Medium",
-      "conf_score": 0.6,
-      "ev_weight": 4,
-      "study_types": [
-        "other"
-      ],
-      "sources_n": 1,
-      "dois": [
-        "10.1016/S1473-3099(24)00141-5"
-      ],
-      "contradiction": false
-    },
-    {
-      "id": "malaria-resistance:N86",
-      "topic": "malaria-resistance",
-      "metric": "N86",
-      "claim": "pfmdr1 N86 invariable",
-      "verified": true,
-      "confidence": "Medium",
-      "conf_score": 0.6,
-      "ev_weight": 4,
-      "study_types": [
-        "other"
-      ],
-      "sources_n": 1,
-      "dois": [
-        "10.1186/s12936-025-05447-x"
-      ],
-      "contradiction": false
-    },
-    {
-      "id": "malaria-resistance:MOI",
-      "topic": "malaria-resistance",
-      "metric": "MOI",
-      "claim": "mean MOI 1.5",
-      "verified": true,
-      "confidence": "Medium",
-      "conf_score": 0.6,
-      "ev_weight": 4,
-      "study_types": [
-        "other"
-      ],
-      "sources_n": 1,
-      "dois": [
-        "10.1186/s12936-025-05447-x"
-      ],
-      "contradiction": false
-    },
-    {
-      "id": "malaria-resistance:suggests emerging lumefantrine",
-      "topic": "malaria-resistance",
-      "metric": "suggests emerging lumefantrine",
-      "claim": "suggests emerging lumefantrine tolerance",
-      "verified": true,
-      "confidence": "Medium",
-      "conf_score": 0.6,
-      "ev_weight": 4,
-      "study_types": [
-        "other"
-      ],
-      "sources_n": 1,
-      "dois": [
-        "10.1186/s12936-025-05447-x"
-      ],
-      "contradiction": false
-    },
-    {
-      "id": "malaria-resistance:pooled non synonymous",
-      "topic": "malaria-resistance",
-      "metric": "pooled non synonymous",
-  
+      "study_
 ```

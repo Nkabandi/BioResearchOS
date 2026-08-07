@@ -3,9 +3,9 @@
 
 Combines the per-topic verification outputs into one Claude-Science-style
 notebook: every claim carries a verdict (confidence / evidence weight / study
-grades), a falsifiable test statement, and a review flag when it should be
-checked by a human before use. Claims are linked into a small knowledge graph
-over three edge types:
+grades), a falsifiable test statement, a review flag, and full provenance back
+to its source rows (Study / DOI / Method / Population / Result / Limitations).
+Claims are linked into a small knowledge graph over three edge types:
 
   CLAIM -> TOPIC       (claim held in this topic)
   CLAIM -> DOI         (claim grounded in this source, normalized DOI key)
@@ -14,7 +14,7 @@ over three edge types:
 Which is enough to see cross-topic reuse and source overlap without a
 database. Official connectors (PubMed / OpenAlex / ClinicalTrials.gov) are not
 called here — this is a local static build; add a connector only when a client
-report needs a live source fetch.
+report needs a live source fetch (PMID/URL resolution happens there).
 
 Run:
   python reports/science_report.py --topics portfolio/amr-east-africa/evidence \\
@@ -33,7 +33,26 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def load_verif(ev: Path) -> list[dict]:
+def load_evidence(ev: Path) -> dict:
+    """source rows keyed by normalized DOI; provenance / population / limitations."""
+    prov = {}
+    for r in csv.DictReader(open(ev / "evidence_table.csv", encoding="utf-8")):
+        doi_m = re.search(r"10\.\S+", r.get("Reference", ""))
+        if not doi_m:
+            continue
+        doi = doi_m.group(0).lower()
+        prov.setdefault(doi, []).append({"paper": r.get("Paper", "").strip(),
+                                         "doi": doi,
+                                         "reference": r.get("Reference", "").strip(),
+                                         "status": r.get("Status", "").strip(),
+                                         "sample": (r.get("Sample") or "").strip(),
+                                         "method": (r.get("Method") or "").strip(),
+                                         "population": (r.get("Sample") or "").strip(),
+                                         "limitations": (r.get("Limitations") or "").strip()})
+    return prov
+
+
+def load_verif(ev: Path) -> tuple[list[dict], dict]:
     table = list(csv.DictReader(open(ev / "verification.csv", encoding="utf-8")))
     contradicted = set()
     try:
@@ -41,19 +60,22 @@ def load_verif(ev: Path) -> list[dict]:
                         for r in csv.DictReader(open(ev / "contradictions.csv", encoding="utf-8"))}
     except FileNotFoundError:
         pass
+    prov = load_evidence(ev)
     for c in table:
         c["contradiction"] = c["metric"] in contradicted
         c["dois"] = [d for d in c["dois"].split() if d]
         c["sources_n"] = int(c["sources"])
         c["verified"] = c["verified"] == "y"
-    return table
+        c["provenance"] = [s for d in c["dois"] for s in prov.get(d.lower(), [])]
+    return table, prov
 
 
 def build(spec: list[tuple[Path, str]]) -> dict:
     """Claims + graph edges (claim->topic, claim->doi, claim~claim shared doi)."""
     claims, by_doi = [], {}
     for i, (ev, topic) in enumerate(spec):
-        for row in load_verif(ev):
+        rows, _prov = load_verif(ev)
+        for row in rows:
             nid = f"{topic}:{row['metric']}"
             claims.append({"id": nid, "topic": topic, "metric": row["metric"],
                            "claim": row["claim"], "verified": row["verified"],
@@ -62,7 +84,8 @@ def build(spec: list[tuple[Path, str]]) -> dict:
                            "ev_weight": int(row["ev_weight"]),
                            "study_types": row["study_types"].split(),
                            "sources_n": row["sources_n"], "dois": row["dois"],
-                           "contradiction": row["contradiction"]})
+                           "contradiction": row["contradiction"],
+                           "provenance": row["provenance"]})
             for d in row["dois"]:
                 by_doi.setdefault(d.lower(), []).append(nid)   # claim -> doi
     edges = []
@@ -113,7 +136,24 @@ def build_md(nb: dict) -> str:
         lines.append(f"| {c['claim'][:80]} | {c['topic']} | {c['confidence']} "
                      f"({c['conf_score']}) | {c['ev_weight']} | {', '.join(c['study_types'])} | "
                      f"{falsified(c)} | {flagged} |")
-    lines += ["", "## Knowledge Graph", "",
+    lines += ["", "## Provenance", "",
+              "Every claim traces to its source rows: study, DOI, population, "
+              "method, and stated limitations.", ""]
+    for c in sorted(nb["claims"], key=lambda x: (x["topic"], x["metric"])):
+        if not c["provenance"]:
+            continue
+        lines.append(f"### {c['metric']} — {c['claim'][:110]}")
+        lines.append("")
+        for s in c["provenance"]:
+            lines.append(f"- **{s['paper'][:90]}** · `{s['doi']}` · {s['status']}")
+            if s["population"]:
+                lines.append(f"  - Population: {s['population'][:160]}")
+            if s["method"]:
+                lines.append(f"  - Method: {s['method'][:160]}")
+            if s["limitations"]:
+                lines.append(f"  - Limitations: {s['limitations'][:160]}")
+        lines.append("")
+    lines += ["## Knowledge Graph", "",
               f"{len(nb['edges'])} edges: claim→topic, claim→DOI, shared-DOI links.", "",
               "```json", json.dumps(nb, indent=2)[:8000], "```", ""]
     return "\n".join(lines)
