@@ -3,151 +3,500 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BioResearchOS — AI Research Support for Biotechnology</title>
-<meta name="description" content="AI-assisted literature reviews, data analysis, and figures for biotechnology students and researchers. Local-first, reproducible, honest about limits.">
+<title>BioResearchOS — Scientific Intelligence for Biotechnology Leaders</title>
+<meta name="description" content="BioResearchOS is an independent research desk for biotechnology teams, startups, and investors. Every deliverable is grounded in literature that has been verified against Crossref metadata, human-reviewed, and reproducible. Evidence Briefs, Competitive Intelligence Reports, and Literature Monitoring.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root { --ink:#1b1b1f; --acc:#0a6c6c; --soft:#f4f6f7; --line:#dde3e5; --warn:#8a5a00; }
-  * { box-sizing:border-box; margin:0; }
-  body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:var(--ink); background:#fff; }
-  .wrap { max-width: 840px; margin: 0 auto; padding: 0 20px; }
-  header { background:var(--soft); border-bottom:1px solid var(--line); padding:56px 0 40px; }
-  h1 { font-size:1.9rem; letter-spacing:-.02em; }
-  header p.tag { font-size:1.05rem; color:#444; margin-top:10px; max-width:56ch; }
-  .badges { margin-top:16px; display:flex; flex-wrap:wrap; gap:8px; }
-  .badge { border:1px solid var(--line); border-radius:999px; padding:4px 12px; font-size:.8rem; background:#fff; }
-  section { padding: 40px 0; border-bottom:1px solid var(--line); }
-  h2 { font-size:1.25rem; margin-bottom:16px; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; }
-  .card { border:1px solid var(--line); border-radius:10px; padding:18px; background:#fff; }
-  .card h3 { font-size:1rem; margin-bottom:6px; }
-  .card p { font-size:.92rem; color:#555; margin-bottom:10px; }
-  .card .price { font-weight:600; color:var(--acc); }
-  table { width:100%; border-collapse:collapse; font-size:.92rem; }
-  th,td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); }
-  .note { background:#fff7e0; border:1px solid #e6d9a8; color:var(--warn); border-radius:8px; padding:12px 14px; font-size:.9rem; margin-top:14px; }
-  .cta { background:var(--acc); color:#fff; border:0; border-radius:8px; padding:12px 18px; font-size:1rem; cursor:pointer; text-decoration:none; display:inline-block; }
-  .cta:hover { opacity:.92; }
-  footer { padding:30px 0; color:#777; font-size:.85rem; }
-  a { color:var(--acc); }
+/* ============================================================
+   BioResearchOS — a scientific intelligence publishing house.
+   Editorial, calm, print-set. One dark plate. One accent.
+   Almost nothing is coloured; almost nothing moves.
+   ============================================================ */
+:root{
+  --ink:#201d18;          /* warm near-black */
+  --ink-2:#6f6a61;        /* muted stone */
+  --paper:#f6f3ed;        /* warm paper */
+  --paper-2:#efece4;      /* slightly deeper paper */
+  --line:#e3ded2;         /* hairline */
+  --line-strong:#c9c2b2;
+  --accent:#2f5a45;       /* forest — reserved */
+  --navy:#081421;         /* report cover navy */
+  --ivory:#FAFAF6;
+  --sans:'Inter',-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --serif:'Fraunces',Georgia,"Times New Roman",serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(47,90,69,.14)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.wrap{width:min(1080px,100% - 64px);margin-inline:auto}
+.section{padding:clamp(6rem,12vw,9.5rem) 0}
+.eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-2)}
+.shead{max-width:760px}
+.shead h2{font-family:var(--serif);font-weight:350;font-size:clamp(2.1rem,4.6vw,3.2rem);letter-spacing:-.015em;line-height:1.1;color:var(--ink);margin-top:20px}
+.shead p{color:var(--ink-2);margin-top:22px;font-size:1.05rem;max-width:56ch}
+.num-dn{font-variant-numeric:tabular-nums}
+
+/* ---------- grain: very subtle paper texture ---------- */
+.grain{position:relative}
+.grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.55;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='0.06'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ---------- masthead ---------- */
+.nav{position:sticky;top:0;z-index:50;background:rgba(246,243,237,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:var(--serif);font-size:1rem;letter-spacing:.2em;color:var(--ink)}
+.brand b{font-weight:400}
+.nav-links{display:flex;align-items:center;gap:36px}
+.nav-links a{font-size:.88rem;color:var(--ink-2);letter-spacing:.01em}
+.nav-links a:hover{color:var(--ink)}
+.nav-links .cta{color:var(--ink)}
+.nav-links .cta::after{content:"→";margin-left:8px}
+.burger{display:none;background:none;border:0;cursor:pointer;width:36px;height:36px;position:relative}
+.burger span{position:absolute;left:4px;right:4px;height:1.5px;background:var(--ink)}
+.burger span:nth-child(1){top:12px}.burger span:nth-child(2){top:18px}.burger span:nth-child(3){top:24px}
+.mobile-menu{display:none;flex-direction:column;gap:4px;padding:16px 32px 28px;border-bottom:1px solid var(--line);background:var(--paper)}
+.mobile-menu a{font-size:1.05rem;padding:10px 0;border-bottom:1px solid var(--line)}
+.mobile-menu a:last-child{border:0;color:var(--ink);font-weight:500}
+
+/* ---------- chapter I — the statement + the publication ---------- */
+.hero{padding:clamp(5rem,10vw,7.5rem) 0 clamp(4rem,8vw,6rem);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(3rem,6vw,5.5rem);align-items:center}
+.hero .deck{font-family:var(--mono);font-size:.76rem;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-2)}
+.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(2.6rem,5.6vw,4.4rem);line-height:1.05;letter-spacing:-.02em;margin-top:34px;max-width:18ch}
+.hero h1 .rule{display:block}
+.hero .sub{color:var(--ink-2);font-size:1.08rem;max-width:52ch;margin:30px 0 48px}
+.hero .sub strong{color:var(--ink);font-weight:500}
+.hero-links{display:flex;gap:36px;flex-wrap:wrap;align-items:center}
+.link-arr{font-size:.98rem;font-weight:500;color:var(--ink);border-bottom:1px solid var(--ink);padding-bottom:3px}
+.link-arr:hover{color:var(--accent);border-color:var(--accent)}
+.link-plain{font-size:.98rem;color:var(--ink-2);border-bottom:1px solid var(--line-strong);padding-bottom:3px}
+.link-plain:hover{color:var(--ink);border-color:var(--ink)}
+
+/* the hero report — a bound volume, not a card */
+.hero-cover{position:relative;background:var(--navy);color:var(--ivory);padding:clamp(1.8rem,3.4vw,2.6rem);min-height:460px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;box-shadow:26px 30px 0 -14px rgba(32,29,24,.14),40px 0 90px -30px rgba(32,29,24,.25)}
+.hero-cover::before{content:"";position:absolute;inset:0;opacity:.65;pointer-events:none;mix-blend-mode:soft-light;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='0.5'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero-cover::after{content:"";position:absolute;top:0;bottom:0;left:0;width:1px;background:linear-gradient(rgba(255,255,255,.28),rgba(255,255,255,.05))}
+.hero-cover .hc-inner{position:relative;z-index:1;display:flex;flex-direction:column;flex:1}
+.hc-mast{font-family:var(--mono);font-size:.68rem;letter-spacing:.3em;color:#8f9aa0;text-transform:uppercase}
+.hc-tag{display:inline-block;font-family:var(--mono);font-size:.62rem;letter-spacing:.22em;color:#c8c0ac;border:1px solid rgba(255,255,255,.25);padding:6px 12px;margin-top:34px;text-transform:uppercase}
+.hc-title{font-family:var(--serif);font-weight:300;font-size:clamp(1.6rem,2.6vw,2.15rem);line-height:1.12;margin-top:20px;letter-spacing:-.01em}
+.hc-meta{margin-top:38px;border-top:1px solid rgba(255,255,255,.16);padding-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.hc-meta div .k{display:block;font-family:var(--mono);font-size:.58rem;letter-spacing:.2em;color:#8f9aa0;text-transform:uppercase}
+.hc-meta div .v{display:block;font-family:var(--serif);font-size:1.1rem;color:#efe9dc;margin-top:6px}
+.hc-foot{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;color:#8f9aa0;text-transform:uppercase}
+.hc-cap{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;color:var(--ink-2);margin-top:34px;max-width:40ch}
+
+/* ---------- chapter II — the archive ---------- */
+.reports .shead{margin-bottom:clamp(3rem,6vw,4.5rem)}
+.report-row{display:grid;grid-template-columns:210px minmax(0,1fr);gap:clamp(2rem,4.5vw,4rem);align-items:center;padding:56px 0;border-top:1px solid var(--line-strong)}
+.report-row:first-of-type{border-top:0}
+.report-row .no{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;color:var(--ink-2);text-transform:uppercase;margin-bottom:18px}
+.report-row .tag{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;color:var(--accent);margin-bottom:14px;text-transform:uppercase}
+.report-row h3{font-family:var(--serif);font-weight:350;font-size:clamp(1.6rem,3vw,2.15rem);line-height:1.12;letter-spacing:-.012em}
+.report-row p{color:var(--ink-2);margin-top:16px;max-width:58ch;font-size:.98rem}
+.report-row .stat{font-family:var(--mono);font-size:.74rem;color:var(--ink-2);letter-spacing:.06em;margin-top:22px}
+.report-row .stat b{color:var(--accent);font-weight:500}
+.report-row .read{display:inline-block;margin-top:28px;font-family:var(--mono);font-size:.74rem;letter-spacing:.16em;color:var(--ink);border-bottom:1px solid var(--line-strong);padding-bottom:3px;text-transform:uppercase;white-space:nowrap}
+.report-row .read:hover{color:var(--accent);border-color:var(--accent)}
+
+/* mini cover in the archive */
+.vcover{position:relative;background:var(--navy);color:var(--ivory);padding:26px 24px;min-height:250px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;box-shadow:14px 18px 0 -10px rgba(32,29,24,.12)}
+.vcover::before{content:"";position:absolute;inset:0;opacity:.6;pointer-events:none;mix-blend-mode:soft-light;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='0.5'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+.vcover .vc-inner{position:relative;z-index:1}
+.vc-mast{font-family:var(--mono);font-size:.58rem;letter-spacing:.26em;color:#8f9aa0;text-transform:uppercase}
+.vc-tag{display:block;font-family:var(--mono);font-size:.56rem;letter-spacing:.2em;color:#c8c0ac;margin-top:22px;text-transform:uppercase}
+.vc-title{font-family:var(--serif);font-weight:300;font-size:1.3rem;line-height:1.15;margin-top:12px}
+.vc-meta{margin-top:22px;padding-top:14px;border-top:1px solid rgba(255,255,255,.14);font-family:var(--mono);font-size:.56rem;letter-spacing:.16em;color:#8f9aa0;text-transform:uppercase;line-height:2}
+
+/* ---------- chapter III — method ---------- */
+.method-head{margin-bottom:clamp(3rem,6vw,4.5rem)}
+.steps{border-top:1px solid var(--line-strong)}
+.step{display:grid;grid-template-columns:110px minmax(0,1fr) auto;gap:34px;align-items:baseline;padding:40px 0;border-bottom:1px solid var(--line)}
+.step .n{font-family:var(--mono);font-size:.72rem;letter-spacing:.18em;color:var(--ink-2)}
+.step .t{font-family:var(--serif);font-size:1.55rem;line-height:1.15;letter-spacing:-.01em}
+.step p{color:var(--ink-2);font-size:.94rem;max-width:46ch;margin-top:8px}
+.step .arr{font-family:var(--serif);font-size:1.3rem;color:var(--line-strong)}
+.steps .step:last-child .arr{color:var(--accent)}
+.pipe{margin-top:clamp(4rem,8vw,6rem);display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-strong)}
+.pstep{padding:34px 22px 0 0}
+.pstep + .pstep{padding-left:26px;border-left:1px solid var(--line)}
+.pstep .pn{font-family:var(--serif);font-weight:300;font-size:clamp(2.6rem,5vw,3.6rem);line-height:1;letter-spacing:-.02em}
+.pstep .pl{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;color:var(--ink-2);margin-top:14px;display:block;text-transform:uppercase}
+.stdbound{margin-top:42px;max-width:64ch}
+.stdbound p{font-size:1.02rem;color:var(--ink-2)}
+.stdbound p em{font-style:italic;color:var(--ink)}
+
+/* ---------- chapter IV — standards ---------- */
+.standards{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.std-grid{margin-top:clamp(2.5rem,5vw,4rem);display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-strong)}
+.std{padding:30px 22px 0 0}
+.std + .std{padding-left:26px;border-left:1px solid var(--line)}
+.std .k{font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;color:var(--accent);text-transform:uppercase}
+.std p{color:var(--ink-2);font-size:.92rem;margin-top:10px}
+.stdline{margin-top:44px;font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--ink);max-width:52ch}
+
+/* ---------- chapter V — the catalogue ---------- */
+.products .chapter-head{margin-bottom:clamp(3rem,6vw,4.5rem)}
+.series{border-top:1px solid var(--line-strong)}
+.vol{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:40px;align-items:baseline;padding:46px 0;border-bottom:1px solid var(--line)}
+.vol:last-child{border-bottom:0}
+.vol-no{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;color:var(--ink-2);text-transform:uppercase;margin-bottom:14px}
+.vol h3{font-family:var(--serif);font-weight:350;font-size:clamp(1.4rem,2.6vw,1.8rem)}
+.vol p{color:var(--ink-2);font-size:.95rem;margin-top:12px;max-width:52ch}
+.vol-foot{text-align:right;border-left:1px solid var(--line);padding-left:36px}
+.vol-details{display:block;font-family:var(--mono);font-size:.72rem;color:var(--ink-2);letter-spacing:.06em;line-height:2;text-transform:uppercase}
+.vol-price{margin-top:18px;display:block;font-family:var(--serif);font-size:1.9rem;font-weight:350}
+.vol-price em{font-family:var(--mono);font-size:.68rem;font-style:normal;color:var(--ink-2);letter-spacing:.1em;text-transform:uppercase;margin-left:10px}
+
+/* ---------- chapter VI — contact ---------- */
+.contact{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;opacity:.5;pointer-events:none;mix-blend-mode:soft-light;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='0.5'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+.contact .wrap{position:relative;z-index:1}
+.contact .shead h2{color:var(--paper)}
+.contact .shead p{color:#a8b0a9}
+.contact .shead .eyebrow{color:#8f9890}
+.contact-head{margin-bottom:clamp(3.5rem,7vw,5.5rem)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;border-top:1px solid rgba(255,255,255,.16);padding-top:48px}
+.cgrid .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;color:#8f9890;text-transform:uppercase}
+.cgrid .v{font-family:var(--serif);font-size:1.4rem;margin-top:14px;display:inline-block;color:var(--paper);border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:3px}
+.cgrid .v:hover{border-color:var(--paper)}
+.cgrid .sub{color:#a8b0a9;font-size:.9rem;margin-top:10px}
+.cta-row{margin-top:56px;display:flex;gap:36px;flex-wrap:wrap}
+.cta-row .link-arr{color:var(--paper);border-color:rgba(255,255,255,.4)}
+.cta-row .link-arr:hover{color:#cfc8b8;border-color:#cfc8b8}
+.cta-row .link-plain{color:#a8b0a9;border-color:rgba(255,255,255,.2)}
+.cta-row .link-plain:hover{color:var(--paper);border-color:var(--paper)}
+
+/* ---------- colophon ---------- */
+.footer{border-top:1px solid var(--line);padding:38px 0;color:var(--ink-2);font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:48px}
+  .hero-cover{min-height:0}
+  .report-row{grid-template-columns:1fr;gap:28px;padding:44px 0}
+  .vcover{min-height:0;max-width:340px}
+  .step{grid-template-columns:1fr;gap:10px;padding:30px 0}
+  .step .arr{display:none}
+  .pipe{grid-template-columns:1fr 1fr;row-gap:28px}
+  .pstep:nth-child(2),.pstep:nth-child(4){border-left:0;padding-left:0}
+  .pstep:nth-child(1),.pstep:nth-child(3){padding-top:24px}
+  .std-grid{grid-template-columns:1fr 1fr;row-gap:28px}
+  .std:nth-child(odd){border-left:0;padding-left:0}
+  .std:nth-child(n+3){border-top:1px solid var(--line);padding-top:24px}
+  .vol{grid-template-columns:1fr;gap:18px}
+  .vol-foot{text-align:left;border-left:0;padding-left:0}
+  .contact-grid{grid-template-columns:1fr;gap:36px}
+}
+@media (max-width:620px){
+  .nav-links{display:none}
+  .burger{display:block}
+  .mobile-menu.open{display:flex}
+  .pipe{grid-template-columns:1fr}
+  .pstep{border-left:0!important;padding-left:0!important;padding-top:22px}
+  .std-grid{grid-template-columns:1fr}
+  .std{border-left:0!important;padding-left:0!important;padding-top:22px}
+  .step p{max-width:none}
+}
 </style>
 </head>
 <body>
 
-<header>
+<header class="nav">
   <div class="wrap">
-    <h1>AI Research Support for Biotechnology</h1>
-    <p class="tag">Literature reviews, data analysis, and publication-ready figures — done fast, documented honestly, and yours to verify. Built on the open-source <a href="https://github.com/Nkabandi/BioResearchOS">BioResearchOS</a> platform.</p>
-    <div class="badges">
-      <span class="badge">Local-first, your data stays on your machine</span>
-      <span class="badge">Reproducible reports</span>
-      <span class="badge">Limitations documented</span>
-    </div>
+    <a class="brand" href="#top"><span class="brand-mark">BIO</span>RESEARCH<span class="brand-mark">OS</span></a>
+    <nav class="nav-links">
+      <a href="#reports">Publications</a>
+      <a href="#method">Method</a>
+      <a href="#standards">Standards</a>
+      <a href="#contact" class="cta">Commission a volume</a>
+    </nav>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobile">
+    <a href="#reports">Publications</a>
+    <a href="#method">Method</a>
+    <a href="#standards">Standards</a>
+    <a href="#contact">Commission a volume</a>
   </div>
 </header>
 
-<section>
-  <div class="wrap">
-    <h2>What I offer</h2>
-    <div class="grid">
-
-      <div class="card">
-        <h3>Literature Review Package</h3>
-        <p>Search recent papers across PubMed, OpenAlex, and arXiv. Summarize findings, compare methods, identify consensus and gaps, and generate a structured report with references.</p>
-        <span class="meta">~2–4 days · fixed price</span>
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="deck">BIORESEARCHOS · A Scientific Intelligence Publishing House</p>
+      <h1>Scientific intelligence<span class="rule">for biotechnology leaders<span style="color:var(--accent)">.</span></span></h1>
+      <p class="sub">Verified literature intelligence, competitive research, and public-data analysis — published as numbered volumes for <strong>research teams, startups, and investors</strong>. Every citation checked against Crossref. Every volume human-reviewed.</p>
+      <div class="hero-links">
+        <a class="link-arr" href="#reports">Browse the archive</a>
+        <a class="link-plain" href="#contact">Commission a volume</a>
       </div>
-
-      <div class="card">
-        <h3>Research Data Analysis</h3>
-        <p>Clean your dataset, run descriptive and inferential statistics, produce charts and PCA, and get each result explained in plain language — with a notebook and reproducible pipeline included.</p>
-        <span class="price">Pricing varies by scope</span>
+    </div>
+    <div>
+      <div class="hero-cover">
+        <div class="hc-inner">
+          <p class="hc-mast">BIORESEARCHOS</p>
+          <span class="hc-tag">Evidence Brief · Vol. 01</span>
+          <h2 class="hc-title">Antimicrobial Resistance in East Africa</h2>
+          <div class="hc-meta">
+            <div><span class="k">Crossref-verified</span><span class="v">4 / 4</span></div>
+            <div><span class="k">Published</span><span class="v">August 2026</span></div>
+            <div><span class="k">Surveillance coverage</span><span class="v">NAP 7–94%</span></div>
+            <div><span class="k">First-line resistance</span><span class="v">50–100%</span></div>
+          </div>
+        </div>
+        <div class="hc-foot"><span>Vol. 01 — Series of four</span><span>Open the volume →</span></div>
       </div>
-
-      <div class="card">
-        <h3>Figure &amp; Report Formatting</h3>
-        <p>Publication-style figures, consistent tables, and structured report assembly so your thesis or paper submission step is faster and less painful.</p>
-        <span class="meta">project-based</span>
-      </div>
-
+      <p class="hc-cap">A recent verified deliverable, reproduced for this page. Numbers are from the full publication.</p>
     </div>
   </div>
 </section>
 
-<section>
+<section class="reports section" id="reports">
   <div class="wrap">
-    <h2>Sample work (real outputs)</h2>
-    <table>
-      <table>
-        <tr><th>Evidence-backed literature reviews (verified)</th><th>What's inside</th><th>See the report</th></tr>
-        <tr><td>AMR in East Africa</td><td>4/4 references verified against Crossref; NAP progress 7–94%, first-line resistance 50–100%</td><td><a href="portfolio/amr-east-africa.html">read →</a></td></tr>
-        <tr><td>Artemisinin resistance in malaria</td><td>7/7 references verified; pooled PfK13 5.0%, validated markers across East Africa</td><td><a href="portfolio/malaria-resistance.html">read →</a></td></tr>
-        <tr><td>CRISPR-based TB diagnostics</td><td>6/6 references verified; lab-in-tube assay meets WHO TPP for non-sputum TB</td><td><a href="portfolio/tb-diagnostics.html">read →</a></td></tr>
-        <tr><td>Cassava mosaic disease in West Africa</td><td>7/7 references verified; EACMV-Ug eastward pandemic front</td><td><a href="portfolio/agricultural-biotech.html">read →</a></td></tr>
-      </table>
-      <p style="margin-top:10px;font-size:.92rem">Every report above was built from public literature, and every reference was machine-verified against <a href="https://www.crossref.org">Crossref</a> before publication. Link to the source PDFs yourself — nothing is locked.</p>
-      <table>
-      <tr><th>Project</th><th>What it produces</th><th>See</th></tr>
-      <tr><td>Pharmacogenomics (PharmGX)</td><td>Gene–drug report from a genotype file</td><td><a href="https://github.com/Nkabandi/BioResearchOS/tree/main/pharmgx">pharmgx/</a></td></tr>
-      <tr><td>BioPaper AI</td><td>Structured literature review with references</td><td><a href="https://github.com/Nkabandi/BioResearchOS/tree/main/bio-paper-ai">bio-paper-ai/</a></td></tr>
-      <tr><td>BioData</td><td>Dataset summary, statistics, figures, notebook</td><td><a href="https://github.com/Nkabandi/BioResearchOS/tree/main/bio-data">bio-data/</a></td></tr>
-      <tr><td>Stats Engine</td><td>t-tests, ANOVA, comparisons in plain-language reads</td><td><a href="https://github.com/Nkabandi/BioResearchOS/tree/main/stats-engine">stats-engine/</a></td></tr>
-    </table>
-    <p style="margin-top:10px;font-size:.92rem">All sample reports are written to be reproducible — the same command regenerates the same output. Inspect the code, run it yourself, and judge the quality of the work before buying.</p>
-  </div>
-</section>
+    <div class="shead">
+      <p class="eyebrow">Publications</p>
+      <h2>The archive, in full</h2>
+      <p>Four volumes from the current desk. Every reference verified against Crossref, every deliverable human-reviewed, every research gap stated.</p>
+    </div>
 
-<section>
-  <div class="wrap">
-    <h2>Pricing</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Student · $20 flat</h3>
-        <p>Literature review (basic, 8-12 refs) or a data summary with charts. Aimed at course projects and theses on a student budget.</p>
+    <div class="report-row">
+      <div class="vcover">
+        <div class="vc-inner">
+          <p class="vc-mast">BIORESEARCHOS</p>
+          <span class="vc-tag">Evidence Brief</span>
+          <h3 class="vc-title">AMR Surveillance in East Africa</h3>
+          <div class="vc-meta"><span>4 / 4 Crossref-verified</span><br><span>August 2026</span></div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Researcher · from $50USD</h3>
-        <p>Paper comparison, statistical analysis with methods sections, or a set of publication figures.</p>
-      </div>
-      <div class="card">
-        <h3>Startup / Lab · project-based</h3>
-        <p>Competitive landscape scans, scientific summaries, and internal reports. Scope from a short call.</p>
+      <div>
+        <div class="no">Vol. 01</div>
+        <span class="tag">Evidence Brief</span>
+        <h3>AMR Surveillance in East Africa</h3>
+        <p>National action plans and bloodstream pathogens — where coverage peaks, where the pipeline will be tested, and the resistance numbers behind both.</p>
+        <div class="stat"><b>4 / 4</b>&nbsp;verified&nbsp;·&nbsp;4 screened&nbsp;·&nbsp;evidence table</div>
+        <a class="read" href="portfolio/amr-east-africa.html">Read the volume <span style="color:var(--accent)">→</span></a>
       </div>
     </div>
-    <p style="font-size:.85rem;color:#666">Rates are starting points — send me the scope and we agree a fixed price before any work starts.</p>
-  </div>
-</section>
 
-<section>
-  <div class="wrap">
-    <h2>How it works</h2>
-    <table>
-      <tr><td>1</td><td>You describe the topic, dataset, or problem — a one-paragraph description is enough.</td></tr>
-      <tr><td>2</td><td>I reply with a fixed price and delivery date. No surprises.</td></tr>
-      <tr><td>3</td><td>I deliver the review, analysis, or figures with a clear methods note and honest caveats.</td></tr>
-      <tr><td>4</td><td>You review; one round of revisions included, then revise or done.</td></tr>
-    </table>
-    <div class="note" style="margin-top:14px">
-      <strong>Important:</strong> I provide AI-assisted research support. You remain responsible for scientific interpretation and decisions, and you review the work before using it. Nothing here is medical or diagnostic advice.
+    <div class="report-row">
+      <div class="vcover">
+        <div class="vc-inner">
+          <p class="vc-mast">BIORESEARCHOS</p>
+          <span class="vc-tag">Evidence Brief</span>
+          <h3 class="vc-title">Malaria Resistance</h3>
+          <div class="vc-meta"><span>7 / 7 Crossref-verified</span><br><span>August 2026</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="no">Vol. 02</div>
+        <span class="tag">Evidence Brief</span>
+        <h3>Malaria Resistance</h3>
+        <p>Molecular evidence for artemisinin partial resistance — pooled kelch13 prevalence, validated markers, regional spread, and the clinical blind spots that follow.</p>
+        <div class="stat"><b>7 / 7</b>&nbsp;verified&nbsp;·&nbsp;7 screened&nbsp;·&nbsp;evidence table</div>
+        <a class="read" href="portfolio/malaria-resistance.html">Read the volume <span style="color:var(--accent)">→</span></a>
+      </div>
+    </div>
+
+    <div class="report-row">
+      <div class="vcover">
+        <div class="vc-inner">
+          <p class="vc-mast">BIORESEARCHOS</p>
+          <span class="vc-tag">Evidence Brief</span>
+          <h3 class="vc-title">CRISPR Diagnostics for Tuberculosis</h3>
+          <div class="vc-meta"><span>6 / 8 Crossref-verified</span><br><span>August 2026</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="no">Vol. 03</div>
+        <span class="tag">Evidence Brief</span>
+        <h3>CRISPR Diagnostics for Tuberculosis</h3>
+        <p>Cas-based point-of-care assays weighed against the WHO target product profile — sensitivity, specificity, and the chasm between lab promise and field deployment.</p>
+        <div class="stat"><b>6 / 8</b>&nbsp;verified&nbsp;·&nbsp;8 screened&nbsp;·&nbsp;evidence table</div>
+        <a class="read" href="portfolio/tb-diagnostics.html">Read the volume <span style="color:var(--accent)">→</span></a>
+      </div>
+    </div>
+
+    <div class="report-row">
+      <div class="vcover">
+        <div class="vc-inner">
+          <p class="vc-mast">BIORESEARCHOS</p>
+          <span class="vc-tag">Evidence Brief</span>
+          <h3 class="vc-title">Agricultural Biotechnology</h3>
+          <div class="vc-meta"><span>7 / 7 Crossref-verified</span><br><span>August 2026</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="no">Vol. 04</div>
+        <span class="tag">Evidence Brief</span>
+        <h3>Agricultural Biotechnology</h3>
+        <p>Public dialogue, policy support, and the adoption economics of biotech crops in low-income settings — farmer acceptance, willingness-to-pay, governance.</p>
+        <div class="stat"><b>7 / 7</b>&nbsp;verified&nbsp;·&nbsp;7 screened&nbsp;·&nbsp;evidence table</div>
+        <a class="read" href="portfolio/agricultural-biotech.html">Read the volume <span style="color:var(--accent)">→</span></a>
+      </div>
     </div>
   </div>
 </section>
 
-<section>
+<section class="section" id="method">
   <div class="wrap">
-    <h2>Get in touch</h2>
-    <p style="margin-bottom:12px">Tell me what you're working on (course project, thesis chapter, dataset, or startup query). Replies usually within 24h.</p>
-    <p>
-      <a class="cta" href="mailto:ferdinandnkabandi@icloud.com">Email the short brief</a>
-      <a class="cta" style="background:transparent;color:var(--acc);border:1px solid var(--acc)" href="https://wa.me/255795774784">WhatsApp</a>
-      <a class="cta" style="background:transparent;color:var(--acc);border:1px solid var(--acc)" href="https://github.com/Nkabandi/BioResearchOS">GitHub</a>
-    </p>
+    <div class="method-head">
+      <p class="eyebrow">Method</p>
+      <div class="shead">
+        <h2>How a volume is made</h2>
+        <p>Four steps, each documented. Nothing leaves this desk without a paper trail.</p>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="n">01 · DEFINE</div>
+        <div><div class="t">Question</div><p>The precise research question, its scope, and the decision it informs.</p></div>
+        <span class="arr">→</span>
+      </div>
+      <div class="step">
+        <div class="n">02 · SCREEN</div>
+        <div><div class="t">Evidence</div><p>Primary literature and public data. Every candidate is checked against Crossref metadata; unverifiable claims are dropped.</p></div>
+        <span class="arr">→</span>
+      </div>
+      <div class="step">
+        <div class="n">03 · ELEVATE</div>
+        <div><div class="t">Insight</div><p>Findings stated strictly from the cited publications. No extrapolation, no unattributed claims.</p></div>
+        <span class="arr">→</span>
+      </div>
+      <div class="step">
+        <div class="n">04 · DELIVER</div>
+        <div><div class="t">Volume</div><p>Executive summary, evidence tables, key findings, stated limitations, verified reference list.</p></div>
+        <span class="arr">→</span>
+      </div>
+    </div>
+
+    <div class="pipe">
+      <div class="pstep"><span class="pn">26</span><span class="pl">papers screened</span></div>
+      <div class="pstep"><span class="pn">24</span><span class="pl">Crossref-verified</span></div>
+      <div class="pstep"><span class="pn">24</span><span class="pl">extracted · reproduced</span></div>
+      <div class="pstep"><span class="pn">04</span><span class="pl">volumes · one desk</span></div>
+    </div>
   </div>
 </section>
 
-<footer>
+<section class="standards section" id="standards">
   <div class="wrap">
-    BioResearchOS is an independent, independent research/educational project built by <a href="https://github.com/Nkabandi">Nkabandi</a>. Not affiliated with any university. Reports are reproducible; analysis is honest about its own limits.
+    <p class="eyebrow">Standards</p>
+    <div class="shead">
+      <h2>What every publication carries</h2>
+      <p>These are not claims. They are the editorial rules of this desk.</p>
+    </div>
+    <div class="std-grid">
+      <div class="std"><span class="k">Crossref verification</span><p>Every citation machine-checked against Crossref metadata before release.</p></div>
+      <div class="std"><span class="k">DOIs, checked</span><p>References resolve. If a DOI fails, the source is dropped or replaced.</p></div>
+      <div class="std"><span class="k">Evidence tables</span><p>Every finding links to a row, a paper, and a date — nothing floats.</p></div>
+      <div class="std"><span class="k">Search protocol</span><p>Queries, databases, and inclusion criteria are recorded per volume.</p></div>
+      <div class="std"><span class="k">PRISMA-inspired screening</span><p>Screened records and exclusions are counted and reported.</p></div>
+      <div class="std"><span class="k">Limitations documented</span><p>Research gaps and constraints are stated explicitly — never concealed.</p></div>
+      <div class="std"><span class="k">Reproducible workflow</span><p>From screening set to finding, every step can be rerun.</p></div>
+      <div class="std"><span class="k">Public data only</span><p>No proprietary databases, no paywalled claims without a verified source.</p></div>
+    </div>
+    <p class="stdline">"No hallucinations. Every claim traced to a source you can open."</p>
+  </div>
+</section>
+
+<section class="products section" id="products">
+  <div class="wrap">
+    <div class="chapter-head">
+      <p class="eyebrow">Commission</p>
+      <div class="shead">
+        <h2>Order a volume on your own question</h2>
+        <p>Fixed scope, fixed fee. A serial you can commission.</p>
+      </div>
+    </div>
+
+    <div class="series">
+      <div class="vol">
+        <div>
+          <div class="vol-no">Series 01 · One-shot</div>
+          <h3>Evidence Brief</h3>
+          <p>A single question, 20–40 verified papers, an extraction table, executive summary, and research gaps.</p>
+        </div>
+        <div class="vol-foot">
+          <span class="vol-details">Exec. summary · Evidence table · Research gaps · Verified references</span>
+          <span class="vol-price">$50 <em>per brief</em></span>
+        </div>
+      </div>
+      <div class="vol">
+        <div>
+          <div class="vol-no">Series 02 · One-shot</div>
+          <h3>Competitive Intelligence</h3>
+          <p>Competitor landscape, funding, clinical trials, patents — from public data, cited and dated.</p>
+        </div>
+        <div class="vol-foot">
+          <span class="vol-details">Competitors · Funding · Trials · Patents</span>
+          <span class="vol-price">$100 <em>per brief</em></span>
+        </div>
+      </div>
+      <div class="vol">
+        <div>
+          <div class="vol-no">Series 03 · Standing instruction</div>
+          <h3>Literature Monitoring</h3>
+          <p>An ongoing watch on your field — weekly or monthly digests, alerts, and a quarterly recap.</p>
+        </div>
+        <div class="vol-foot">
+          <span class="vol-details">Digests · Alerts · Quarterly recap</span>
+          <span class="vol-price">$50 <em>per month</em></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact section" id="contact">
+  <div class="wrap">
+    <div class="contact-head">
+      <p class="eyebrow">Commission</p>
+      <div class="shead">
+        <h2>Request a research brief</h2>
+        <p>Fifteen minutes. We'll map your question to a volume and a date — no commitment, no charge.</p>
+      </div>
+    </div>
+    <div class="contact-grid">
+      <div class="cgrid">
+        <p class="k">Email</p>
+        <a class="v" href="mailto:ferdinandnkabandi@icloud.com">ferdinandnkabandi@icloud.com</a>
+        <p class="sub">Fastest for a clear direct message.</p>
+      </div>
+      <div class="cgrid">
+        <p class="k">WhatsApp</p>
+        <a class="v" href="https://wa.me/255795774784">+255 795 774 784</a>
+        <p class="sub">Reply within one business day.</p>
+      </div>
+    </div>
+    <div class="cta-row">
+      <a class="link-arr" href="mailto:ferdinandnkabandi@icloud.com?subject=Research%20brief%20request">Request a brief</a>
+      <a class="link-plain" href="#reports">Read the archive first</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>BIORESEARCHOS · Scientific intelligence publishing house</span>
+    <span>Every citation verified against Crossref · reproducible</span>
   </div>
 </footer>
 
+<script>
+(function(){
+  var b=document.querySelector('.burger'),m=document.getElementById('mobile');
+  b.addEventListener('click',function(){m.classList.toggle('open');});
+  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');});});
+})();
+</script>
 </body>
 </html>

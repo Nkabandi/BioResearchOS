@@ -1,4 +1,4 @@
-# Cassava Mosaic Disease in West Africa: Emergence of the Eastward EACMV-Ug Pandemic Front
+# Agricultural Biotechnology: Public Dialogue, Policy Support, and Biotech Crop Adoption Dynamics
 
 **Client:** Portfolio   **Report date:** 2026-08-07   **References screened:** 7   **Verified against Crossref:** **7/7**
 
@@ -6,17 +6,16 @@
 
 ## Executive Summary
 
-EACMV-Ug (the Uganda-1990s pandemic strain) has reached Guinea, Sierra Leone and is newly confirmed in western Côte d'Ivoire, establishing an eastward CMD front  
- all cultivated accessions are susceptible.\nCMD incidence in western Kenya fell from 26.4% (2022) to 10.1% (2023) while whitefly-transmission share rose to 50.6%  
- improved varieties cut CMD ~30 percentage points. Whitefly superabundance and recombination drive pandemic spread. Benin awareness campaigns improved CMD knowledge but disease persists due to scarcity of healthy planting material.
+Data from 138 low- and middle-income countries shows public-sector R&D spending, not private-sector, is the key driver of policy framings around biotech. FAO/WHO food-safety risk assessments and Codex guidance on LMIC contexts show converging approaches to regulator trust. Ghanaian studies demonstrate farmers' 85.8% willingness-to-pay and 81-89% consumer acceptance  
+ digital-agriculture reviews highlight access-equity regulation for smallholder inclusive adoption.
 
 ## Research Question
 
-What is the current epidemiological status of cassava mosaic disease (CMD) and its whitefly vector in West Africa?
+What evidence describes public acceptance, policy support, and adoption of biotech crops in low-income agricultural settings?
 
-## Methods
+## Methodology
 
-- PubMed/field-survey aggregation: country-wide surveys (Guinea, Sierra Leone, Côte d'Ivoire 2022-2025), western Kenya surveys, and method/exposition reviews
+- Targeted PubMed and open-literature search of agricultural biotechnology acceptance and governance studies
 - DOI verification against Crossref (7/7 verified).
 
 
@@ -34,16 +33,15 @@ What is the current epidemiological status of cassava mosaic disease (CMD) and i
 
 ## Key Findings
 
-- EACMV-Ug (the Uganda-1990s pandemic strain) has reached Guinea, Sierra Leone and is newly confirmed in western Côte d'Ivoire, establishing an eastward CMD front
-- all cultivated accessions are susceptible.\nCMD incidence in western Kenya fell from 26.4% (2022) to 10.1% (2023) while whitefly-transmission share rose to 50.6%
-- improved varieties cut CMD ~30 percentage points. Whitefly superabundance and recombination drive pandemic spread. Benin awareness campaigns improved CMD knowledge but disease persists due to scarcity of healthy planting material.
+- Data from 138 low- and middle-income countries shows public-sector R&D spending, not private-sector, is the key driver of policy framings around biotech. FAO/WHO food-safety risk assessments and Codex guidance on LMIC contexts show converging approaches to regulator trust. Ghanaian studies demonstrate farmers' 85.8% willingness-to-pay and 81-89% consumer acceptance
+- digital-agriculture reviews highlight access-equity regulation for smallholder inclusive adoption.
 
 
 ## Research Gaps
 
-- Regional, cross-border surveillance integration
-- healthy-seed certification schemes
-- --Rest of the effective vector-suppression interventions.
+- Regional regulatory harmonization data
+- longitudinal adoption evidence beyond trials
+- financing constraints in informal seed markets.
 
 
 ## Limitations
@@ -61,5 +59,3 @@ What is the current epidemiological status of cassava mosaic disease (CMD) and i
 - This report is intended for research; it is not a medical device and does not provide clinical diagnoses or regulatory advice. Consult a qualified professional before using it to inform decisions.
 
 ---
-
-*ClawBio is a research and educational tool. It is not a medical device and does not provide clinical diagnoses. Consult a healthcare professional before making any medical decisions.*

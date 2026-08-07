@@ -1,4 +1,4 @@
-# Artemisinin Partial Resistance in East African Plasmodium falciparum: Surveillance and Molecular Evidence
+# Artemisinin Resistance in the Malaria Parasite Plasmodium: Surveillance and Molecular Evidence
 
 **Client:** Portfolio   **Report date:** 2026-08-07   **References screened:** 7   **Verified against Crossref:** **7/7**
 
@@ -6,17 +6,20 @@
 
 ## Executive Summary
 
-Pooled non-synonymous PfKelch13 prevalence 5.0% (CI 3.0-7.0%), with Rh561H and A675V most common in East Africa  
- ART-R emergence follows SE Asia (10-15y earlier). Five WHO-validated PfK13 markers present across Africa including R622I in Central Ethiopia (1.1%), HRP2/3 deletions 24%/79%.\nDetection of ART-R in Rwanda, Tanzania, Uganda, Ethiopia  
- clinical efficacy monitoring of ACTs mandatory.
+Pooled non-synonymous PfKelch13 prevalence is 5.0% (95% CI 3.0-7.0%) in East Africa  
+ R561H and A675V are the most common validated markers  
+ R622I is emerging in central Ethiopia (1.1%)  
+ HRP2/HRP3 gene deletions are common (HRP2 del 24%, HRP3 del 79%). ART-R in Africa follows the Southeast Asian pattern 10-15 years earlier  
+ clinical efficacy monitoring of ACTs is required.
 
 ## Research Question
 
-What is the current molecular evidence for artemisinin partial resistance in Plasmodium falciparum East Africa?
+What molecular evidence supports the ongoing spread of artemisinin partial resistance in East Africa Plasmodium falciparum?
 
-## Methods
+## Methodology
 
-- PubMed systematic review and meta-analysis (2014-2024) plus recent primary surveillance studies anchored to validated PfK13 markers
+- Targeted PubMed search of artemisinin partial resistance and kelch13 surveillance (2021-2026)
+- meta-analysis and primary genotyping studies
 - DOI verification against Crossref (7/7 verified).
 
 
@@ -34,15 +37,18 @@ What is the current molecular evidence for artemisinin partial resistance in Pla
 
 ## Key Findings
 
-- Pooled non-synonymous PfKelch13 prevalence 5.0% (CI 3.0-7.0%), with Rh561H and A675V most common in East Africa
-- ART-R emergence follows SE Asia (10-15y earlier). Five WHO-validated PfK13 markers present across Africa including R622I in Central Ethiopia (1.1%), HRP2/3 deletions 24%/79%.\nDetection of ART-R in Rwanda, Tanzania, Uganda, Ethiopia
-- clinical efficacy monitoring of ACTs mandatory.
+- Pooled non-synonymous PfKelch13 prevalence is 5.0% (95% CI 3.0-7.0%) in East Africa
+- R561H and A675V are the most common validated markers
+- R622I is emerging in central Ethiopia (1.1%)
+- HRP2/HRP3 gene deletions are common (HRP2 del 24%, HRP3 del 79%). ART-R in Africa follows the Southeast Asian pattern 10-15 years earlier
+- clinical efficacy monitoring of ACTs is required.
 
 
 ## Research Gaps
 
-- National genotypic-surveillance coverage and RDT/HRP2-deletion monitoring
-- MT efficacy trials undertake ART-R implementations.
+- National genotypic-surveillance coverage
+- HRP2/3-deletion surveillance
+- ACT efficacy trials across the region.
 
 
 ## Limitations
@@ -60,5 +66,3 @@ What is the current molecular evidence for artemisinin partial resistance in Pla
 - This report is intended for research; it is not a medical device and does not provide clinical diagnoses or regulatory advice. Consult a qualified professional before using it to inform decisions.
 
 ---
-
-*ClawBio is a research and educational tool. It is not a medical device and does not provide clinical diagnoses. Consult a healthcare professional before making any medical decisions.*

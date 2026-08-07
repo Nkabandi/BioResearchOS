@@ -12,9 +12,9 @@ AMR-NAP implementation ranges 7% (Burundi) to 94% (Kenya)
 
 ## Research Question
 
-What is the current state of antimicrobial resistance (AMR) surveillance and bloodstream infection pathogen resistance in East Africa?
+What is the current state of AMR surveillance and bloodstream infection pathogen resistance in East Africa?
 
-## Methods
+## Methodology
 
 - Targeted PubMed search of East African AMR surveillance and bloodstream infection studies
 - National Action Plan (NAP) progress reports
@@ -59,5 +59,3 @@ What is the current state of antimicrobial resistance (AMR) surveillance and blo
 - This report is intended for research; it is not a medical device and does not provide clinical diagnoses or regulatory advice. Consult a qualified professional before using it to inform decisions.
 
 ---
-
-*ClawBio is a research and educational tool. It is not a medical device and does not provide clinical diagnoses. Consult a healthcare professional before making any medical decisions.*

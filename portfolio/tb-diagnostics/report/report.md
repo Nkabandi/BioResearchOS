@@ -1,4 +1,4 @@
-# Next-Generation Molecular Diagnostics for Tuberculosis: CRISPR-Based Point-of-Care Assays
+# CRISPR-Based Point-of-Care Diagnostics for Tuberculosis
 
 **Client:** Portfolio   **Report date:** 2026-08-07   **References screened:** 6   **Verified against Crossref:** **6/6**
 
@@ -6,16 +6,16 @@
 
 ## Executive Summary
 
-Lab-in-tube RPA+CRISPR-Cas12a detected MTB with 81% sensitivity vs culture (vs GeneXpert 68%) and 94% specificity, result within 1 h, meeting WHO TPP for non-sputum TB. CRISPR-TB on circulating cfDNA: 96%/94% (adults), 83%/95% (children), 100% in children living with HIV. WATSON (Cas13 tiled) and CADEM (Cas12a species-level MTB/MAC/MAB differentiation) demonstrated feasibility.\nConventional diagnostics limitations motivate molecular/nano point-of-care approaches.
+A portable lab-in-tube RPA-CRISPR-Cas12a assay detected TB with 81% sensitivity vs culture (GeneXpert 68%) and 94% specificity within 1 h, meeting the WHO target product profile for non-sputum TB. Detection of circulating cfDNA: 96%/94% in adults, 83%/95% in children, 100% in children living with HIV. WATSON (Cas13 tiled) and CAD13 species-level detection demonstrated feasibility.
 
 ## Research Question
 
-What is the evidence for CRISPR-based molecular diagnostics for tuberculosis detection at point of care?
+Can CRISPR/Cas molecular assays meet WHO performance targets for non-sputum TB diagnosis?
 
-## Methods
+## Methodology
 
-- PubMed search of CRISPR/Cas point-of-care TB diagnostics (2022-2026), including lab-in-tube, cfDNA, Cas13, Cas12a, and species-level detection assays
-- DOI verification against Crossref (6/6 verified).
+- Targeted PubMed search of CRISPR-based TB diagnostics (2022-2026)
+- DOI verification against Crossref (6/8 verified).
 
 
 ## Evidence Table
@@ -33,7 +33,7 @@ What is the evidence for CRISPR-based molecular diagnostics for tuberculosis det
 
 ## Key Findings
 
-- Lab-in-tube RPA+CRISPR-Cas12a detected MTB with 81% sensitivity vs culture (vs GeneXpert 68%) and 94% specificity, result within 1 h, meeting WHO TPP for non-sputum TB. CRISPR-TB on circulating cfDNA: 96%/94% (adults), 83%/95% (children), 100% in children living with HIV. WATSON (Cas13 tiled) and CADEM (Cas12a species-level MTB/MAC/MAB differentiation) demonstrated feasibility.\nConventional diagnostics limitations motivate molecular/nano point-of-care approaches.
+- A portable lab-in-tube RPA-CRISPR-Cas12a assay detected TB with 81% sensitivity vs culture (GeneXpert 68%) and 94% specificity within 1 h, meeting the WHO target product profile for non-sputum TB. Detection of circulating cfDNA: 96%/94% in adults, 83%/95% in children, 100% in children living with HIV. WATSON (Cas13 tiled) and CAD13 species-level detection demonstrated feasibility.
 
 
 ## Research Gaps
@@ -58,5 +58,3 @@ What is the evidence for CRISPR-based molecular diagnostics for tuberculosis det
 - This report is intended for research; it is not a medical device and does not provide clinical diagnoses or regulatory advice. Consult a qualified professional before using it to inform decisions.
 
 ---
-
-*ClawBio is a research and educational tool. It is not a medical device and does not provide clinical diagnoses. Consult a healthcare professional before making any medical decisions.*

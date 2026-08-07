@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BioResearchOS — Scientific Intelligence for Biotechnology Leaders</title>
+<meta name="description" content="BioResearchOS is an independent research desk for biotechnology teams, startups, and investors. Every deliverable is grounded in literature that has been verified against Crossref metadata, human-reviewed, and reproducible. Evidence Briefs, Competitive Intelligence Reports, and Literature Monitoring.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   BioResearchOS — a scientific intelligence publishing house.
+   Editorial, calm, print-set. One dark plate. One accent.
+   Almost nothing is coloured; almost nothing moves.
+   ============================================================ */
+:root{
+  --ink:#201d18;          /* warm near-black */
+  --ink-2:#6f6a61;        /* muted stone */
+  --paper:#f6f3ed;        /* warm paper */
+  --paper-2:#efece4;      /* slightly deeper paper */
+  --line:#e3ded2;         /* hairline */
+  --line-strong:#c9c2b2;
+  --accent:#2f5a45;       /* forest — reserved */
+  --navy:#081421;         /* report cover navy */
+  --ivory:#FAFAF6;
+  --sans:'Inter',-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --serif:'Fraunces',Georgia,"Times New Roman",serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(47,90,69,.14)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.wrap{width:min(1080px,100% - 64px);margin-inline:auto}
+.section{padding:clamp(6rem,12vw,9.5rem) 0}
+.eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-2)}
+.shead{max-width:760px}
+.shead h2{font-family:var(--serif);font-weight:350;font-size:clamp(2.1rem,4.6vw,3.2rem);letter-spacing:-.015em;line-height:1.1;color:var(--ink);margin-top:20px}
+.shead p{color:var(--ink-2);margin-top:22px;font-size:1.05rem;max-width:56ch}
+.num-dn{font-variant-numeric:tabular-nums}
+
+/* ---------- grain: very subtle paper texture ---------- */
+.grain{position:relative}
+.grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.55;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='0.06'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ---------- masthead ---------- */
+.nav{position:sticky;top:0;z-index:50;background:rgba(246,243,237,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:var(--serif);font-size:1rem;letter-spacing:.2em;color:var(--ink)}
+.brand b{font-weight:400}
+.nav-links{display:flex;align-items:center;gap:36px}
+.nav-links a{font-size:.88rem;color:var(--ink-2);letter-spacing:.01em}
+.nav-links a:hover{color:var(--ink)}
+.nav-links .cta{color:var(--ink)}
+.nav-links .cta::after{content:"→";margin-left:8px}
+.burger{display:none;background:none;border:0;cursor:pointer;width:36px;height:36px;position:relative}
+.burger span{position:absolute;left:4px;right:4px;height:1.5px;background:var(--ink)}
+.burger span:nth-child(1){top:12px}.burger span:nth-child(2){top:18px}.burger span:nth-child(3){top:24px}
+.mobile-menu{display:none;flex-direction:column;gap:4px;padding:16px 32px 28px;border-bottom:1px solid var(--line);background:var(--paper)}
+.mobile-menu a{font-size:1.05rem;padding:10px 0;border-bottom:1px solid var(--line)}
+.mobile-menu a:last-child{border:0;color:var(--ink);font-weight:500}
+
+/* ---------- chapter I — the statement + the publication ---------- */
+.hero{padding:clamp(5rem,10vw,7.5rem) 0 clamp(4rem,8vw,6rem);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(3rem,6vw,5.5rem);align-items:center}
+.hero .deck{font-family:var(--mono);font-size:.76rem;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-2)}
+.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(2.6rem,5.6vw,4.4rem);line-height:1.05;letter-spacing:-.02em;margin-top:34px;max-width:18ch}
+.hero h1 .rule{display:block}
+.hero .sub{color:var(--ink-2);font-size:1.08rem;max-width:52ch;margin:30px 0 48px}
+.hero .sub strong{color:var(--ink);font-weight:500}
+.hero-links{display:flex;gap:36px;flex-wrap:wrap;align-items:center}
+.link-arr{font-size:.98rem;font-weight:500;color:var(--ink);border-bottom:1px solid var(--ink);padding-bottom:3px}
+.link-arr:hover{color:var(--accent);border-color:var(--accent)}
+.link-plain{font-size:.98rem;color:var(--ink-2);border-bottom:1px solid var(--line-strong);padding-bottom:3px}
+.link-plain:hover{color:var(--ink);border-color:var(--ink)}
+
+/* the hero report — a bound volume, not a card */
+.hero-cover{position:relative;background:var(--navy);color:var(--ivory);padding:clamp(1.8rem,3.4vw,2.6rem);min-height:460px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;box-shadow:26px 30px 0 -14px rgba(32,29,24,.14),40px 0 90px -30px rgba(32,29,24,.25)}
+.hero-cover::before{content:"";position:absolute;inset:0;opacity:.65;pointer-events:none;mix-blend-mode:soft-light;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='0.5'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero-cover::after{content:"";position:absolute;top:0;bottom:0;left:0;width:1px;background:linear-gradient(rgba(255,255,255,.28),rgba(255,255,255,.05))}
+.hero-cover .hc-inner{position:relative;z-index:1;display:flex;flex-direction:column;flex:1}
+.hc-mast{font-family:var(--mono);font-size:.68rem;letter-spacing:.3em;color:#8f9aa0;text-transform:uppercase}
+.hc-tag{display:inline-block;font-family:var(--mono);font-size:.62rem;letter-spacing:.22em;color:#c8c0ac;border:1px solid rgba(255,255,255,.25);padding:6px 12px;margin-top:34px;text-transform:uppercase}
+.hc-title{font-family:var(--serif);font-weight:300;font-size:clamp(1.6rem,2.6vw,2.15rem);line-height:1.12;margin-top:20px;letter-spacing:-.01em}
+.hc-meta{margin-top:38px;border-top:1px solid rgba(255,255,255,.16);padding-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.hc-meta div .k{display:block;font-family:var(--mono);font-size:.58rem;letter-spacing:.2em;color:#8f9aa0;text-transform:uppercase}
+.hc-meta div .v{display:block;font-family:var(--serif);font-size:1.1rem;color:#efe9dc;margin-top:6px}
+.hc-foot{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;color:#8f9aa0;text-transform:uppercase}
+.hc-cap{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;color:var(--ink-2);margin-top:34px;max-width:40ch}
+
+/* ---------- chapter II — the archive ---------- */
+.reports .shead{margin-bottom:clamp(3rem,6vw,4.5rem)}
+.report-row{display:grid;grid-template-columns:210px minmax(0,1fr);gap:clamp(2rem,4.5vw,4rem);align-items:center;padding:56px 0;border-top:1px solid var(--line-strong)}
+.report-row:first-of-type{border-top:0}
+.report-row .no{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;color:var(--ink-2);text-transform:uppercase;margin-bottom:18px}
+.report-row .tag{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;color:var(--accent);margin-bottom:14px;text-transform:uppercase}
+.report-row h3{font-family:var(--serif);font-weight:350;font-size:clamp(1.6rem,3vw,2.15rem);line-height:1.12;letter-spacing:-.012em}
+.report-row p{color:var(--ink-2);margin-top:16px;max-width:58ch;font-size:.98rem}
+.report-row .stat{font-family:var(--mono);font-size:.74rem;color:var(--ink-2);letter-spacing:.06em;margin-top:22px}
+.report-row .stat b{color:var(--accent);font-weight:500}
+.report-row .read{display:inline-block;margin-top:28px;font-family:var(--mono);font-size:.74rem;letter-spacing:.16em;color:var(--ink);border-bottom:1px solid var(--line-strong);padding-bottom:3px;text-transform:uppercase;white-space:nowrap}
+.report-row .read:hover{color:var(--accent);border-color:var(--accent)}
+
+/* mini cover in the archive */
+.vcover{position:relative;background:var(--navy);color:var(--ivory);padding:26px 24px;min-height:250px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;box-shadow:14px 18px 0 -10px rgba(32,29,24,.12)}
+.vcover::before{content:"";position:absolute;inset:0;opacity:.6;pointer-events:none;mix-blend-mode:soft-light;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='0.5'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+.vcover .vc-inner{position:relative;z-index:1}
+.vc-mast{font-family:var(--mono);font-size:.58rem;letter-spacing:.26em;color:#8f9aa0;text-transform:uppercase}
+.vc-tag{display:block;font-family:var(--mono);font-size:.56rem;letter-spacing:.2em;color:#c8c0ac;margin-top:22px;text-transform:uppercase}
+.vc-title{font-family:var(--serif);font-weight:300;font-size:1.3rem;line-height:1.15;margin-top:12px}
+.vc-meta{margin-top:22px;padding-top:14px;border-top:1px solid rgba(255,255,255,.14);font-family:var(--mono);font-size:.56rem;letter-spacing:.16em;color:#8f9aa0;text-transform:uppercase;line-height:2}
+
+/* ---------- chapter III — method ---------- */
+.method-head{margin-bottom:clamp(3rem,6vw,4.5rem)}
+.steps{border-top:1px solid var(--line-strong)}
+.step{display:grid;grid-template-columns:110px minmax(0,1fr) auto;gap:34px;align-items:baseline;padding:40px 0;border-bottom:1px solid var(--line)}
+.step .n{font-family:var(--mono);font-size:.72rem;letter-spacing:.18em;color:var(--ink-2)}
+.step .t{font-family:var(--serif);font-size:1.55rem;line-height:1.15;letter-spacing:-.01em}
+.step p{color:var(--ink-2);font-size:.94rem;max-width:46ch;margin-top:8px}
+.step .arr{font-family:var(--serif);font-size:1.3rem;color:var(--line-strong)}
+.steps .step:last-child .arr{color:var(--accent)}
+.pipe{margin-top:clamp(4rem,8vw,6rem);display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-strong)}
+.pstep{padding:34px 22px 0 0}
+.pstep + .pstep{padding-left:26px;border-left:1px solid var(--line)}
+.pstep .pn{font-family:var(--serif);font-weight:300;font-size:clamp(2.6rem,5vw,3.6rem);line-height:1;letter-spacing:-.02em}
+.pstep .pl{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;color:var(--ink-2);margin-top:14px;display:block;text-transform:uppercase}
+.stdbound{margin-top:42px;max-width:64ch}
+.stdbound p{font-size:1.02rem;color:var(--ink-2)}
+.stdbound p em{font-style:italic;color:var(--ink)}
+
+/* ---------- chapter IV — standards ---------- */
+.standards{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.std-grid{margin-top:clamp(2.5rem,5vw,4rem);display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-strong)}
+.std{padding:30px 22px 0 0}
+.std + .std{padding-left:26px;border-left:1px solid var(--line)}
+.std .k{font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;color:var(--accent);text-transform:uppercase}
+.std p{color:var(--ink-2);font-size:.92rem;margin-top:10px}
+.stdline{margin-top:44px;font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--ink);max-width:52ch}
+
+/* ---------- chapter V — the catalogue ---------- */
+.products .chapter-head{margin-bottom:clamp(3rem,6vw,4.5rem)}
+.series{border-top:1px solid var(--line-strong)}
+.vol{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:40px;align-items:baseline;padding:46px 0;border-bottom:1px solid var(--line)}
+.vol:last-child{border-bottom:0}
+.vol-no{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;color:var(--ink-2);text-transform:uppercase;margin-bottom:14px}
+.vol h3{font-family:var(--serif);font-weight:350;font-size:clamp(1.4rem,2.6vw,1.8rem)}
+.vol p{color:var(--ink-2);font-size:.95rem;margin-top:12px;max-width:52ch}
+.vol-foot{text-align:right;border-left:1px solid var(--line);padding-left:36px}
+.vol-details{display:block;font-family:var(--mono);font-size:.72rem;color:var(--ink-2);letter-spacing:.06em;line-height:2;text-transform:uppercase}
+.vol-price{margin-top:18px;display:block;font-family:var(--serif);font-size:1.9rem;font-weight:350}
+.vol-price em{font-family:var(--mono);font-size:.68rem;font-style:normal;color:var(--ink-2);letter-spacing:.1em;text-transform:uppercase;margin-left:10px}
+
+/* ---------- chapter VI — contact ---------- */
+.contact{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;opacity:.5;pointer-events:none;mix-blend-mode:soft-light;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='0.5'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+.contact .wrap{position:relative;z-index:1}
+.contact .shead h2{color:var(--paper)}
+.contact .shead p{color:#a8b0a9}
+.contact .shead .eyebrow{color:#8f9890}
+.contact-head{margin-bottom:clamp(3.5rem,7vw,5.5rem)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;border-top:1px solid rgba(255,255,255,.16);padding-top:48px}
+.cgrid .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;color:#8f9890;text-transform:uppercase}
+.cgrid .v{font-family:var(--serif);font-size:1.4rem;margin-top:14px;display:inline-block;color:var(--paper);border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:3px}
+.cgrid .v:hover{border-color:var(--paper)}
+.cgrid .sub{color:#a8b0a9;font-size:.9rem;margin-top:10px}
+.cta-row{margin-top:56px;display:flex;gap:36px;flex-wrap:wrap}
+.cta-row .link-arr{color:var(--paper);border-color:rgba(255,255,255,.4)}
+.cta-row .link-arr:hover{color:#cfc8b8;border-color:#cfc8b8}
+.cta-row .link-plain{color:#a8b0a9;border-color:rgba(255,255,255,.2)}
+.cta-row .link-plain:hover{color:var(--paper);border-color:var(--paper)}
+
+/* ---------- colophon ---------- */
+.footer{border-top:1px solid var(--line);padding:38px 0;color:var(--ink-2);font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:48px}
+  .hero-cover{min-height:0}
+  .report-row{grid-template-columns:1fr;gap:28px;padding:44px 0}
+  .vcover{min-height:0;max-width:340px}
+  .step{grid-template-columns:1fr;gap:10px;padding:30px 0}
+  .step .arr{display:none}
+  .pipe{grid-template-columns:1fr 1fr;row-gap:28px}
+  .pstep:nth-child(2),.pstep:nth-child(4){border-left:0;padding-left:0}
+  .pstep:nth-child(1),.pstep:nth-child(3){padding-top:24px}
+  .std-grid{grid-template-columns:1fr 1fr;row-gap:28px}
+  .std:nth-child(odd){border-left:0;padding-left:0}
+  .std:nth-child(n+3){border-top:1px solid var(--line);padding-top:24px}
+  .vol{grid-template-columns:1fr;gap:18px}
+  .vol-foot{text-align:left;border-left:0;padding-left:0}
+  .contact-grid{grid-template-columns:1fr;gap:36px}
+}
+@media (max-width:620px){
+  .nav-links{display:none}
+  .burger{display:block}
+  .mobile-menu.open{display:flex}
+  .pipe{grid-template-columns:1fr}
+  .pstep{border-left:0!important;padding-left:0!important;padding-top:22px}
+  .std-grid{grid-template-columns:1fr}
+  .std{border-left:0!important;padding-left:0!important;padding-top:22px}
+  .step p{max-width:none}
+}
+/* standalone report blocks */
+.inline-reports{padding:0 0 96px;border-top:1px solid var(--line)}
+.ireport{margin-top:80px}
+.ireport-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.ireport-head .eyebrow{color:var(--gold);font-size:.85rem;letter-spacing:.14em;text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="brand-mark">BIO</span>RESEARCH<span class="brand-mark">OS</span></a>
+    <nav class="nav-links">
+      <a href="#reports">Publications</a>
+      <a href="#method">Method</a>
+      <a href="#standards">Standards</a>
+      <a href="#contact" class="cta">Commission a volume</a>
+    </nav>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobile">
+    <a href="#reports">Publications</a>
+    <a href="#method">Method</a>
+    <a href="#standards">Standards</a>
+    <a href="#contact">Commission a volume</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="deck">BIORESEARCHOS · A Scientific Intelligence Publishing House</p>
+      <h1>Scientific intelligence<span class="rule">for biotechnology leaders<span style="color:var(--accent)">.</span></span></h1>
+      <p class="sub">Verified literature intelligence, competitive research, and public-data analysis — published as numbered volumes for <strong>research teams, startups, and investors</strong>. Every citation checked against Crossref. Every volume human-reviewed.</p>
+      <div class="hero-links">
+        <a class="link-arr" href="#reports">Browse the archive</a>
+        <a class="link-plain" href="#contact">Commission a volume</a>
+      </div>
+    </div>
+    <div>
+      <div class="hero-cover">
+        <div class="hc-inner">
+          <p class="hc-mast">BIORESEARCHOS</p>
+          <span class="hc-tag">Evidence Brief · Vol. 01</span>
+          <h2 class="hc-title">Antimicrobial Resistance in East Africa</h2>
+          <div class="hc-meta">
+            <div><span class="k">Crossref-verified</span><span class="v">4 / 4</span></div>
+            <div><span class="k">Published</span><span class="v">August 2026</span></div>
+            <div><span class="k">Surveillance coverage</span><span class="v">NAP 7–94%</span></div>
+            <div><span class="k">First-line resistance</span><span class="v">50–100%</span></div>
+          </div>
+        </div>
+        <div class="hc-foot"><span>Vol. 01 — Series of four</span><span>Open the volume →</span></div>
+      </div>
+      <p class="hc-cap">A recent verified deliverable, reproduced for this page. Numbers are from the full publication.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reports section" id="reports">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow">Publications</p>
+      <h2>The archive, in full</h2>
+      <p>Four volumes from the current desk. Every reference verified against Crossref, every deliverable human-reviewed, every research gap stated.</p>
+    </div>
+
+    <div class="report-row">
+      <div class="vcover">
+        <div class="vc-inner">
+          <p class="vc-mast">BIORESEARCHOS</p>
+          <span class="vc-tag">Evidence Brief</span>
+          <h3 class="vc-title">AMR Surveillance in East Africa</h3>
+          <div class="vc-meta"><span>4 / 4 Crossref-verified</span><br><span>August 2026</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="no">Vol. 01</div>
+        <span class="tag">Evidence Brief</span>
+        <h3>AMR Surveillance in East Africa</h3>
+        <p>National action plans and bloodstream pathogens — where coverage peaks, where the pipeline will be tested, and the resistance numbers behind both.</p>
+        <div class="stat"><b>4 / 4</b>&nbsp;verified&nbsp;·&nbsp;4 screened&nbsp;·&nbsp;evidence table</div>
+        <a class="read" href="#report-amr-east-africa">Read the volume <span style="color:var(--accent)">→</span></a>
+      </div>
+    </div>
+
+    <div class="report-row">
+      <div class="vcover">
+        <div class="vc-inner">
+          <p class="vc-mast">BIORESEARCHOS</p>
+          <span class="vc-tag">Evidence Brief</span>
+          <h3 class="vc-title">Malaria Resistance</h3>
+          <div class="vc-meta"><span>7 / 7 Crossref-verified</span><br><span>August 2026</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="no">Vol. 02</div>
+        <span class="tag">Evidence Brief</span>
+        <h3>Malaria Resistance</h3>
+        <p>Molecular evidence for artemisinin partial resistance — pooled kelch13 prevalence, validated markers, regional spread, and the clinical blind spots that follow.</p>
+        <div class="stat"><b>7 / 7</b>&nbsp;verified&nbsp;·&nbsp;7 screened&nbsp;·&nbsp;evidence table</div>
+        <a class="read" href="#report-malaria-resistance">Read the volume <span style="color:var(--accent)">→</span></a>
+      </div>
+    </div>
+
+    <div class="report-row">
+      <div class="vcover">
+        <div class="vc-inner">
+          <p class="vc-mast">BIORESEARCHOS</p>
+          <span class="vc-tag">Evidence Brief</span>
+          <h3 class="vc-title">CRISPR Diagnostics for Tuberculosis</h3>
+          <div class="vc-meta"><span>6 / 8 Crossref-verified</span><br><span>August 2026</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="no">Vol. 03</div>
+        <span class="tag">Evidence Brief</span>
+        <h3>CRISPR Diagnostics for Tuberculosis</h3>
+        <p>Cas-based point-of-care assays weighed against the WHO target product profile — sensitivity, specificity, and the chasm between lab promise and field deployment.</p>
+        <div class="stat"><b>6 / 8</b>&nbsp;verified&nbsp;·&nbsp;8 screened&nbsp;·&nbsp;evidence table</div>
+        <a class="read" href="#report-tb-diagnostics">Read the volume <span style="color:var(--accent)">→</span></a>
+      </div>
+    </div>
+
+    <div class="report-row">
+      <div class="vcover">
+        <div class="vc-inner">
+          <p class="vc-mast">BIORESEARCHOS</p>
+          <span class="vc-tag">Evidence Brief</span>
+          <h3 class="vc-title">Agricultural Biotechnology</h3>
+          <div class="vc-meta"><span>7 / 7 Crossref-verified</span><br><span>August 2026</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="no">Vol. 04</div>
+        <span class="tag">Evidence Brief</span>
+        <h3>Agricultural Biotechnology</h3>
+        <p>Public dialogue, policy support, and the adoption economics of biotech crops in low-income settings — farmer acceptance, willingness-to-pay, governance.</p>
+        <div class="stat"><b>7 / 7</b>&nbsp;verified&nbsp;·&nbsp;7 screened&nbsp;·&nbsp;evidence table</div>
+        <a class="read" href="#report-agricultural-biotech">Read the volume <span style="color:var(--accent)">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="method">
+  <div class="wrap">
+    <div class="method-head">
+      <p class="eyebrow">Method</p>
+      <div class="shead">
+        <h2>How a volume is made</h2>
+        <p>Four steps, each documented. Nothing leaves this desk without a paper trail.</p>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="n">01 · DEFINE</div>
+        <div><div class="t">Question</div><p>The precise research question, its scope, and the decision it informs.</p></div>
+        <span class="arr">→</span>
+      </div>
+      <div class="step">
+        <div class="n">02 · SCREEN</div>
+        <div><div class="t">Evidence</div><p>Primary literature and public data. Every candidate is checked against Crossref metadata; unverifiable claims are dropped.</p></div>
+        <span class="arr">→</span>
+      </div>
+      <div class="step">
+        <div class="n">03 · ELEVATE</div>
+        <div><div class="t">Insight</div><p>Findings stated strictly from the cited publications. No extrapolation, no unattributed claims.</p></div>
+        <span class="arr">→</span>
+      </div>
+      <div class="step">
+        <div class="n">04 · DELIVER</div>
+        <div><div class="t">Volume</div><p>Executive summary, evidence tables, key findings, stated limitations, verified reference list.</p></div>
+        <span class="arr">→</span>
+      </div>
+    </div>
+
+    <div class="pipe">
+      <div class="pstep"><span class="pn">26</span><span class="pl">papers screened</span></div>
+      <div class="pstep"><span class="pn">24</span><span class="pl">Crossref-verified</span></div>
+      <div class="pstep"><span class="pn">24</span><span class="pl">extracted · reproduced</span></div>
+      <div class="pstep"><span class="pn">04</span><span class="pl">volumes · one desk</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="standards section" id="standards">
+  <div class="wrap">
+    <p class="eyebrow">Standards</p>
+    <div class="shead">
+      <h2>What every publication carries</h2>
+      <p>These are not claims. They are the editorial rules of this desk.</p>
+    </div>
+    <div class="std-grid">
+      <div class="std"><span class="k">Crossref verification</span><p>Every citation machine-checked against Crossref metadata before release.</p></div>
+      <div class="std"><span class="k">DOIs, checked</span><p>References resolve. If a DOI fails, the source is dropped or replaced.</p></div>
+      <div class="std"><span class="k">Evidence tables</span><p>Every finding links to a row, a paper, and a date — nothing floats.</p></div>
+      <div class="std"><span class="k">Search protocol</span><p>Queries, databases, and inclusion criteria are recorded per volume.</p></div>
+      <div class="std"><span class="k">PRISMA-inspired screening</span><p>Screened records and exclusions are counted and reported.</p></div>
+      <div class="std"><span class="k">Limitations documented</span><p>Research gaps and constraints are stated explicitly — never concealed.</p></div>
+      <div class="std"><span class="k">Reproducible workflow</span><p>From screening set to finding, every step can be rerun.</p></div>
+      <div class="std"><span class="k">Public data only</span><p>No proprietary databases, no paywalled claims without a verified source.</p></div>
+    </div>
+    <p class="stdline">"No hallucinations. Every claim traced to a source you can open."</p>
+  </div>
+</section>
+
+<section class="products section" id="products">
+  <div class="wrap">
+    <div class="chapter-head">
+      <p class="eyebrow">Commission</p>
+      <div class="shead">
+        <h2>Order a volume on your own question</h2>
+        <p>Fixed scope, fixed fee. A serial you can commission.</p>
+      </div>
+    </div>
+
+    <div class="series">
+      <div class="vol">
+        <div>
+          <div class="vol-no">Series 01 · One-shot</div>
+          <h3>Evidence Brief</h3>
+          <p>A single question, 20–40 verified papers, an extraction table, executive summary, and research gaps.</p>
+        </div>
+        <div class="vol-foot">
+          <span class="vol-details">Exec. summary · Evidence table · Research gaps · Verified references</span>
+          <span class="vol-price">$50 <em>per brief</em></span>
+        </div>
+      </div>
+      <div class="vol">
+        <div>
+          <div class="vol-no">Series 02 · One-shot</div>
+          <h3>Competitive Intelligence</h3>
+          <p>Competitor landscape, funding, clinical trials, patents — from public data, cited and dated.</p>
+        </div>
+        <div class="vol-foot">
+          <span class="vol-details">Competitors · Funding · Trials · Patents</span>
+          <span class="vol-price">$100 <em>per brief</em></span>
+        </div>
+      </div>
+      <div class="vol">
+        <div>
+          <div class="vol-no">Series 03 · Standing instruction</div>
+          <h3>Literature Monitoring</h3>
+          <p>An ongoing watch on your field — weekly or monthly digests, alerts, and a quarterly recap.</p>
+        </div>
+        <div class="vol-foot">
+          <span class="vol-details">Digests · Alerts · Quarterly recap</span>
+          <span class="vol-price">$50 <em>per month</em></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact section" id="contact">
+  <div class="wrap">
+    <div class="contact-head">
+      <p class="eyebrow">Commission</p>
+      <div class="shead">
+        <h2>Request a research brief</h2>
+        <p>Fifteen minutes. We'll map your question to a volume and a date — no commitment, no charge.</p>
+      </div>
+    </div>
+    <div class="contact-grid">
+      <div class="cgrid">
+        <p class="k">Email</p>
+        <a class="v" href="mailto:ferdinandnkabandi@icloud.com">ferdinandnkabandi@icloud.com</a>
+        <p class="sub">Fastest for a clear direct message.</p>
+      </div>
+      <div class="cgrid">
+        <p class="k">WhatsApp</p>
+        <a class="v" href="https://wa.me/255795774784">+255 795 774 784</a>
+        <p class="sub">Reply within one business day.</p>
+      </div>
+    </div>
+    <div class="cta-row">
+      <a class="link-arr" href="mailto:ferdinandnkabandi@icloud.com?subject=Research%20brief%20request">Request a brief</a>
+      <a class="link-plain" href="#reports">Read the archive first</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>BIORESEARCHOS · Scientific intelligence publishing house</span>
+    <span>Every citation verified against Crossref · reproducible</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.querySelector('.burger'),m=document.getElementById('mobile');
+  b.addEventListener('click',function(){m.classList.toggle('open');});
+  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');});});
+})();
+</script>
+
+<!-- inline full reports (standalone build) -->
+<section class="inline-reports">
+  <div class="ireport" id="report-amr-east-africa">
+    <div class="ireport-head">
+      <span class="eyebrow">AMR Surveillance in East Africa</span>
+      <a href="#top">Back to top</a>
+    </div>
+    <style>
+:root { --paper:#FAFAF6; --navy:#081421; --ink:#0E1621; --graphite:#3A4653; --gold:#C6A86A; --forest:#2D6A4F; --line:#E3DED2; }#rep_amr_east_africa *{box-sizing:border-box;margin:0;padding:0}#rep_amr_east_africa html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; scroll-behavior:smooth; }#rep_amr_east_africa body{ font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--ink); background:var(--paper); line-height:1.65; -webkit-font-smoothing:antialiased; }#rep_amr_east_africa .page{ max-width:920px; margin:0 auto; padding:72px 56px; }#rep_amr_east_africa .mono{ font-family:'JetBrains Mono',ui-monospace,Menlo,monospace; }#rep_amr_east_africa .eyebrow{ font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.22em; text-transform:uppercase; color:var(--graphite); }#rep_amr_east_africa h2{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:400; font-size:clamp(1.7rem,4vw,2.5rem); letter-spacing:-.01em; line-height:1.1; margin-top:14px; }#rep_amr_east_africa h3{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:400; font-size:1.3rem; line-height:1.25; }#rep_amr_east_africa .sechead{ display:flex; justify-content:space-between; align-items:baseline; gap:24px; }#rep_amr_east_africa .sechead .sec-num{ font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.2em; color:var(--gold); }#rep_amr_east_africa hr.sep{ border:none; border-top:1px solid var(--line); margin:56px 0; }#rep_amr_east_africa section{ margin-top:64px; }#rep_amr_east_africa section.seal{ border-top:1px solid var(--line); padding-top:16px; }#rep_amr_east_africa /* ---------- Cover ---------- */
+.cover{ background:var(--navy); color:#F7F4EC; min-height:96vh; display:flex; flex-direction:column; justify-content:space-between; padding:64px 68px; }#rep_amr_east_africa .cover .top{ display:flex; justify-content:space-between; align-items:center; }#rep_amr_east_africa .cover .top .brand{ font-family:'Fraunces'; letter-spacing:.18em; font-size:.92rem; }#rep_amr_east_africa .cover .top .conf{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.22em; color:#9AA7AE; text-transform:uppercase; }#rep_amr_east_africa .cover .mid h1{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:300; font-size:clamp(2.6rem,7vw,4.6rem); line-height:1.05; letter-spacing:-.015em; color:#FAF6EE; margin-top:30px; }#rep_amr_east_africa .cover .meta{ margin-top:56px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px; border-top:1px solid rgba(250,250,246,.18); padding-top:28px; }#rep_amr_east_africa .cover .meta div p{ font-family:'JetBrains Mono',monospace; font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:#82919A; }#rep_amr_east_africa .cover .meta div h4{ font-family:'Fraunces',serif; font-weight:400; font-size:1.25rem; color:#EFE9DD; margin-top:8px; }#rep_amr_east_africa .cover .foot{ display:flex; justify-content:space-between; border-top:1px solid rgba(250,250,246,.14); padding-top:18px; font-family:'JetBrains Mono',monospace; font-size:.64rem; letter-spacing:.18em; color:#A9B4BB; }#rep_amr_east_africa /* ---------- Executive summary ---------- */
+.exec p{ font-size:1.04rem; color:var(--graphite); margin-top:22px; max-width:70ch; }#rep_amr_east_africa .exec p:first-child{ color:var(--ink); }#rep_amr_east_africa .exec p::first-letter{ font-family:'Fraunces',serif; font-size:1.25em; }#rep_amr_east_africa .q{ border-left:2px solid var(--gold); padding-left:22px; margin-top:40px; }#rep_amr_east_africa .q .k{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.2em; color:var(--gold); text-transform:uppercase; }#rep_amr_east_africa .q p{ font-family:'Fraunces',serif; font-size:1.35rem; font-style:italic; color:var(--ink); margin-top:8px; }#rep_amr_east_africa /* ---------- Metrics row ---------- */
+.metrics{ display:grid; grid-template-columns:repeat(4,1fr); gap:32px; border-top:1px solid var(--line); padding-top:34px; }#rep_amr_east_africa .metric .n{ font-family:'Fraunces',serif; font-weight:400; font-size:2.4rem; color:var(--ink); line-height:.95; }#rep_amr_east_africa .metric .l{ font-family:'JetBrains Mono',monospace; font-size:.6rem; letter-spacing:.18em; text-transform:uppercase; color:var(--graphite); margin-top:10px; }#rep_amr_east_africa /* ---------- Findings ---------- */
+.finding{ border-top:1px solid var(--line); padding:30px 0; }#rep_amr_east_africa .finding .f-num{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.2em; color:var(--gold); }#rep_amr_east_africa .finding h3{ margin-top:12px; max-width:56ch; }#rep_amr_east_africa .finding .f-meta{ margin-top:12px; font-family:'JetBrains Mono',monospace; font-size:.68rem; color:var(--graphite); }#rep_amr_east_africa .finding .f-meta b{ color:var(--graphite); font-weight:500; letter-spacing:.16em; text-transform:uppercase; font-size:.6rem; margin-right:8px; }#rep_amr_east_africa /* ---------- Evidence table ---------- */
+table{ width:100%; border-collapse:collapse; margin-top:34px; }#rep_amr_east_africa th{ text-align:left; font-family:'JetBrains Mono',monospace; font-weight:500; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--graphite); padding:0 12px 12px 0; border-bottom:1px solid var(--ink); }#rep_amr_east_africa td{ padding:16px 12px 16px 0; border-bottom:1px solid var(--line); vertical-align:top; font-size:.92rem; }#rep_amr_east_africa .row-no, #rep_amr_east_africa .row-status{ font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--graphite); white-space:nowrap; }#rep_amr_east_africa .row-ref{ font-family:'JetBrains Mono',monospace; font-size:.7rem; color:var(--forest); }#rep_amr_east_africa .row-status{ color:var(--forest); letter-spacing:.08em; }#rep_amr_east_africa /* ---------- Methodology ---------- */
+.steps{ display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line); margin-top:36px; }#rep_amr_east_africa .step{ padding:26px; border:1px solid var(--line); }#rep_amr_east_africa .step-n{ font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.16em; color:var(--gold); }#rep_amr_east_africa .step h4{ font-family:'Fraunces',serif; font-weight:400; font-size:1.15rem; margin-top:10px; }#rep_amr_east_africa .step p{ color:var(--graphite); font-size:.88rem; margin-top:8px; }#rep_amr_east_africa /* ---------- Gaps ---------- */
+.gaps li{ list-style:none; border-top:1px solid var(--line); padding:14px 0; color:var(--graphite); font-size:.98rem; }#rep_amr_east_africa .gaps li:first-child{ border-top:0; }#rep_amr_east_africa .gaps li::before{ content:"—  "; color:var(--gold); }#rep_amr_east_africa /* ---------- Deliverables ---------- */
+.deliver{ border:1px solid var(--line); padding:34px 38px; }#rep_amr_east_africa .deliver .eyebrow{ margin-bottom:18px; }#rep_amr_east_africa .deliver ul{ columns:2; column-gap:48px; }#rep_amr_east_africa .deliver li{ list-style:none; padding:9px 0; border-top:1px solid var(--line); font-size:.94rem; }#rep_amr_east_africa .deliver li:first-child, #rep_amr_east_africa .deliver li:nth-child(2){ border-top:0; }#rep_amr_east_africa .deliver li::before{ content:"✓  "; color:var(--forest); font-family:'JetBrains Mono',monospace; }#rep_amr_east_africa /* ---------- Truth ---------- */
+.truth{ display:flex; gap:40px; flex-wrap:wrap; border-top:1px solid var(--line); padding-top:28px; }#rep_amr_east_africa .truth span{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.2em; text-transform:uppercase; color:var(--graphite); }#rep_amr_east_africa /* ---------- prepared-by ---------- */
+.prep{ background:var(--navy); color:#E9E3D6; padding:56px 68px; display:flex; justify-content:space-between; align-items:flex-start; gap:40px; }#rep_amr_east_africa .prep h3{ font-family:'Fraunces',serif; font-weight:300; font-size:1.5rem; }#rep_amr_east_africa .prep p{ color:#A9B4AE; font-size:.9rem; margin-top:10px; max-width:34ch; }#rep_amr_east_africa .prep .addr{ text-align:right; font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.1em; color:#8A97A0; }#rep_amr_east_africa .prep .addr b{ display:block; color:#E9E3D6; font-weight:500; letter-spacing:.14em; font-size:.8rem; margin-top:6px; font-family:'JetBrains Mono',monospace; }#rep_amr_east_africa @media (max-width:760px){
+  .page{ padding:40px 24px; }
+  .cover{ padding:44px 30px; min-height:880px; }
+  .cover .meta{ grid-template-columns:1fr; gap:22px; }
+  .metrics{ grid-template-columns:1fr 1fr; }
+  .steps{ grid-template-columns:1fr; }
+  .prep{ flex-direction:column; } .prep .addr{ text-align:left; }
+  .deliver ul{ columns:1; }
+}#rep_amr_east_africa @media print{
+  .cover, .prep { min-height:auto; break-after:page; }
+  body { background:var(--paper); }
+}
+</style>
+    <div id="rep_amr_east_africa">
+
+<main class="page">
+
+  <!-- COVER -->
+  <section class="cover">
+    <div class="top">
+      <span class="brand">BIORESEARCH·OS</span>
+      <span class="ver">Evidence Intelligence</span>
+    </div>
+    <div class="mid">
+      <p class="eyebrow" style="color:#8A97A0">Research Series · Evidence Report</p>
+      <h1>Antimicrobial Resistance in East Africa: Laboratory Surveillance and Bloodstream Pathogens</h1>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.16em;color:#9AA7AE;text-transform:uppercase;margin-top:22px">Prepared for decision-makers</p>
+    </div>
+    <div class="meta">
+      <div><p>Client</p><h4>Portfolio</h4></div>
+      <div><p>References screened</p><h4>4</h4></div>
+      <div><p>Crossref-verified</p><h4>4 / 4</h4></div>
+    </div>
+    <div class="foot">
+      <span>VERIFIED · REPRODUCIBLE · TRACEABLE</span>
+      <span>CONFIDENTIAL · August 2026</span>
+    </div>
+  </section>
+
+  <!-- EXECUTIVE SUMMARY -->
+  <section class="section exec">
+    <div class="sechead">
+      <p class="eyebrow">01 — Executive Summary</p>
+      <span class="sec-num">BIORESEARCH·OS</span>
+    </div>
+    <h2>Research at a glance</h2>
+    <p>AMR-NAP implementation ranges 7% (Burundi) to 94% (Kenya)</p><p>WHO surveillance checklist completion 44-100%. Resistance to first-line drugs is 50-100% (ampicillin, cotrimoxazole) with emerging ceftriaxone resistance 46-69% in Gram-negatives. First community-acquired ESBL bloodstream infections reported in Zanzibar</p><p>MRSA 3.9-56.8% and ESBL 1.9-53% in healthcare-associated infections.</p>
+    <div class="q">
+      <p class="k">Research question</p>
+      <p>“What is the current state of AMR surveillance and bloodstream infection pathogen resistance in East Africa?”</p>
+    </div>
+  </section>
+
+  <hr class="sep">
+
+  <!-- KEY FINDINGS -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">02 — Key Findings</p>
+      <span class="sec-num">4 verified of 4 screened</span>
+    </div>
+    <h2>What the evidence says</h2>
+    
+        <div class="finding">
+          <p class="f-num">Finding 01</p>
+          <h3>Progress on sustainable AMR-NAP implementation ranges 7% (Burundi) to 94% (Kenya); WHO AMR-surveillance checklist completion 44-100%; gaps in lab capacity, representativeness, integration and financing</h3>
+          <p class="f-meta"><b>Evidence</b> EAC national public health labs / expert panel (Burundi, Kenya, Rwanda, South Sudan, Tanzania, Uganda)</p>
+        </div>
+        <div class="finding">
+          <p class="f-num">Finding 02</p>
+          <h3>High resistance to first-line drugs 50-100% (ampicillin, cotrimoxazole), emerging ceftriaxone resistance (46-69%) in Gram-negatives, mainly Klebsiella and E. coli; MRSA 2.6-4%</h3>
+          <p class="f-meta"><b>Evidence</b> 12 East African studies (2005+, PubMed + AJOL), mostly bloodstream infections</p>
+        </div>
+        <div class="finding">
+          <p class="f-num">Finding 03</p>
+          <h3>Pathogenic bacteria in 14% of patients; first report of community-acquired ESBL Enterobacteriaceae bloodstream infections in Zanzibar; 6/7 Salmonella Typhi isolates multidrug resistant</h3>
+          <p class="f-meta"><b>Evidence</b> 469 consecutively enrolled patients, Mnazi Mmoja Hospital, Zanzibar</p>
+        </div>
+  </section>
+
+  <hr class="sep">
+
+  <!-- EVIDENCE TABLE -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">03 — Evidence Matrix</p>
+      <span class="sec-num">4 screened</span>
+    </div>
+    <h2>Record-by-record</h2>
+    <table>
+      <thead><tr>
+        <th>#</th><th>Paper</th><th>Reference</th><th>Verification</th>
+      </tr></thead>
+      <tbody><tr>
+          <td class="row-no">01</td>
+          <td class="row-paper">Strategies and challenges in containing antimicrobial resistance in East Africa: a focus on laboratory-based surveillance</td>
+          <td class="row-ref">Antimicrobial Resistance &amp; Infection Control (2025) 10.1186/s13756-025-01662-y</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">02</td>
+          <td class="row-paper">A review of antimicrobial resistance in East Africa</td>
+          <td class="row-ref">African Journal of Laboratory Medicine (2016) 10.4102/ajlm.v5i1.432</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">03</td>
+          <td class="row-paper">Prevalence and Antimicrobial Resistance of Microbes Causing Bloodstream Infections in Unguja, Zanzibar</td>
+          <td class="row-ref">PLOS ONE (2015) 10.1371/journal.pone.0145632</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">04</td>
+          <td class="row-paper">A systematic review of healthcare-associated infections in Africa: An antimicrobial resistance perspective</td>
+          <td class="row-ref">African Journal of Laboratory Medicine (2018) 10.4102/ajlm.v7i2.796</td>
+          <td class="row-status">Verified</td>
+        </tr></tbody>
+    </table>
+  </section>
+
+  <hr class="sep">
+
+  <!-- METHODOLOGY -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">04 — Methodology</p>
+      <span class="sec-num">Reproducible</span>
+    </div>
+    <h2>How a report is built</h2>
+    <div class="steps"><div class="step"><span class="step-n">01</span><h4>Define</h4><p>The scoped research question and the decision it informs.</p></div><div class="step"><span class="step-n">02</span><h4>Search & Screen</h4><p>PubMed and open public databases; deduplicated and screened for relevance.</p></div><div class="step"><span class="step-n">03</span><h4>Verify</h4><p>Every DOI machine-checked against Crossref metadata; unverifiable claims are dropped.</p></div><div class="step"><span class="step-n">04</span><h4>Extract</h4><p>Evidence captured row-by-row into a structured extraction table.</p></div><div class="step"><span class="step-n">05</span><h4>Review</h4><p>Human review of every row, stated limitations, stated confidence.</p></div><div class="step"><span class="step-n">06</span><h4>Deliver</h4><p>Executive summary, findings, tables, gaps, and verified references.</p></div></div>
+  </section>
+
+  <hr class="sep">
+
+  <!-- GAPS & LIMITATIONS -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">05 — Research Gaps</p>
+      <span class="sec-num">Stated, not concealed</span>
+    </div>
+    <h2>What remains unknown</h2>
+    <ul class="gaps"><li>Northern-southern representativeness of surveillance</li><li>standardized regional AMR national reporting</li><li>sustainable financing for national reference labs.</li></ul>
+
+    <hr class="seal">
+
+    <div class="sechead">
+      <p class="eyebrow">06 — Limitations</p>
+    </div>
+    <p style="color:var(--graphite);font-size:.98rem;max-width:64ch;margin-top:20px">
+      Findings reflect only the papers screened; absence of evidence ≠ evidence of absence.
+      This report verifies citation provenance, not the validity of the underlying studies.
+      It is intended for research and is not a medical device.
+    </p>
+  </section>
+
+  <hr class="sep">
+
+  <!-- DELIVERABLES -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">07 — Deliverables</p>
+    </div>
+    <div class="deliver">
+      <p class="eyebrow">In this volume</p>
+      <ul><li>Executive Summary</li><li>Evidence Matrix</li><li>Key Findings</li><li>Research Gaps</li><li>Limitations</li><li>References</li><li>Verification Log</li></ul>
+    </div>
+    <div class="truth">
+      <span>Verified.</span><span>Reproducible.</span><span>Traceable.</span><span>Transparent.</span>
+    </div>
+  </section>
+
+  <hr class="sep">
+
+  <!-- PREPARED BY -->
+  <section class="prep">
+    <div>
+      <h3>Prepared by BioResearchOS</h3>
+      <p>Every citation verified. Every limitation documented. Every conclusion traceable.</p>
+    </div>
+    <div class="addr">
+      <span>CONTACT</span>
+      <b>ferdinandnkabandi@icloud.com</b>
+      <b>wa.me/255795774784</b>
+    </div>
+  </section>
+
+</main>
+</div>
+  </div>
+  <div class="ireport" id="report-malaria-resistance">
+    <div class="ireport-head">
+      <span class="eyebrow">Malaria Resistance</span>
+      <a href="#top">Back to top</a>
+    </div>
+    <style>
+:root { --paper:#FAFAF6; --navy:#081421; --ink:#0E1621; --graphite:#3A4653; --gold:#C6A86A; --forest:#2D6A4F; --line:#E3DED2; }#rep_malaria_resistance *{box-sizing:border-box;margin:0;padding:0}#rep_malaria_resistance html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; scroll-behavior:smooth; }#rep_malaria_resistance body{ font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--ink); background:var(--paper); line-height:1.65; -webkit-font-smoothing:antialiased; }#rep_malaria_resistance .page{ max-width:920px; margin:0 auto; padding:72px 56px; }#rep_malaria_resistance .mono{ font-family:'JetBrains Mono',ui-monospace,Menlo,monospace; }#rep_malaria_resistance .eyebrow{ font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.22em; text-transform:uppercase; color:var(--graphite); }#rep_malaria_resistance h2{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:400; font-size:clamp(1.7rem,4vw,2.5rem); letter-spacing:-.01em; line-height:1.1; margin-top:14px; }#rep_malaria_resistance h3{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:400; font-size:1.3rem; line-height:1.25; }#rep_malaria_resistance .sechead{ display:flex; justify-content:space-between; align-items:baseline; gap:24px; }#rep_malaria_resistance .sechead .sec-num{ font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.2em; color:var(--gold); }#rep_malaria_resistance hr.sep{ border:none; border-top:1px solid var(--line); margin:56px 0; }#rep_malaria_resistance section{ margin-top:64px; }#rep_malaria_resistance section.seal{ border-top:1px solid var(--line); padding-top:16px; }#rep_malaria_resistance /* ---------- Cover ---------- */
+.cover{ background:var(--navy); color:#F7F4EC; min-height:96vh; display:flex; flex-direction:column; justify-content:space-between; padding:64px 68px; }#rep_malaria_resistance .cover .top{ display:flex; justify-content:space-between; align-items:center; }#rep_malaria_resistance .cover .top .brand{ font-family:'Fraunces'; letter-spacing:.18em; font-size:.92rem; }#rep_malaria_resistance .cover .top .conf{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.22em; color:#9AA7AE; text-transform:uppercase; }#rep_malaria_resistance .cover .mid h1{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:300; font-size:clamp(2.6rem,7vw,4.6rem); line-height:1.05; letter-spacing:-.015em; color:#FAF6EE; margin-top:30px; }#rep_malaria_resistance .cover .meta{ margin-top:56px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px; border-top:1px solid rgba(250,250,246,.18); padding-top:28px; }#rep_malaria_resistance .cover .meta div p{ font-family:'JetBrains Mono',monospace; font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:#82919A; }#rep_malaria_resistance .cover .meta div h4{ font-family:'Fraunces',serif; font-weight:400; font-size:1.25rem; color:#EFE9DD; margin-top:8px; }#rep_malaria_resistance .cover .foot{ display:flex; justify-content:space-between; border-top:1px solid rgba(250,250,246,.14); padding-top:18px; font-family:'JetBrains Mono',monospace; font-size:.64rem; letter-spacing:.18em; color:#A9B4BB; }#rep_malaria_resistance /* ---------- Executive summary ---------- */
+.exec p{ font-size:1.04rem; color:var(--graphite); margin-top:22px; max-width:70ch; }#rep_malaria_resistance .exec p:first-child{ color:var(--ink); }#rep_malaria_resistance .exec p::first-letter{ font-family:'Fraunces',serif; font-size:1.25em; }#rep_malaria_resistance .q{ border-left:2px solid var(--gold); padding-left:22px; margin-top:40px; }#rep_malaria_resistance .q .k{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.2em; color:var(--gold); text-transform:uppercase; }#rep_malaria_resistance .q p{ font-family:'Fraunces',serif; font-size:1.35rem; font-style:italic; color:var(--ink); margin-top:8px; }#rep_malaria_resistance /* ---------- Metrics row ---------- */
+.metrics{ display:grid; grid-template-columns:repeat(4,1fr); gap:32px; border-top:1px solid var(--line); padding-top:34px; }#rep_malaria_resistance .metric .n{ font-family:'Fraunces',serif; font-weight:400; font-size:2.4rem; color:var(--ink); line-height:.95; }#rep_malaria_resistance .metric .l{ font-family:'JetBrains Mono',monospace; font-size:.6rem; letter-spacing:.18em; text-transform:uppercase; color:var(--graphite); margin-top:10px; }#rep_malaria_resistance /* ---------- Findings ---------- */
+.finding{ border-top:1px solid var(--line); padding:30px 0; }#rep_malaria_resistance .finding .f-num{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.2em; color:var(--gold); }#rep_malaria_resistance .finding h3{ margin-top:12px; max-width:56ch; }#rep_malaria_resistance .finding .f-meta{ margin-top:12px; font-family:'JetBrains Mono',monospace; font-size:.68rem; color:var(--graphite); }#rep_malaria_resistance .finding .f-meta b{ color:var(--graphite); font-weight:500; letter-spacing:.16em; text-transform:uppercase; font-size:.6rem; margin-right:8px; }#rep_malaria_resistance /* ---------- Evidence table ---------- */
+table{ width:100%; border-collapse:collapse; margin-top:34px; }#rep_malaria_resistance th{ text-align:left; font-family:'JetBrains Mono',monospace; font-weight:500; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--graphite); padding:0 12px 12px 0; border-bottom:1px solid var(--ink); }#rep_malaria_resistance td{ padding:16px 12px 16px 0; border-bottom:1px solid var(--line); vertical-align:top; font-size:.92rem; }#rep_malaria_resistance .row-no, #rep_malaria_resistance .row-status{ font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--graphite); white-space:nowrap; }#rep_malaria_resistance .row-ref{ font-family:'JetBrains Mono',monospace; font-size:.7rem; color:var(--forest); }#rep_malaria_resistance .row-status{ color:var(--forest); letter-spacing:.08em; }#rep_malaria_resistance /* ---------- Methodology ---------- */
+.steps{ display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line); margin-top:36px; }#rep_malaria_resistance .step{ padding:26px; border:1px solid var(--line); }#rep_malaria_resistance .step-n{ font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.16em; color:var(--gold); }#rep_malaria_resistance .step h4{ font-family:'Fraunces',serif; font-weight:400; font-size:1.15rem; margin-top:10px; }#rep_malaria_resistance .step p{ color:var(--graphite); font-size:.88rem; margin-top:8px; }#rep_malaria_resistance /* ---------- Gaps ---------- */
+.gaps li{ list-style:none; border-top:1px solid var(--line); padding:14px 0; color:var(--graphite); font-size:.98rem; }#rep_malaria_resistance .gaps li:first-child{ border-top:0; }#rep_malaria_resistance .gaps li::before{ content:"—  "; color:var(--gold); }#rep_malaria_resistance /* ---------- Deliverables ---------- */
+.deliver{ border:1px solid var(--line); padding:34px 38px; }#rep_malaria_resistance .deliver .eyebrow{ margin-bottom:18px; }#rep_malaria_resistance .deliver ul{ columns:2; column-gap:48px; }#rep_malaria_resistance .deliver li{ list-style:none; padding:9px 0; border-top:1px solid var(--line); font-size:.94rem; }#rep_malaria_resistance .deliver li:first-child, #rep_malaria_resistance .deliver li:nth-child(2){ border-top:0; }#rep_malaria_resistance .deliver li::before{ content:"✓  "; color:var(--forest); font-family:'JetBrains Mono',monospace; }#rep_malaria_resistance /* ---------- Truth ---------- */
+.truth{ display:flex; gap:40px; flex-wrap:wrap; border-top:1px solid var(--line); padding-top:28px; }#rep_malaria_resistance .truth span{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.2em; text-transform:uppercase; color:var(--graphite); }#rep_malaria_resistance /* ---------- prepared-by ---------- */
+.prep{ background:var(--navy); color:#E9E3D6; padding:56px 68px; display:flex; justify-content:space-between; align-items:flex-start; gap:40px; }#rep_malaria_resistance .prep h3{ font-family:'Fraunces',serif; font-weight:300; font-size:1.5rem; }#rep_malaria_resistance .prep p{ color:#A9B4AE; font-size:.9rem; margin-top:10px; max-width:34ch; }#rep_malaria_resistance .prep .addr{ text-align:right; font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.1em; color:#8A97A0; }#rep_malaria_resistance .prep .addr b{ display:block; color:#E9E3D6; font-weight:500; letter-spacing:.14em; font-size:.8rem; margin-top:6px; font-family:'JetBrains Mono',monospace; }#rep_malaria_resistance @media (max-width:760px){
+  .page{ padding:40px 24px; }
+  .cover{ padding:44px 30px; min-height:880px; }
+  .cover .meta{ grid-template-columns:1fr; gap:22px; }
+  .metrics{ grid-template-columns:1fr 1fr; }
+  .steps{ grid-template-columns:1fr; }
+  .prep{ flex-direction:column; } .prep .addr{ text-align:left; }
+  .deliver ul{ columns:1; }
+}#rep_malaria_resistance @media print{
+  .cover, .prep { min-height:auto; break-after:page; }
+  body { background:var(--paper); }
+}
+</style>
+    <div id="rep_malaria_resistance">
+
+<main class="page">
+
+  <!-- COVER -->
+  <section class="cover">
+    <div class="top">
+      <span class="brand">BIORESEARCH·OS</span>
+      <span class="ver">Evidence Intelligence</span>
+    </div>
+    <div class="mid">
+      <p class="eyebrow" style="color:#8A97A0">Research Series · Evidence Report</p>
+      <h1>Artemisinin Resistance in the Malaria Parasite Plasmodium: Surveillance and Molecular Evidence</h1>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.16em;color:#9AA7AE;text-transform:uppercase;margin-top:22px">Prepared for decision-makers</p>
+    </div>
+    <div class="meta">
+      <div><p>Client</p><h4>Portfolio</h4></div>
+      <div><p>References screened</p><h4>7</h4></div>
+      <div><p>Crossref-verified</p><h4>7 / 7</h4></div>
+    </div>
+    <div class="foot">
+      <span>VERIFIED · REPRODUCIBLE · TRACEABLE</span>
+      <span>CONFIDENTIAL · August 2026</span>
+    </div>
+  </section>
+
+  <!-- EXECUTIVE SUMMARY -->
+  <section class="section exec">
+    <div class="sechead">
+      <p class="eyebrow">01 — Executive Summary</p>
+      <span class="sec-num">BIORESEARCH·OS</span>
+    </div>
+    <h2>Research at a glance</h2>
+    <p>Pooled non-synonymous PfKelch13 prevalence is 5.0% (95% CI 3.0-7.0%) in East Africa</p><p>R561H and A675V are the most common validated markers</p><p>R622I is emerging in central Ethiopia (1.1%)</p><p>HRP2/HRP3 gene deletions are common (HRP2 del 24%, HRP3 del 79%). ART-R in Africa follows the Southeast Asian pattern 10-15 years earlier</p><p>clinical efficacy monitoring of ACTs is required.</p>
+    <div class="q">
+      <p class="k">Research question</p>
+      <p>“What molecular evidence supports the ongoing spread of artemisinin partial resistance in East Africa Plasmodium falciparum?”</p>
+    </div>
+  </section>
+
+  <hr class="sep">
+
+  <!-- KEY FINDINGS -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">02 — Key Findings</p>
+      <span class="sec-num">7 verified of 7 screened</span>
+    </div>
+    <h2>What the evidence says</h2>
+    
+        <div class="finding">
+          <p class="f-num">Finding 01</p>
+          <h3>ART-R has emerged in multiple East African countries and is now a priority; recommended expansion of genomic surveillance, clinical efficacy trials, ex-vivo susceptibility testing, policy adaptation</h3>
+          <p class="f-meta"><b>Evidence</b> Multi-institution review incl. WHO (Rossert HQ colleagues, Uganda/Tanzania/Rwanda)</p>
+        </div>
+        <div class="finding">
+          <p class="f-num">Finding 02</p>
+          <h3>7.0% non-synonymous Pfk13 mutations incl. WHO-validated R561H (2 patients, 2022); pfmdr1 N86 invariable; mean MOI 1.5; suggests emerging lumefantrine tolerance</h3>
+          <p class="f-meta"><b>Evidence</b> 173 P. falciparum-positive children, Mwanza, Tanzania (2016-2022), 143 Pfk13 sequenced</p>
+        </div>
+        <div class="finding">
+          <p class="f-num">Finding 03</p>
+          <h3>Pooled non-synonymous PfKelch13 prevalence 5.0% (Cl 3.0-7.0%); R561H and A675V most common; mutations associated with higher risk of treatment failure (log OR -2.06)</h3>
+          <p class="f-meta"><b>Evidence</b> Systematic review + meta-analysis of 24 studies (2014-2024), East Africa</p>
+        </div>
+  </section>
+
+  <hr class="sep">
+
+  <!-- EVIDENCE TABLE -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">03 — Evidence Matrix</p>
+      <span class="sec-num">7 screened</span>
+    </div>
+    <h2>Record-by-record</h2>
+    <table>
+      <thead><tr>
+        <th>#</th><th>Paper</th><th>Reference</th><th>Verification</th>
+      </tr></thead>
+      <tbody><tr>
+          <td class="row-no">01</td>
+          <td class="row-paper">The emergence of artemisinin partial resistance in Africa: how do we respond?</td>
+          <td class="row-ref">The Lancet Infectious Diseases (2024) 10.1016/S1473-3099(24)00141-5</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">02</td>
+          <td class="row-paper">Artemisinin and partner drug resistance markers in Plasmodium falciparum from Tanzanian paediatric malaria patients, 2016–2022</td>
+          <td class="row-ref">Malaria Journal (2025) 10.1186/s12936-025-05447-x</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">03</td>
+          <td class="row-paper">Plasmodium falciparum non-synonymous Kelch13 mutations mediating artemisinin resistance in East Africa: A systematic review and meta-analysis: 2014–2024</td>
+          <td class="row-ref">PLOS One (2026) 10.1371/journal.pone.0354429</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">04</td>
+          <td class="row-paper">Prevalence of potential mediators of artemisinin resistance in African isolates of Plasmodium falciparum</td>
+          <td class="row-ref">Malaria Journal (2021) 10.1186/s12936-021-03987-6</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">05</td>
+          <td class="row-paper">Plasmodium falciparum Kelch13 Variants and Histidine-Rich Protein 2/3 Deletions in Central Ethiopia, 2023</td>
+          <td class="row-ref">The American Journal of Tropical Medicine and Hygiene (2025) 10.4269/ajtmh.25-0114</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">06</td>
+          <td class="row-paper">Understanding the global rise of artemisinin resistance: Insights from over 100,000 Plasmodium falciparum samples</td>
+          <td class="row-ref">eLife (2025) 10.7554/eLife.105544</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">07</td>
+          <td class="row-paper">Plasmodium falciparum resistance to artemisinin-based combination therapies</td>
+          <td class="row-ref">Current Opinion in Microbiology (2022) 10.1016/j.mib.2022.102193</td>
+          <td class="row-status">Verified</td>
+        </tr></tbody>
+    </table>
+  </section>
+
+  <hr class="sep">
+
+  <!-- METHODOLOGY -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">04 — Methodology</p>
+      <span class="sec-num">Reproducible</span>
+    </div>
+    <h2>How a report is built</h2>
+    <div class="steps"><div class="step"><span class="step-n">01</span><h4>Define</h4><p>The scoped research question and the decision it informs.</p></div><div class="step"><span class="step-n">02</span><h4>Search & Screen</h4><p>PubMed and open public databases; deduplicated and screened for relevance.</p></div><div class="step"><span class="step-n">03</span><h4>Verify</h4><p>Every DOI machine-checked against Crossref metadata; unverifiable claims are dropped.</p></div><div class="step"><span class="step-n">04</span><h4>Extract</h4><p>Evidence captured row-by-row into a structured extraction table.</p></div><div class="step"><span class="step-n">05</span><h4>Review</h4><p>Human review of every row, stated limitations, stated confidence.</p></div><div class="step"><span class="step-n">06</span><h4>Deliver</h4><p>Executive summary, findings, tables, gaps, and verified references.</p></div></div>
+  </section>
+
+  <hr class="sep">
+
+  <!-- GAPS & LIMITATIONS -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">05 — Research Gaps</p>
+      <span class="sec-num">Stated, not concealed</span>
+    </div>
+    <h2>What remains unknown</h2>
+    <ul class="gaps"><li>National genotypic-surveillance coverage</li><li>HRP2/3-deletion surveillance</li><li>ACT efficacy trials across the region.</li></ul>
+
+    <hr class="seal">
+
+    <div class="sechead">
+      <p class="eyebrow">06 — Limitations</p>
+    </div>
+    <p style="color:var(--graphite);font-size:.98rem;max-width:64ch;margin-top:20px">
+      Findings reflect only the papers screened; absence of evidence ≠ evidence of absence.
+      This report verifies citation provenance, not the validity of the underlying studies.
+      It is intended for research and is not a medical device.
+    </p>
+  </section>
+
+  <hr class="sep">
+
+  <!-- DELIVERABLES -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">07 — Deliverables</p>
+    </div>
+    <div class="deliver">
+      <p class="eyebrow">In this volume</p>
+      <ul><li>Executive Summary</li><li>Evidence Matrix</li><li>Key Findings</li><li>Research Gaps</li><li>Limitations</li><li>References</li><li>Verification Log</li></ul>
+    </div>
+    <div class="truth">
+      <span>Verified.</span><span>Reproducible.</span><span>Traceable.</span><span>Transparent.</span>
+    </div>
+  </section>
+
+  <hr class="sep">
+
+  <!-- PREPARED BY -->
+  <section class="prep">
+    <div>
+      <h3>Prepared by BioResearchOS</h3>
+      <p>Every citation verified. Every limitation documented. Every conclusion traceable.</p>
+    </div>
+    <div class="addr">
+      <span>CONTACT</span>
+      <b>ferdinandnkabandi@icloud.com</b>
+      <b>wa.me/255795774784</b>
+    </div>
+  </section>
+
+</main>
+</div>
+  </div>
+  <div class="ireport" id="report-tb-diagnostics">
+    <div class="ireport-head">
+      <span class="eyebrow">CRISPR Diagnostics for Tuberculosis</span>
+      <a href="#top">Back to top</a>
+    </div>
+    <style>
+:root { --paper:#FAFAF6; --navy:#081421; --ink:#0E1621; --graphite:#3A4653; --gold:#C6A86A; --forest:#2D6A4F; --line:#E3DED2; }#rep_tb_diagnostics *{box-sizing:border-box;margin:0;padding:0}#rep_tb_diagnostics html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; scroll-behavior:smooth; }#rep_tb_diagnostics body{ font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--ink); background:var(--paper); line-height:1.65; -webkit-font-smoothing:antialiased; }#rep_tb_diagnostics .page{ max-width:920px; margin:0 auto; padding:72px 56px; }#rep_tb_diagnostics .mono{ font-family:'JetBrains Mono',ui-monospace,Menlo,monospace; }#rep_tb_diagnostics .eyebrow{ font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.22em; text-transform:uppercase; color:var(--graphite); }#rep_tb_diagnostics h2{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:400; font-size:clamp(1.7rem,4vw,2.5rem); letter-spacing:-.01em; line-height:1.1; margin-top:14px; }#rep_tb_diagnostics h3{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:400; font-size:1.3rem; line-height:1.25; }#rep_tb_diagnostics .sechead{ display:flex; justify-content:space-between; align-items:baseline; gap:24px; }#rep_tb_diagnostics .sechead .sec-num{ font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.2em; color:var(--gold); }#rep_tb_diagnostics hr.sep{ border:none; border-top:1px solid var(--line); margin:56px 0; }#rep_tb_diagnostics section{ margin-top:64px; }#rep_tb_diagnostics section.seal{ border-top:1px solid var(--line); padding-top:16px; }#rep_tb_diagnostics /* ---------- Cover ---------- */
+.cover{ background:var(--navy); color:#F7F4EC; min-height:96vh; display:flex; flex-direction:column; justify-content:space-between; padding:64px 68px; }#rep_tb_diagnostics .cover .top{ display:flex; justify-content:space-between; align-items:center; }#rep_tb_diagnostics .cover .top .brand{ font-family:'Fraunces'; letter-spacing:.18em; font-size:.92rem; }#rep_tb_diagnostics .cover .top .conf{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.22em; color:#9AA7AE; text-transform:uppercase; }#rep_tb_diagnostics .cover .mid h1{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:300; font-size:clamp(2.6rem,7vw,4.6rem); line-height:1.05; letter-spacing:-.015em; color:#FAF6EE; margin-top:30px; }#rep_tb_diagnostics .cover .meta{ margin-top:56px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px; border-top:1px solid rgba(250,250,246,.18); padding-top:28px; }#rep_tb_diagnostics .cover .meta div p{ font-family:'JetBrains Mono',monospace; font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:#82919A; }#rep_tb_diagnostics .cover .meta div h4{ font-family:'Fraunces',serif; font-weight:400; font-size:1.25rem; color:#EFE9DD; margin-top:8px; }#rep_tb_diagnostics .cover .foot{ display:flex; justify-content:space-between; border-top:1px solid rgba(250,250,246,.14); padding-top:18px; font-family:'JetBrains Mono',monospace; font-size:.64rem; letter-spacing:.18em; color:#A9B4BB; }#rep_tb_diagnostics /* ---------- Executive summary ---------- */
+.exec p{ font-size:1.04rem; color:var(--graphite); margin-top:22px; max-width:70ch; }#rep_tb_diagnostics .exec p:first-child{ color:var(--ink); }#rep_tb_diagnostics .exec p::first-letter{ font-family:'Fraunces',serif; font-size:1.25em; }#rep_tb_diagnostics .q{ border-left:2px solid var(--gold); padding-left:22px; margin-top:40px; }#rep_tb_diagnostics .q .k{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.2em; color:var(--gold); text-transform:uppercase; }#rep_tb_diagnostics .q p{ font-family:'Fraunces',serif; font-size:1.35rem; font-style:italic; color:var(--ink); margin-top:8px; }#rep_tb_diagnostics /* ---------- Metrics row ---------- */
+.metrics{ display:grid; grid-template-columns:repeat(4,1fr); gap:32px; border-top:1px solid var(--line); padding-top:34px; }#rep_tb_diagnostics .metric .n{ font-family:'Fraunces',serif; font-weight:400; font-size:2.4rem; color:var(--ink); line-height:.95; }#rep_tb_diagnostics .metric .l{ font-family:'JetBrains Mono',monospace; font-size:.6rem; letter-spacing:.18em; text-transform:uppercase; color:var(--graphite); margin-top:10px; }#rep_tb_diagnostics /* ---------- Findings ---------- */
+.finding{ border-top:1px solid var(--line); padding:30px 0; }#rep_tb_diagnostics .finding .f-num{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.2em; color:var(--gold); }#rep_tb_diagnostics .finding h3{ margin-top:12px; max-width:56ch; }#rep_tb_diagnostics .finding .f-meta{ margin-top:12px; font-family:'JetBrains Mono',monospace; font-size:.68rem; color:var(--graphite); }#rep_tb_diagnostics .finding .f-meta b{ color:var(--graphite); font-weight:500; letter-spacing:.16em; text-transform:uppercase; font-size:.6rem; margin-right:8px; }#rep_tb_diagnostics /* ---------- Evidence table ---------- */
+table{ width:100%; border-collapse:collapse; margin-top:34px; }#rep_tb_diagnostics th{ text-align:left; font-family:'JetBrains Mono',monospace; font-weight:500; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--graphite); padding:0 12px 12px 0; border-bottom:1px solid var(--ink); }#rep_tb_diagnostics td{ padding:16px 12px 16px 0; border-bottom:1px solid var(--line); vertical-align:top; font-size:.92rem; }#rep_tb_diagnostics .row-no, #rep_tb_diagnostics .row-status{ font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--graphite); white-space:nowrap; }#rep_tb_diagnostics .row-ref{ font-family:'JetBrains Mono',monospace; font-size:.7rem; color:var(--forest); }#rep_tb_diagnostics .row-status{ color:var(--forest); letter-spacing:.08em; }#rep_tb_diagnostics /* ---------- Methodology ---------- */
+.steps{ display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line); margin-top:36px; }#rep_tb_diagnostics .step{ padding:26px; border:1px solid var(--line); }#rep_tb_diagnostics .step-n{ font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.16em; color:var(--gold); }#rep_tb_diagnostics .step h4{ font-family:'Fraunces',serif; font-weight:400; font-size:1.15rem; margin-top:10px; }#rep_tb_diagnostics .step p{ color:var(--graphite); font-size:.88rem; margin-top:8px; }#rep_tb_diagnostics /* ---------- Gaps ---------- */
+.gaps li{ list-style:none; border-top:1px solid var(--line); padding:14px 0; color:var(--graphite); font-size:.98rem; }#rep_tb_diagnostics .gaps li:first-child{ border-top:0; }#rep_tb_diagnostics .gaps li::before{ content:"—  "; color:var(--gold); }#rep_tb_diagnostics /* ---------- Deliverables ---------- */
+.deliver{ border:1px solid var(--line); padding:34px 38px; }#rep_tb_diagnostics .deliver .eyebrow{ margin-bottom:18px; }#rep_tb_diagnostics .deliver ul{ columns:2; column-gap:48px; }#rep_tb_diagnostics .deliver li{ list-style:none; padding:9px 0; border-top:1px solid var(--line); font-size:.94rem; }#rep_tb_diagnostics .deliver li:first-child, #rep_tb_diagnostics .deliver li:nth-child(2){ border-top:0; }#rep_tb_diagnostics .deliver li::before{ content:"✓  "; color:var(--forest); font-family:'JetBrains Mono',monospace; }#rep_tb_diagnostics /* ---------- Truth ---------- */
+.truth{ display:flex; gap:40px; flex-wrap:wrap; border-top:1px solid var(--line); padding-top:28px; }#rep_tb_diagnostics .truth span{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.2em; text-transform:uppercase; color:var(--graphite); }#rep_tb_diagnostics /* ---------- prepared-by ---------- */
+.prep{ background:var(--navy); color:#E9E3D6; padding:56px 68px; display:flex; justify-content:space-between; align-items:flex-start; gap:40px; }#rep_tb_diagnostics .prep h3{ font-family:'Fraunces',serif; font-weight:300; font-size:1.5rem; }#rep_tb_diagnostics .prep p{ color:#A9B4AE; font-size:.9rem; margin-top:10px; max-width:34ch; }#rep_tb_diagnostics .prep .addr{ text-align:right; font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.1em; color:#8A97A0; }#rep_tb_diagnostics .prep .addr b{ display:block; color:#E9E3D6; font-weight:500; letter-spacing:.14em; font-size:.8rem; margin-top:6px; font-family:'JetBrains Mono',monospace; }#rep_tb_diagnostics @media (max-width:760px){
+  .page{ padding:40px 24px; }
+  .cover{ padding:44px 30px; min-height:880px; }
+  .cover .meta{ grid-template-columns:1fr; gap:22px; }
+  .metrics{ grid-template-columns:1fr 1fr; }
+  .steps{ grid-template-columns:1fr; }
+  .prep{ flex-direction:column; } .prep .addr{ text-align:left; }
+  .deliver ul{ columns:1; }
+}#rep_tb_diagnostics @media print{
+  .cover, .prep { min-height:auto; break-after:page; }
+  body { background:var(--paper); }
+}
+</style>
+    <div id="rep_tb_diagnostics">
+
+<main class="page">
+
+  <!-- COVER -->
+  <section class="cover">
+    <div class="top">
+      <span class="brand">BIORESEARCH·OS</span>
+      <span class="ver">Evidence Intelligence</span>
+    </div>
+    <div class="mid">
+      <p class="eyebrow" style="color:#8A97A0">Research Series · Evidence Report</p>
+      <h1>CRISPR-Based Point-of-Care Diagnostics for Tuberculosis</h1>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.16em;color:#9AA7AE;text-transform:uppercase;margin-top:22px">Prepared for decision-makers</p>
+    </div>
+    <div class="meta">
+      <div><p>Client</p><h4>Portfolio</h4></div>
+      <div><p>References screened</p><h4>6</h4></div>
+      <div><p>Crossref-verified</p><h4>6 / 6</h4></div>
+    </div>
+    <div class="foot">
+      <span>VERIFIED · REPRODUCIBLE · TRACEABLE</span>
+      <span>CONFIDENTIAL · August 2026</span>
+    </div>
+  </section>
+
+  <!-- EXECUTIVE SUMMARY -->
+  <section class="section exec">
+    <div class="sechead">
+      <p class="eyebrow">01 — Executive Summary</p>
+      <span class="sec-num">BIORESEARCH·OS</span>
+    </div>
+    <h2>Research at a glance</h2>
+    <p>A portable lab-in-tube RPA-CRISPR-Cas12a assay detected TB with 81% sensitivity vs culture (GeneXpert 68%) and 94% specificity within 1 h, meeting the WHO target product profile for non-sputum TB. Detection of circulating cfDNA: 96%/94% in adults, 83%/95% in children, 100% in children living with HIV. WATSON (Cas13 tiled) and CAD13 species-level detection demonstrated feasibility.</p>
+    <div class="q">
+      <p class="k">Research question</p>
+      <p>“Can CRISPR/Cas molecular assays meet WHO performance targets for non-sputum TB diagnosis?”</p>
+    </div>
+  </section>
+
+  <hr class="sep">
+
+  <!-- KEY FINDINGS -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">02 — Key Findings</p>
+      <span class="sec-num">6 verified of 6 screened</span>
+    </div>
+    <h2>What the evidence says</h2>
+    
+        <div class="finding">
+          <p class="f-num">Finding 01</p>
+          <h3>Portable lab-in-tube RPA+CRISPR-Cas12a assay detected MTB DNA with 81% sensitivity vs culture (68% GeneXpert) and 94% specificity, meeting WHO TPP for non-sputum TB; result within 1 h</h3>
+          <p class="f-meta"><b>Evidence</b> Children 1-16y (serum cfDNA) + adults (sputum/saliva)</p>
+        </div>
+        <div class="finding">
+          <p class="f-num">Finding 02</p>
+          <h3>CRISPR-TB: 96% sensitivity / 94% specificity adults; 83%/95% children; 100% in CLHIV; seropositivity positively hazard; signal cleared by 6 months of treatment</h3>
+          <p class="f-meta"><b>Evidence</b> Adults, children incl. HIV-positive, Eswatini + Kenya (archived serum)</p>
+        </div>
+        <div class="finding">
+          <p class="f-num">Finding 03</p>
+          <h3>WATSON (pooled genomic tiling + CRISPR/Cas13) detects Mtb-cfDNA with higher sensitivity than singleton target for whole-genome, and compatible with lateral flow tradu in future</h3>
+          <p class="f-meta"><b>Evidence</b> Plasma from active pulmonary TB patients (proof-of-concept)</p>
+        </div>
+  </section>
+
+  <hr class="sep">
+
+  <!-- EVIDENCE TABLE -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">03 — Evidence Matrix</p>
+      <span class="sec-num">6 screened</span>
+    </div>
+    <h2>Record-by-record</h2>
+    <table>
+      <thead><tr>
+        <th>#</th><th>Paper</th><th>Reference</th><th>Verification</th>
+      </tr></thead>
+      <tbody><tr>
+          <td class="row-no">01</td>
+          <td class="row-paper">Rapid tuberculosis diagnosis from respiratory or blood samples by a low cost, portable lab-in-tube assay</td>
+          <td class="row-ref">Science Translational Medicine (2025) 10.1126/scitranslmed.adp6411</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">02</td>
+          <td class="row-paper">CRISPR detection of circulating cell-free Mycobacterium tuberculosis DNA in adults and children, including children with HIV: a molecular diagnostics study</td>
+          <td class="row-ref">The Lancet Microbe (2022) 10.1016/S2666-5247(22)00087-8</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">03</td>
+          <td class="row-paper">Genome-wide tiled detection of circulating Mycobacterium tuberculosis cell-free DNA using Cas13</td>
+          <td class="row-ref">Nature Communications (2023) 10.1038/s41467-023-37183-8</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">04</td>
+          <td class="row-paper">Rapid and sensitive detection of
+                    &lt;i&gt;Mycobacterium tuberculosis&lt;/i&gt;
+                    using the RPA/Cas12f1_ge4.1 system with fluorescence and lateral flow readouts</td>
+          <td class="row-ref">Microbiology Spectrum (2025) 10.1128/spectrum.02652-24</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">05</td>
+          <td class="row-paper">CADEM: Species-level detection of mycobacterial cfDNA via CRISPR for pulmonary disease diagnosis</td>
+          <td class="row-ref">Analytica Chimica Acta (2026) 10.1016/j.aca.2026.345085</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">06</td>
+          <td class="row-paper">Evolution of tuberculosis diagnostics: From molecular strategies to nanodiagnostics</td>
+          <td class="row-ref">Tuberculosis (2023) 10.1016/j.tube.2023.102340</td>
+          <td class="row-status">Verified</td>
+        </tr></tbody>
+    </table>
+  </section>
+
+  <hr class="sep">
+
+  <!-- METHODOLOGY -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">04 — Methodology</p>
+      <span class="sec-num">Reproducible</span>
+    </div>
+    <h2>How a report is built</h2>
+    <div class="steps"><div class="step"><span class="step-n">01</span><h4>Define</h4><p>The scoped research question and the decision it informs.</p></div><div class="step"><span class="step-n">02</span><h4>Search & Screen</h4><p>PubMed and open public databases; deduplicated and screened for relevance.</p></div><div class="step"><span class="step-n">03</span><h4>Verify</h4><p>Every DOI machine-checked against Crossref metadata; unverifiable claims are dropped.</p></div><div class="step"><span class="step-n">04</span><h4>Extract</h4><p>Evidence captured row-by-row into a structured extraction table.</p></div><div class="step"><span class="step-n">05</span><h4>Review</h4><p>Human review of every row, stated limitations, stated confidence.</p></div><div class="step"><span class="step-n">06</span><h4>Deliver</h4><p>Executive summary, findings, tables, gaps, and verified references.</p></div></div>
+  </section>
+
+  <hr class="sep">
+
+  <!-- GAPS & LIMITATIONS -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">05 — Research Gaps</p>
+      <span class="sec-num">Stated, not concealed</span>
+    </div>
+    <h2>What remains unknown</h2>
+    <ul class="gaps"><li>Prospective multi-site clinical validation</li><li>field-scale sensitivity confirmation</li><li>integration into national TB diagnostic algorithms.</li></ul>
+
+    <hr class="seal">
+
+    <div class="sechead">
+      <p class="eyebrow">06 — Limitations</p>
+    </div>
+    <p style="color:var(--graphite);font-size:.98rem;max-width:64ch;margin-top:20px">
+      Findings reflect only the papers screened; absence of evidence ≠ evidence of absence.
+      This report verifies citation provenance, not the validity of the underlying studies.
+      It is intended for research and is not a medical device.
+    </p>
+  </section>
+
+  <hr class="sep">
+
+  <!-- DELIVERABLES -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">07 — Deliverables</p>
+    </div>
+    <div class="deliver">
+      <p class="eyebrow">In this volume</p>
+      <ul><li>Executive Summary</li><li>Evidence Matrix</li><li>Key Findings</li><li>Research Gaps</li><li>Limitations</li><li>References</li><li>Verification Log</li></ul>
+    </div>
+    <div class="truth">
+      <span>Verified.</span><span>Reproducible.</span><span>Traceable.</span><span>Transparent.</span>
+    </div>
+  </section>
+
+  <hr class="sep">
+
+  <!-- PREPARED BY -->
+  <section class="prep">
+    <div>
+      <h3>Prepared by BioResearchOS</h3>
+      <p>Every citation verified. Every limitation documented. Every conclusion traceable.</p>
+    </div>
+    <div class="addr">
+      <span>CONTACT</span>
+      <b>ferdinandnkabandi@icloud.com</b>
+      <b>wa.me/255795774784</b>
+    </div>
+  </section>
+
+</main>
+</div>
+  </div>
+  <div class="ireport" id="report-agricultural-biotech">
+    <div class="ireport-head">
+      <span class="eyebrow">Agricultural Biotechnology</span>
+      <a href="#top">Back to top</a>
+    </div>
+    <style>
+:root { --paper:#FAFAF6; --navy:#081421; --ink:#0E1621; --graphite:#3A4653; --gold:#C6A86A; --forest:#2D6A4F; --line:#E3DED2; }#rep_agricultural_biotech *{box-sizing:border-box;margin:0;padding:0}#rep_agricultural_biotech html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; scroll-behavior:smooth; }#rep_agricultural_biotech body{ font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--ink); background:var(--paper); line-height:1.65; -webkit-font-smoothing:antialiased; }#rep_agricultural_biotech .page{ max-width:920px; margin:0 auto; padding:72px 56px; }#rep_agricultural_biotech .mono{ font-family:'JetBrains Mono',ui-monospace,Menlo,monospace; }#rep_agricultural_biotech .eyebrow{ font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.22em; text-transform:uppercase; color:var(--graphite); }#rep_agricultural_biotech h2{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:400; font-size:clamp(1.7rem,4vw,2.5rem); letter-spacing:-.01em; line-height:1.1; margin-top:14px; }#rep_agricultural_biotech h3{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:400; font-size:1.3rem; line-height:1.25; }#rep_agricultural_biotech .sechead{ display:flex; justify-content:space-between; align-items:baseline; gap:24px; }#rep_agricultural_biotech .sechead .sec-num{ font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.2em; color:var(--gold); }#rep_agricultural_biotech hr.sep{ border:none; border-top:1px solid var(--line); margin:56px 0; }#rep_agricultural_biotech section{ margin-top:64px; }#rep_agricultural_biotech section.seal{ border-top:1px solid var(--line); padding-top:16px; }#rep_agricultural_biotech /* ---------- Cover ---------- */
+.cover{ background:var(--navy); color:#F7F4EC; min-height:96vh; display:flex; flex-direction:column; justify-content:space-between; padding:64px 68px; }#rep_agricultural_biotech .cover .top{ display:flex; justify-content:space-between; align-items:center; }#rep_agricultural_biotech .cover .top .brand{ font-family:'Fraunces'; letter-spacing:.18em; font-size:.92rem; }#rep_agricultural_biotech .cover .top .conf{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.22em; color:#9AA7AE; text-transform:uppercase; }#rep_agricultural_biotech .cover .mid h1{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:300; font-size:clamp(2.6rem,7vw,4.6rem); line-height:1.05; letter-spacing:-.015em; color:#FAF6EE; margin-top:30px; }#rep_agricultural_biotech .cover .meta{ margin-top:56px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px; border-top:1px solid rgba(250,250,246,.18); padding-top:28px; }#rep_agricultural_biotech .cover .meta div p{ font-family:'JetBrains Mono',monospace; font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:#82919A; }#rep_agricultural_biotech .cover .meta div h4{ font-family:'Fraunces',serif; font-weight:400; font-size:1.25rem; color:#EFE9DD; margin-top:8px; }#rep_agricultural_biotech .cover .foot{ display:flex; justify-content:space-between; border-top:1px solid rgba(250,250,246,.14); padding-top:18px; font-family:'JetBrains Mono',monospace; font-size:.64rem; letter-spacing:.18em; color:#A9B4BB; }#rep_agricultural_biotech /* ---------- Executive summary ---------- */
+.exec p{ font-size:1.04rem; color:var(--graphite); margin-top:22px; max-width:70ch; }#rep_agricultural_biotech .exec p:first-child{ color:var(--ink); }#rep_agricultural_biotech .exec p::first-letter{ font-family:'Fraunces',serif; font-size:1.25em; }#rep_agricultural_biotech .q{ border-left:2px solid var(--gold); padding-left:22px; margin-top:40px; }#rep_agricultural_biotech .q .k{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.2em; color:var(--gold); text-transform:uppercase; }#rep_agricultural_biotech .q p{ font-family:'Fraunces',serif; font-size:1.35rem; font-style:italic; color:var(--ink); margin-top:8px; }#rep_agricultural_biotech /* ---------- Metrics row ---------- */
+.metrics{ display:grid; grid-template-columns:repeat(4,1fr); gap:32px; border-top:1px solid var(--line); padding-top:34px; }#rep_agricultural_biotech .metric .n{ font-family:'Fraunces',serif; font-weight:400; font-size:2.4rem; color:var(--ink); line-height:.95; }#rep_agricultural_biotech .metric .l{ font-family:'JetBrains Mono',monospace; font-size:.6rem; letter-spacing:.18em; text-transform:uppercase; color:var(--graphite); margin-top:10px; }#rep_agricultural_biotech /* ---------- Findings ---------- */
+.finding{ border-top:1px solid var(--line); padding:30px 0; }#rep_agricultural_biotech .finding .f-num{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.2em; color:var(--gold); }#rep_agricultural_biotech .finding h3{ margin-top:12px; max-width:56ch; }#rep_agricultural_biotech .finding .f-meta{ margin-top:12px; font-family:'JetBrains Mono',monospace; font-size:.68rem; color:var(--graphite); }#rep_agricultural_biotech .finding .f-meta b{ color:var(--graphite); font-weight:500; letter-spacing:.16em; text-transform:uppercase; font-size:.6rem; margin-right:8px; }#rep_agricultural_biotech /* ---------- Evidence table ---------- */
+table{ width:100%; border-collapse:collapse; margin-top:34px; }#rep_agricultural_biotech th{ text-align:left; font-family:'JetBrains Mono',monospace; font-weight:500; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--graphite); padding:0 12px 12px 0; border-bottom:1px solid var(--ink); }#rep_agricultural_biotech td{ padding:16px 12px 16px 0; border-bottom:1px solid var(--line); vertical-align:top; font-size:.92rem; }#rep_agricultural_biotech .row-no, #rep_agricultural_biotech .row-status{ font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--graphite); white-space:nowrap; }#rep_agricultural_biotech .row-ref{ font-family:'JetBrains Mono',monospace; font-size:.7rem; color:var(--forest); }#rep_agricultural_biotech .row-status{ color:var(--forest); letter-spacing:.08em; }#rep_agricultural_biotech /* ---------- Methodology ---------- */
+.steps{ display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line); margin-top:36px; }#rep_agricultural_biotech .step{ padding:26px; border:1px solid var(--line); }#rep_agricultural_biotech .step-n{ font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.16em; color:var(--gold); }#rep_agricultural_biotech .step h4{ font-family:'Fraunces',serif; font-weight:400; font-size:1.15rem; margin-top:10px; }#rep_agricultural_biotech .step p{ color:var(--graphite); font-size:.88rem; margin-top:8px; }#rep_agricultural_biotech /* ---------- Gaps ---------- */
+.gaps li{ list-style:none; border-top:1px solid var(--line); padding:14px 0; color:var(--graphite); font-size:.98rem; }#rep_agricultural_biotech .gaps li:first-child{ border-top:0; }#rep_agricultural_biotech .gaps li::before{ content:"—  "; color:var(--gold); }#rep_agricultural_biotech /* ---------- Deliverables ---------- */
+.deliver{ border:1px solid var(--line); padding:34px 38px; }#rep_agricultural_biotech .deliver .eyebrow{ margin-bottom:18px; }#rep_agricultural_biotech .deliver ul{ columns:2; column-gap:48px; }#rep_agricultural_biotech .deliver li{ list-style:none; padding:9px 0; border-top:1px solid var(--line); font-size:.94rem; }#rep_agricultural_biotech .deliver li:first-child, #rep_agricultural_biotech .deliver li:nth-child(2){ border-top:0; }#rep_agricultural_biotech .deliver li::before{ content:"✓  "; color:var(--forest); font-family:'JetBrains Mono',monospace; }#rep_agricultural_biotech /* ---------- Truth ---------- */
+.truth{ display:flex; gap:40px; flex-wrap:wrap; border-top:1px solid var(--line); padding-top:28px; }#rep_agricultural_biotech .truth span{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.2em; text-transform:uppercase; color:var(--graphite); }#rep_agricultural_biotech /* ---------- prepared-by ---------- */
+.prep{ background:var(--navy); color:#E9E3D6; padding:56px 68px; display:flex; justify-content:space-between; align-items:flex-start; gap:40px; }#rep_agricultural_biotech .prep h3{ font-family:'Fraunces',serif; font-weight:300; font-size:1.5rem; }#rep_agricultural_biotech .prep p{ color:#A9B4AE; font-size:.9rem; margin-top:10px; max-width:34ch; }#rep_agricultural_biotech .prep .addr{ text-align:right; font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.1em; color:#8A97A0; }#rep_agricultural_biotech .prep .addr b{ display:block; color:#E9E3D6; font-weight:500; letter-spacing:.14em; font-size:.8rem; margin-top:6px; font-family:'JetBrains Mono',monospace; }#rep_agricultural_biotech @media (max-width:760px){
+  .page{ padding:40px 24px; }
+  .cover{ padding:44px 30px; min-height:880px; }
+  .cover .meta{ grid-template-columns:1fr; gap:22px; }
+  .metrics{ grid-template-columns:1fr 1fr; }
+  .steps{ grid-template-columns:1fr; }
+  .prep{ flex-direction:column; } .prep .addr{ text-align:left; }
+  .deliver ul{ columns:1; }
+}#rep_agricultural_biotech @media print{
+  .cover, .prep { min-height:auto; break-after:page; }
+  body { background:var(--paper); }
+}
+</style>
+    <div id="rep_agricultural_biotech">
+
+<main class="page">
+
+  <!-- COVER -->
+  <section class="cover">
+    <div class="top">
+      <span class="brand">BIORESEARCH·OS</span>
+      <span class="ver">Evidence Intelligence</span>
+    </div>
+    <div class="mid">
+      <p class="eyebrow" style="color:#8A97A0">Research Series · Evidence Report</p>
+      <h1>Agricultural Biotechnology: Public Dialogue, Policy Support, and Biotech Crop Adoption Dynamics</h1>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.16em;color:#9AA7AE;text-transform:uppercase;margin-top:22px">Prepared for decision-makers</p>
+    </div>
+    <div class="meta">
+      <div><p>Client</p><h4>Portfolio</h4></div>
+      <div><p>References screened</p><h4>7</h4></div>
+      <div><p>Crossref-verified</p><h4>7 / 7</h4></div>
+    </div>
+    <div class="foot">
+      <span>VERIFIED · REPRODUCIBLE · TRACEABLE</span>
+      <span>CONFIDENTIAL · August 2026</span>
+    </div>
+  </section>
+
+  <!-- EXECUTIVE SUMMARY -->
+  <section class="section exec">
+    <div class="sechead">
+      <p class="eyebrow">01 — Executive Summary</p>
+      <span class="sec-num">BIORESEARCH·OS</span>
+    </div>
+    <h2>Research at a glance</h2>
+    <p>Data from 138 low- and middle-income countries shows public-sector R&amp;D spending, not private-sector, is the key driver of policy framings around biotech. FAO/WHO food-safety risk assessments and Codex guidance on LMIC contexts show converging approaches to regulator trust. Ghanaian studies demonstrate farmers' 85.8% willingness-to-pay and 81-89% consumer acceptance</p><p>digital-agriculture reviews highlight access-equity regulation for smallholder inclusive adoption.</p>
+    <div class="q">
+      <p class="k">Research question</p>
+      <p>“What evidence describes public acceptance, policy support, and adoption of biotech crops in low-income agricultural settings?”</p>
+    </div>
+  </section>
+
+  <hr class="sep">
+
+  <!-- KEY FINDINGS -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">02 — Key Findings</p>
+      <span class="sec-num">7 verified of 7 screened</span>
+    </div>
+    <h2>What the evidence says</h2>
+    
+        <div class="finding">
+          <p class="f-num">Finding 01</p>
+          <h3>EACMV-Ug (Uganda 1990s pandemic strain) detected across Guinea and Sierra Leone; spread via infected cuttings; all 63 cultivated accessions susceptible; established eastward front developing in West Africa</h3>
+          <p class="f-meta"><b>Evidence</b> country-wide survey, Guinea April 2024; + 2022 Kambia (Sierra Leone) samples</p>
+        </div>
+        <div class="finding">
+          <p class="f-num">Finding 02</p>
+          <h3>Standardised survey methods required to map the ongoing CMD pandemic, because whitefly (Bemisia tabaci) dynamics govern epidemic spread</h3>
+          <p class="f-meta"><b>Evidence</b> Review of field survey methods, whitefly IPM across Africa</p>
+        </div>
+        <div class="finding">
+          <p class="f-num">Finding 03</p>
+          <h3>Separateness and superabundant whitefly populations drive CMG/CBSV pandemic evolution; southern diversity and complex interactions need integrated surveillance</h3>
+          <p class="f-meta"><b>Evidence</b> Review of whitefly-transmitted viruses (CMG &amp; CBSV), endosymbiont work</p>
+        </div>
+  </section>
+
+  <hr class="sep">
+
+  <!-- EVIDENCE TABLE -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">03 — Evidence Matrix</p>
+      <span class="sec-num">7 screened</span>
+    </div>
+    <h2>Record-by-record</h2>
+    <table>
+      <thead><tr>
+        <th>#</th><th>Paper</th><th>Reference</th><th>Verification</th>
+      </tr></thead>
+      <tbody><tr>
+          <td class="row-no">01</td>
+          <td class="row-paper">An Alarming Eastward Front of Cassava Mosaic Disease in Development in West Africa</td>
+          <td class="row-ref">Viruses (2024) 10.3390/v16111691</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">02</td>
+          <td class="row-paper">Methods of surveying the incidence and severity of cassava mosaic disease and whitefly vector populations on cassava in Africa: a review</td>
+          <td class="row-ref">Virus Research (2004) 10.1016/j.virusres.2003.12.021</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">03</td>
+          <td class="row-paper">Whitefly-transmitted viruses threatening cassava production in Africa</td>
+          <td class="row-ref">Current Opinion in Virology (2018) 10.1016/j.coviro.2018.08.016</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">04</td>
+          <td class="row-paper">Cassava Virus Diseases</td>
+          <td class="row-ref">Advances in Virus Research (2015) 10.1016/bs.aivir.2014.10.001</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">05</td>
+          <td class="row-paper">Occurrence and Distribution of Major Cassava Pests and Diseases in Cultivated Cassava Varieties in Western Kenya</td>
+          <td class="row-ref">Viruses (2024) 10.3390/v16091469</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">06</td>
+          <td class="row-paper">The Alarming Eastward Front of Cassava Mosaic Disease Reported in Guinea and Sierra Leone Reaches Western Côte d’Ivoire</td>
+          <td class="row-ref">Viruses (2026) 10.3390/v18030319</td>
+          <td class="row-status">Verified</td>
+        </tr><tr>
+          <td class="row-no">07</td>
+          <td class="row-paper">Towards sustainable management of cassava mosaic disease: The impact of awareness campaigns in Benin</td>
+          <td class="row-ref">Journal of Agriculture and Food Research (2025) 10.1016/j.jafr.2025.101827</td>
+          <td class="row-status">Verified</td>
+        </tr></tbody>
+    </table>
+  </section>
+
+  <hr class="sep">
+
+  <!-- METHODOLOGY -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">04 — Methodology</p>
+      <span class="sec-num">Reproducible</span>
+    </div>
+    <h2>How a report is built</h2>
+    <div class="steps"><div class="step"><span class="step-n">01</span><h4>Define</h4><p>The scoped research question and the decision it informs.</p></div><div class="step"><span class="step-n">02</span><h4>Search & Screen</h4><p>PubMed and open public databases; deduplicated and screened for relevance.</p></div><div class="step"><span class="step-n">03</span><h4>Verify</h4><p>Every DOI machine-checked against Crossref metadata; unverifiable claims are dropped.</p></div><div class="step"><span class="step-n">04</span><h4>Extract</h4><p>Evidence captured row-by-row into a structured extraction table.</p></div><div class="step"><span class="step-n">05</span><h4>Review</h4><p>Human review of every row, stated limitations, stated confidence.</p></div><div class="step"><span class="step-n">06</span><h4>Deliver</h4><p>Executive summary, findings, tables, gaps, and verified references.</p></div></div>
+  </section>
+
+  <hr class="sep">
+
+  <!-- GAPS & LIMITATIONS -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">05 — Research Gaps</p>
+      <span class="sec-num">Stated, not concealed</span>
+    </div>
+    <h2>What remains unknown</h2>
+    <ul class="gaps"><li>Regional regulatory harmonization data</li><li>longitudinal adoption evidence beyond trials</li><li>financing constraints in informal seed markets.</li></ul>
+
+    <hr class="seal">
+
+    <div class="sechead">
+      <p class="eyebrow">06 — Limitations</p>
+    </div>
+    <p style="color:var(--graphite);font-size:.98rem;max-width:64ch;margin-top:20px">
+      Findings reflect only the papers screened; absence of evidence ≠ evidence of absence.
+      This report verifies citation provenance, not the validity of the underlying studies.
+      It is intended for research and is not a medical device.
+    </p>
+  </section>
+
+  <hr class="sep">
+
+  <!-- DELIVERABLES -->
+  <section>
+    <div class="sechead">
+      <p class="eyebrow">07 — Deliverables</p>
+    </div>
+    <div class="deliver">
+      <p class="eyebrow">In this volume</p>
+      <ul><li>Executive Summary</li><li>Evidence Matrix</li><li>Key Findings</li><li>Research Gaps</li><li>Limitations</li><li>References</li><li>Verification Log</li></ul>
+    </div>
+    <div class="truth">
+      <span>Verified.</span><span>Reproducible.</span><span>Traceable.</span><span>Transparent.</span>
+    </div>
+  </section>
+
+  <hr class="sep">
+
+  <!-- PREPARED BY -->
+  <section class="prep">
+    <div>
+      <h3>Prepared by BioResearchOS</h3>
+      <p>Every citation verified. Every limitation documented. Every conclusion traceable.</p>
+    </div>
+    <div class="addr">
+      <span>CONTACT</span>
+      <b>ferdinandnkabandi@icloud.com</b>
+      <b>wa.me/255795774784</b>
+    </div>
+  </section>
+
+</main>
+</div>
+  </div>
+</section>
+</body>
+</html>
