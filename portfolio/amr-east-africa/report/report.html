@@ -3,95 +3,99 @@
 <title>Antimicrobial Resistance in East Africa: Laboratory Surveillance and Bloodstream Pathogens — BioResearchOS</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <style>
-:root { --paper:#FAFAF6; --navy:#081421; --ink:#0E1621; --graphite:#3A4653; --gold:#C6A86A; --forest:#2D6A4F; --line:#E3DED2; }
+:root { --paper:#FFFFFF; --teal:#1B4B4D; --ink:#1C1B19; --graphite:#6B6862; --gold:#C6A86A; --ochre:#8A5A24; --ochrebg:#FBF3E7; --line:#E5E1D8; }
 *{box-sizing:border-box;margin:0;padding:0}
 html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; scroll-behavior:smooth; }
 body{ font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--ink); background:var(--paper); line-height:1.65; -webkit-font-smoothing:antialiased; }
 .page{ max-width:920px; margin:0 auto; padding:72px 56px; }
 .mono{ font-family:'JetBrains Mono',ui-monospace,Menlo,monospace; }
-.eyebrow{ font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.22em; text-transform:uppercase; color:var(--graphite); }
-h2{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:400; font-size:clamp(1.7rem,4vw,2.5rem); letter-spacing:-.01em; line-height:1.1; margin-top:14px; }
-h3{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:400; font-size:1.3rem; line-height:1.25; }
-.sechead{ display:flex; justify-content:space-between; align-items:baseline; gap:24px; }
-.sechead .sec-num{ font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.2em; color:var(--gold); }
+.eyebrow{ font-family:'JetBrains Mono',monospace; font-size:.68rem; letter-spacing:.22em; text-transform:uppercase; color:var(--graphite); }
+h2{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:400; font-size:clamp(1.6rem,4vw,2.3rem); letter-spacing:-.01em; line-height:1.12; margin-top:14px; }
+h3{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:400; font-size:1.25rem; line-height:1.25; }
+.sechead{ display:flex; justify-content:space-between; align-items:baseline; gap:24px; border-bottom:1px solid var(--teal); padding-bottom:10px; margin-top:64px; }
+.sechead .sec-num{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.18em; color:var(--graphite); }
 hr.sep{ border:none; border-top:1px solid var(--line); margin:56px 0; }
-section{ margin-top:64px; }
-section.seal{ border-top:1px solid var(--line); padding-top:16px; }
+section{ margin-top:24px; }
+.note{ font-size:.8rem; color:var(--graphite); margin-top:14px; }
 
 /* ---------- Cover ---------- */
-.cover{ background:var(--navy); color:#F7F4EC; min-height:96vh; display:flex; flex-direction:column; justify-content:space-between; padding:64px 68px; }
+.cover{ background:var(--teal); color:#F7F4EC; min-height:96vh; display:flex; flex-direction:column; justify-content:space-between; padding:64px 68px; }
 .cover .top{ display:flex; justify-content:space-between; align-items:center; }
 .cover .top .brand{ font-family:'Fraunces'; letter-spacing:.18em; font-size:.92rem; }
-.cover .top .conf{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.22em; color:#9AA7AE; text-transform:uppercase; }
-.cover .mid h1{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:300; font-size:clamp(2.6rem,7vw,4.6rem); line-height:1.05; letter-spacing:-.015em; color:#FAF6EE; margin-top:30px; }
-.cover .meta{ margin-top:56px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px; border-top:1px solid rgba(250,250,246,.18); padding-top:28px; }
-.cover .meta div p{ font-family:'JetBrains Mono',monospace; font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:#82919A; }
-.cover .meta div h4{ font-family:'Fraunces',serif; font-weight:400; font-size:1.25rem; color:#EFE9DD; margin-top:8px; }
-.cover .foot{ display:flex; justify-content:space-between; border-top:1px solid rgba(250,250,246,.14); padding-top:18px; font-family:'JetBrains Mono',monospace; font-size:.64rem; letter-spacing:.18em; color:#A9B4BB; }
+.cover .top .conf{ font-family:'JetBrains Mono',monospace; font-size:.62rem; letter-spacing:.2em; color:#B9C7C5; text-transform:uppercase; }
+.cover .mid h1{ font-family:'Fraunces',Georgia,'Times New Roman',serif; font-weight:300; font-size:clamp(2.4rem,6.5vw,4.2rem); line-height:1.05; letter-spacing:-.015em; color:#FAF6EE; margin-top:30px; }
+.cover .mid .sub{ font-family:'Inter',sans-serif; font-size:1rem; color:#D8E0DE; margin-top:18px; max-width:56ch; }
+.cover .meta{ margin-top:56px; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:32px; border-top:1px solid rgba(250,250,246,.18); padding-top:26px; }
+.cover .meta div p{ font-family:'JetBrains Mono',monospace; font-size:.58rem; letter-spacing:.2em; text-transform:uppercase; color:#9FB3B0; }
+.cover .meta div h4{ font-family:'Fraunces',serif; font-weight:400; font-size:1.1rem; color:#EFE9DD; margin-top:8px; }
+.cover .foot{ display:flex; justify-content:space-between; border-top:1px solid rgba(250,250,246,.14); padding-top:18px; font-family:'JetBrains Mono',monospace; font-size:.62rem; letter-spacing:.18em; color:#A9B4BB; }
 
 /* ---------- Executive summary ---------- */
-.exec p{ font-size:1.04rem; color:var(--graphite); margin-top:22px; max-width:70ch; }
-.exec p:first-child { color:var(--ink); }
-.exec p::first-letter{ font-family:'Fraunces',serif; font-size:1.25em; }
-.q{ border-left:2px solid var(--gold); padding-left:22px; margin-top:40px; }
-.q .k{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.2em; color:var(--gold); text-transform:uppercase; }
-.q p{ font-family:'Fraunces',serif; font-size:1.35rem; font-style:italic; color:var(--ink); margin-top:8px; }
+.exec p{ font-size:1rem; color:var(--graphite); margin-top:18px; max-width:70ch; }
+.exec .bluf{ font-weight:600; color:var(--teal); font-size:1.15rem; margin-top:26px; }
+.datanote{ display:flex; gap:34px; flex-wrap:wrap; border-top:1px solid var(--line); margin-top:34px; padding-top:20px; }
+.datanote span{ font-family:'JetBrains Mono',monospace; font-size:.62rem; letter-spacing:.18em; text-transform:uppercase; color:var(--graphite); }
+.datanote b{ font-family:'JetBrains Mono',monospace; font-weight:500; font-size:1rem; color:var(--teal); margin-left:8px; }
+.q{ border-left:2px solid var(--gold); padding-left:22px; margin-top:36px; }
+.q .k{ font-family:'JetBrains Mono',monospace; font-size:.64rem; letter-spacing:.2em; color:var(--gold); text-transform:uppercase; }
+.q p{ font-family:'Fraunces',serif; font-size:1.3rem; font-style:italic; color:var(--ink); margin-top:8px; }
 
-/* ---------- Metrics row ---------- */
-.metrics{ display:grid; grid-template-columns:repeat(4,1fr); gap:32px; border-top:1px solid var(--line); padding-top:34px; }
-.metric .n{ font-family:'Fraunces',serif; font-weight:400; font-size:2.4rem; color:var(--ink); line-height:.95; }
-.metric .l{ font-family:'JetBrains Mono',monospace; font-size:.6rem; letter-spacing:.18em; text-transform:uppercase; color:var(--graphite); margin-top:10px; }
+/* ---------- Lists ---------- */
+.take li, .ctx li, .impl li{ list-style:none; border-top:1px solid var(--line); padding:13px 0; font-size:.97rem; color:var(--ink); }
+.take li:first-child, .ctx li:first-child, .impl li:first-child{ border-top:0; }
+.take li::before{ content:"—  "; color:var(--gold); }
+.impl li::before{ content:"→  "; color:var(--teal); font-family:'JetBrains Mono',monospace; }
+.scope{ display:grid; grid-template-columns:1fr 1fr; gap:36px; margin-top:34px; }
+.scope .k{ font-family:'JetBrains Mono',monospace; font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:var(--teal); }
+.scope li{ list-style:none; border-top:1px solid var(--line); padding:10px 0; font-size:.9rem; color:var(--graphite); }
+.scope li:first-child{ border-top:0; }
+
+/* ---------- Truth strip ---------- */
+.truth{ display:flex; gap:36px; flex-wrap:wrap; border-top:1px solid var(--line); padding-top:24px; margin-top:34px; }
+.truth span{ font-family:'JetBrains Mono',monospace; font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:var(--graphite); }
 
 /* ---------- Findings ---------- */
 .finding{ border-top:1px solid var(--line); padding:30px 0; }
-.finding .f-num{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.2em; color:var(--gold); }
-.finding h3{ margin-top:12px; max-width:56ch; }
-.finding .f-meta{ margin-top:12px; font-family:'JetBrains Mono',monospace; font-size:.68rem; color:var(--graphite); }
-.finding .f-meta b{ color:var(--graphite); font-weight:500; letter-spacing:.16em; text-transform:uppercase; font-size:.6rem; margin-right:8px; }
+.finding .f-num{ font-family:'JetBrains Mono',monospace; font-size:.64rem; letter-spacing:.2em; color:var(--gold); }
+.finding h3{ margin-top:12px; max-width:60ch; }
+.insight{ border:1px solid var(--line); background:var(--paper); padding:20px 24px; margin-top:16px; }
+.insight .k{ font-family:'JetBrains Mono',monospace; font-size:.58rem; letter-spacing:.2em; text-transform:uppercase; color:var(--graphite); margin-top:12px; }
+.insight .k:first-child{ margin-top:0; }
+.insight .v{ font-size:.9rem; color:var(--ink); margin-top:4px; }
+.insight .v.mono{ font-size:.74rem; color:var(--teal); word-break:break-word; }
 
-/* ---------- Range chart ---------- */
-.chartwrap{ border:1px solid var(--line); padding:26px 30px; margin-top:40px; }
-.chart-title{ font-family:'JetBrains Mono',monospace; font-size:.64rem; letter-spacing:.18em; text-transform:uppercase; color:var(--graphite); margin-bottom:18px; }
-.chartwrap svg{ width:100%; height:auto; }
-.chartwrap .font{ font:500 11px 'JetBrains Mono',monospace; fill:#3A4653; }
-.chart-note{ margin-top:14px; font-size:.78rem; color:var(--graphite); }
+/* ---------- Tables ---------- */
+table{ width:100%; border-collapse:collapse; margin-top:30px; }
+th{ text-align:left; font-family:'JetBrains Mono',monospace; font-weight:500; font-size:.62rem; letter-spacing:.16em; text-transform:uppercase; color:var(--ink); padding:0 12px 12px 0; border-bottom:1px solid var(--teal); }
+td{ padding:15px 12px 15px 0; border-bottom:1px solid var(--line); vertical-align:top; font-size:.9rem; }
+.row-no, .row-status{ font-family:'JetBrains Mono',monospace; font-size:.7rem; color:var(--graphite); white-space:nowrap; }
+.row-ref{ font-family:'JetBrains Mono',monospace; font-size:.68rem; color:var(--teal); }
+.row-status{ color:var(--teal); letter-spacing:.08em; }
+table.conf td:nth-child(2){ font-family:'JetBrains Mono',monospace; color:var(--teal); white-space:nowrap; }
 
-/* ---------- Evidence table ---------- */
-table{ width:100%; border-collapse:collapse; margin-top:34px; }
-th{ text-align:left; font-family:'JetBrains Mono',monospace; font-weight:500; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--graphite); padding:0 12px 12px 0; border-bottom:1px solid var(--ink); }
-td{ padding:16px 12px 16px 0; border-bottom:1px solid var(--line); vertical-align:top; font-size:.92rem; }
-.row-no, .row-status{ font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--graphite); white-space:nowrap; }
-.row-ref{ font-family:'JetBrains Mono',monospace; font-size:.7rem; color:var(--forest); }
-.row-status{ color:var(--forest); letter-spacing:.08em; }
+/* ---------- Recommendations ---------- */
+.rec{ display:flex; gap:20px; align-items:baseline; border-top:1px solid var(--line); padding:18px 0; }
+.rec .rec-band{ font-family:'JetBrains Mono',monospace; font-size:.6rem; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); white-space:nowrap; }
+.rec p{ font-size:.97rem; }
 
-/* ---------- Methodology ---------- */
-.steps{ display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line); margin-top:36px; }
-.step{ padding:26px; border:1px solid var(--line); }
-.step-n{ font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.16em; color:var(--gold); }
-.step h4{ font-family:'Fraunces',serif; font-weight:400; font-size:1.15rem; margin-top:10px; }
-.step p{ color:var(--graphite); font-size:.88rem; margin-top:8px; }
+/* ---------- Limitations ---------- */
+.limbox{ background:var(--ochrebg); border-left:3px solid var(--ochre); padding:26px 30px; margin-top:28px; }
+.limbox p{ color:#5C4620; font-size:.92rem; }
+.limbox .mono{ color:var(--ochre); font-size:.7rem; margin-top:16px; word-break:break-word; }
 
 /* ---------- Gaps ---------- */
-.gaps li{ list-style:none; border-top:1px solid var(--line); padding:14px 0; color:var(--graphite); font-size:.98rem; }
+.gaps li{ list-style:none; border-top:1px solid var(--line); padding:13px 0; color:var(--ink); font-size:.97rem; }
 .gaps li:first-child{ border-top:0; }
 .gaps li::before{ content:"—  "; color:var(--gold); }
 
-/* ---------- Deliverables ---------- */
-.deliver{ border:1px solid var(--line); padding:34px 38px; }
-.deliver .eyebrow { margin-bottom:18px; }
-.deliver ul{ columns:2; column-gap:48px; }
-.deliver li{ list-style:none; padding:9px 0; border-top:1px solid var(--line); font-size:.94rem; }
-.deliver li:first-child, .deliver li:nth-child(2){ border-top:0; }
-.deliver li::before{ content:"✓  "; color:var(--forest); font-family:'JetBrains Mono',monospace; }
+/* ---------- Appendix ---------- */
+.srcs li{ font-family:'JetBrains Mono',monospace; font-size:.74rem; color:var(--teal); padding:9px 0; border-top:1px solid var(--line); }
+.srcs li:first-child{ border-top:0; }
 
-/* ---------- Truth ---------- */
-.truth{ display:flex; gap:40px; flex-wrap:wrap; border-top:1px solid var(--line); padding-top:28px; }
-.truth span{ font-family:'JetBrains Mono',monospace; font-size:.66rem; letter-spacing:.2em; text-transform:uppercase; color:var(--graphite); }
-
-/* ---------- prepared-by ---------- */
-.prep{ background:var(--navy); color:#E9E3D6; padding:56px 68px; display:flex; justify-content:space-between; align-items:flex-start; gap:40px; }
+/* ---------- Prepared-by ---------- */
+.prep{ background:var(--teal); color:#E9E3D6; padding:56px 68px; display:flex; justify-content:space-between; align-items:flex-start; gap:40px; }
 .prep h3{ font-family:'Fraunces',serif; font-weight:300; font-size:1.5rem; }
 .prep p{ color:#A9B4AE; font-size:.9rem; margin-top:10px; max-width:34ch; }
 .prep .addr{ text-align:right; font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.1em; color:#8A97A0; }
@@ -99,12 +103,10 @@ td{ padding:16px 12px 16px 0; border-bottom:1px solid var(--line); vertical-alig
 
 @media (max-width:760px){
   .page{ padding:40px 24px; }
-  .cover{ padding:44px 30px; min-height:880px; }
-  .cover .meta{ grid-template-columns:1fr; gap:22px; }
-  .metrics{ grid-template-columns:1fr 1fr; }
-  .steps{ grid-template-columns:1fr; }
+  .cover{ padding:44px 30px; min-height:900px; }
+  .cover .meta{ grid-template-columns:1fr; gap:20px; }
+  .scope{ grid-template-columns:1fr; gap:24px; }
   .prep{ flex-direction:column; } .prep .addr{ text-align:left; }
-  .deliver ul{ columns:1; }
 }
 @media print{
   .cover, .prep { min-height:auto; break-after:page; }
@@ -120,72 +122,135 @@ td{ padding:16px 12px 16px 0; border-bottom:1px solid var(--line); vertical-alig
   <section class="cover">
     <div class="top">
       <span class="brand">BIORESEARCH·OS</span>
-      <span class="ver">Evidence Intelligence</span>
+      <span class="conf">CONFIDENTIAL</span>
     </div>
     <div class="mid">
-      <p class="eyebrow" style="color:#8A97A0">Research Series · Evidence Report</p>
+      <p class="eyebrow" style="color:#9FB3B0">Evidence Intelligence · August 2026 · v1</p>
       <h1>Antimicrobial Resistance in East Africa: Laboratory Surveillance and Bloodstream Pathogens</h1>
-      <p style="font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.16em;color:#9AA7AE;text-transform:uppercase;margin-top:22px">Prepared for decision-makers</p>
+      <p class="sub">Verified evidence brief on surveillance capacity and bloodstream pathogen resistance</p>
     </div>
     <div class="meta">
-      <div><p>Client</p><h4>Portfolio</h4></div>
+      <div><p>Prepared for</p><h4>BioResearchOS Portfolio</h4></div>
       <div><p>References screened</p><h4>4</h4></div>
       <div><p>Crossref-verified</p><h4>4 / 4</h4></div>
+      <div><p>Version</p><h4>v1 · August 2026</h4></div>
     </div>
     <div class="foot">
       <span>VERIFIED · REPRODUCIBLE · TRACEABLE</span>
-      <span>CONFIDENTIAL · August 2026</span>
+      <span>NOT FOR REDISTRIBUTION</span>
     </div>
   </section>
 
-  <!-- EXECUTIVE SUMMARY -->
-  <section class="section exec">
-    <div class="sechead">
-      <p class="eyebrow">01 — Executive Summary</p>
-      <span class="sec-num">BIORESEARCH·OS</span>
-    </div>
-    <h2>Research at a glance</h2>
-    <p>AMR-NAP implementation ranges 7% (Burundi) to 94% (Kenya)</p><p>WHO surveillance checklist completion 44-100%. Resistance to first-line drugs is 50-100% (ampicillin, cotrimoxazole) with emerging ceftriaxone resistance 46-69% in Gram-negatives. First community-acquired ESBL bloodstream infections reported in Zanzibar</p><p>MRSA 3.9-56.8% and ESBL 1.9-53% in healthcare-associated infections.</p>
-    <div class="q">
-      <p class="k">Research question</p>
-      <p>“What is the current state of AMR surveillance and bloodstream infection pathogen resistance in East Africa?”</p>
-    </div>
+  <!-- CONTENTS -->
+  <section id="toc">
+    <div class="sechead"><p class="eyebrow">Contents</p><span class="sec-num">BIORESEARCH·OS</span></div>
+    <ul class="take" style="columns:2;column-gap:48px"><li><a href="#s1">Executive Summary</a></li><li><a href="#s2">Key Takeaways</a></li><li><a href="#s3">Context &amp; Objective</a></li><li><a href="#s4">Methodology</a></li><li><a href="#s5">Findings</a></li><li><a href="#s6">Discussion</a></li><li><a href="#s7">Decision Implications</a></li><li><a href="#s8">Recommendations</a></li><li><a href="#s9">Limitations</a></li><li><a href="#s10">Confidence Assessment</a></li><li><a href="#s11">Research Gaps</a></li><li><a href="#s12">Appendix</a></li></ul>
   </section>
 
-  <hr class="sep">
-
-  <!-- KEY FINDINGS -->
-  <section>
-    <div class="sechead">
-      <p class="eyebrow">02 — Key Findings</p>
-      <span class="sec-num">4 verified of 4 screened</span>
-    </div>
-    <h2>What the evidence says</h2>
-    
+  <section id="s1">
+      <div class="sechead">
+        <p class="eyebrow">Bottom Line Up Front</p>
+        <span class="sec-num"></span>
+      </div>
+      <h2>Executive Summary</h2>
+      
+      <div class="exec">
+        <p class="bluf">East African bloodstream infections face entrenched resistance: 50-100% of isolates resist first-line antibiotics, ceftriaxone is failing in 46-69% of Gram-negatives, and sustainable NAP implementation ranges from 7% (Burundi) to 94% (Kenya).</p>
+        <p>East African bloodstream infections face entrenched resistance: 50-100% of isolates resist first-line antibiotics, ceftriaxone is failing in 46-69% of Gram-negatives, and sustainable NAP implementation ranges from 7% (Burundi) to 94% (Kenya).</p><p>Surveillance capacity is uneven, and gaps in lab capacity, representativeness and financing mask the true burden.</p>
+        <div class="datanote"><span>Sources reviewed</span><b>4</b><span>Crossref-verified</span><b>4/4</b><span>Report date</span><b>August 2026</b></div>
+      </div>
+    </section><section id="s2">
+      <div class="sechead">
+        <p class="eyebrow">Read this first</p>
+        <span class="sec-num"></span>
+      </div>
+      <h2>Key Takeaways</h2>
+      <ul class="take"><li>NAP implementation ranges 7-94% across EAC</li><li>WHO checklist completion 44-100%.</li><li>First-line drug resistance 50-100% (ampicillin, cotrimoxazole), mainly Klebsiella and E. coli</li><li>ceftriaxone resistance 46-69% in Gram-negatives.</li><li>MRSA 3.9-56.8% in healthcare-associated infections</li><li>ESBL 1.9-53%.</li><li>First community-acquired ESBL bloodstream infections in Zanzibar</li><li>6/7 Salmonella Typhi isolates MDR.</li><li>Surveillance needs capacity, representativeness, integration and financing.</li></ul>
+    </section><section id="s3">
+      <div class="sechead">
+        <p class="eyebrow">Why this report exists</p>
+        <span class="sec-num"></span>
+      </div>
+      <h2>Context &amp; Objective</h2>
+      
+      <ul class="ctx"><li>AMR-NAP implementation ranges 7% (Burundi) to 94% (Kenya) across EAC national public health labs</li><li>WHO AMR-surveillance checklist completion 44-100%.</li><li>Gaps persist in laboratory capacity, representativeness, integration and financing.</li><li>First-line drugs (ampicillin, cotrimoxazole) face 50-100% resistance in bloodstream isolates</li><li>ceftriaxone resistance emerging at 46-69% in Gram-negatives.</li><li>Community-acquired ESBL bloodstream infections reported for the first time in Zanzibar.</li></ul>
+      <div class="q"><p class="k">Research question</p><p>“What is the current state of AMR surveillance and bloodstream-infection pathogen resistance in East Africa?”</p></div>
+      <div class="scope">
+        <div><p class="k">In scope</p><ul><li>Regional AMR surveillance</li><li>bloodstream infection pathogens</li><li>East Africa (Burundi, Kenya, Rwanda, South Sudan, Tanzania, Uganda)</li><li>2005-present literature</li></ul></div>
+        <div><p class="k">Out of scope</p><ul><li>Clinical treatment guidelines</li><li>antimicrobial stewardship programs</li><li>animal/agricultural AMR</li><li>health economics</li><li>individual-country drug policy</li></ul></div>
+      </div>
+    </section><section id="s4">
+      <div class="sechead">
+        <p class="eyebrow">How conclusions were reached</p>
+        <span class="sec-num"></span>
+      </div>
+      <h2>Methodology</h2>
+      
+      <ul class="ctx"><li>Systematic PubMed/AJOL/OpenAlex search for East African AMR studies</li><li>verification of every DOI against Crossref</li><li>evidence extraction row-by-row</li><li>human review with stated confidence</li></ul>
+      <div class="truth">
+        <span>Crossref-verified</span><span>AI-assisted, human-reviewed</span><span>Confidence assessed</span><span>Limitations stated</span>
+      </div>
+    </section><section id="s5">
+      <div class="sechead">
+        <p class="eyebrow">The evidence, insight by insight</p>
+        <span class="sec-num">4 verified of 4 screened</span>
+      </div>
+      <h2>Findings</h2>
+      
         <div class="finding">
           <p class="f-num">Finding 01</p>
-          <h3>Progress on sustainable AMR-NAP implementation ranges 7% (Burundi) to 94% (Kenya); WHO AMR-surveillance checklist completion 44-100%; gaps in lab capacity, representativeness, integration and financing</h3>
-          <p class="f-meta"><b>Evidence</b> EAC national public health labs / expert panel (Burundi, Kenya, Rwanda, South Sudan, Tanzania, Uganda)</p>
+          <h3>Progress on sustainable AMR-NAP implementation ranges 7% (Burundi) to 94% (Kenya)</h3>
+          <div class="insight">
+            <p class="k">Evidence</p>
+            <p class="v">Progress on sustainable AMR-NAP implementation ranges 7% (Burundi) to 94% (Kenya); WHO AMR-surveillance checklist completion 44-100%; gaps in lab capacity, representativeness, integration and financing</p>
+            <p class="k">Source</p>
+            <p class="v mono">Antimicrobial Resistance &amp; Infection Control (2025) 10.1186/s13756-025-01662-y</p>
+            <p class="k">Confidence</p>
+            <p class="v">Assessed in §12 Confidence Assessment</p>
+          </div>
         </div>
         <div class="finding">
           <p class="f-num">Finding 02</p>
-          <h3>High resistance to first-line drugs 50-100% (ampicillin, cotrimoxazole), emerging ceftriaxone resistance (46-69%) in Gram-negatives, mainly Klebsiella and E. coli; MRSA 2.6-4%</h3>
-          <p class="f-meta"><b>Evidence</b> 12 East African studies (2005+, PubMed + AJOL), mostly bloodstream infections</p>
+          <h3>High resistance to first-line drugs 50-100% (ampicillin, cotrimoxazole), emerging ceftriaxone resistance (46-6</h3>
+          <div class="insight">
+            <p class="k">Evidence</p>
+            <p class="v">High resistance to first-line drugs 50-100% (ampicillin, cotrimoxazole), emerging ceftriaxone resistance (46-69%) in Gram-negatives, mainly Klebsiella and E. coli; MRSA 2.6-4%</p>
+            <p class="k">Source</p>
+            <p class="v mono">African Journal of Laboratory Medicine (2016) 10.4102/ajlm.v5i1.432</p>
+            <p class="k">Confidence</p>
+            <p class="v">Assessed in §12 Confidence Assessment</p>
+          </div>
         </div>
         <div class="finding">
           <p class="f-num">Finding 03</p>
-          <h3>Pathogenic bacteria in 14% of patients; first report of community-acquired ESBL Enterobacteriaceae bloodstream infections in Zanzibar; 6/7 Salmonella Typhi isolates multidrug resistant</h3>
-          <p class="f-meta"><b>Evidence</b> 469 consecutively enrolled patients, Mnazi Mmoja Hospital, Zanzibar</p>
+          <h3>Pathogenic bacteria in 14% of patients</h3>
+          <div class="insight">
+            <p class="k">Evidence</p>
+            <p class="v">Pathogenic bacteria in 14% of patients; first report of community-acquired ESBL Enterobacteriaceae bloodstream infections in Zanzibar; 6/7 Salmonella Typhi isolates multidrug resistant</p>
+            <p class="k">Source</p>
+            <p class="v mono">PLOS ONE (2015) 10.1371/journal.pone.0145632</p>
+            <p class="k">Confidence</p>
+            <p class="v">Assessed in §12 Confidence Assessment</p>
+          </div>
         </div>
-
-    <div class="chartwrap">
-      <p class="chart-title">Evidence range — observed values across screened studies</p>
-      <svg viewBox="0 0 720 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Horizontal bar chart of key resistance ranges from the screened evidence">
+        <div class="finding">
+          <p class="f-num">Finding 04</p>
+          <h3>HCAI driven by Klebsiella, S. aureus, E. coli, Pseudomonas</h3>
+          <div class="insight">
+            <p class="k">Evidence</p>
+            <p class="v">HCAI driven by Klebsiella, S. aureus, E. coli, Pseudomonas; MRSA 3.9-56.8%; ESBL Gram-negatives 1.9-53%; surveillance sparse</p>
+            <p class="k">Source</p>
+            <p class="v mono">African Journal of Laboratory Medicine (2018) 10.4102/ajlm.v7i2.796</p>
+            <p class="k">Confidence</p>
+            <p class="v">Assessed in §12 Confidence Assessment</p>
+          </div>
+        </div>
+<figure style="margin:28px 0 8px"><p class="chart-title" style="font-family:var(--serif);font-weight:600;font-size:15px;margin:0 0 10px">Evidence range — observed values across screened studies</p><svg viewBox="0 0 720 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Horizontal bar chart of key resistance ranges from the screened evidence">
         <style>
-          .cb{font:500 11px 'JetBrains Mono',monospace;fill:#3A4653}
-          .cl{font:400 11px 'Helvetica Neue',Arial,sans-serif;fill:#0E1722}
+          .cb{font:500 11px 'JetBrains Mono',monospace;fill:#6B6862}
+          .cl{font:400 11px 'Helvetica Neue',Arial,sans-serif;fill:#1C1B19}
           .cgrid{stroke:#E3DED2;stroke-width:1}
-          .cbar{fill:#2D6A4F} .cbar2{fill:#C6A86A}
+          .cbar{fill:#1B4B4D} .cbar2{fill:#C6A86A}
         </style>
         <!-- grid -->
         <line class="cgrid" x1="230" y1="24" x2="700" y2="24"/>
@@ -216,24 +281,73 @@ td{ padding:16px 12px 16px 0; border-bottom:1px solid var(--line); vertical-alig
         <text class="cb" x="222" y="239" text-anchor="end">ESBL Gram-negative</text>
         <rect class="cbar" x="239" y="229" width="240" height="12"/>
         <text class="cl" x="483" y="239" text-anchor="end">1.9–53%</text>
-      </svg>
-      <p class="chart-note">Ranges as reported in the screened, Crossref-verified studies. Bar length = spread of observed values, not a single point estimate.</p>
-    </div>
-  </section>
-
-  <hr class="sep">
-
-  <!-- EVIDENCE TABLE -->
-  <section>
-    <div class="sechead">
-      <p class="eyebrow">03 — Evidence Matrix</p>
-      <span class="sec-num">4 screened</span>
-    </div>
-    <h2>Record-by-record</h2>
-    <table>
-      <thead><tr>
-        <th>#</th><th>Paper</th><th>Reference</th><th>Verification</th>
-      </tr></thead>
+      </svg></figure>
+    </section><section id="s6">
+      <div class="sechead">
+        <p class="eyebrow">What the findings mean</p>
+        <span class="sec-num"></span>
+      </div>
+      <h2>Discussion</h2>
+      <ul class="ctx"><li>Resistance to first-line antibiotics is effectively the norm in East African bloodstream isolates, leaving second-line agents exposed.</li><li>The wide NAP implementation range shows surveillance quality varies widely, which can understate true prevalence.</li><li>ESBL and MRSA ranges are broad, reflecting heterogeneous studies and settings more than true uncertainty.</li><li>Surveillance systems are strongest where they sample consistently and publish openly.</li></ul>
+    </section><section id="s7">
+      <div class="sechead">
+        <p class="eyebrow">What changes because of these findings</p>
+        <span class="sec-num"></span>
+      </div>
+      <h2>Decision Implications</h2>
+      <ul class="impl"><li>If a country under-reports NAP progress, then regional AMR trend estimates are biased and resources misallocated.</li><li>If ceftriaxone resistance is rising, then empiric sepsis protocols relying on it need stewardship review.</li><li>If community ESBLs are spreading, then hospital and community surveillance both warrant expansion.</li></ul>
+    </section><section id="s8">
+      <div class="sechead">
+        <p class="eyebrow">Immediate · Near-term · Long-term</p>
+        <span class="sec-num"></span>
+      </div>
+      <h2>Recommendations</h2>
+      <div class="rec">
+          <span class="rec-band">Immediate</span>
+          <p>Improve laboratory capacity and core surveillance representativeness in the weakest EAC states.|NEAR|Standardize regional AMR national reporting and align with the WHO surveillance checklist.|NEAR|Secure sustainable financing for national reference laboratories.|LONG|Link clinical data to national surveillance to catch drug-resistance shifts earlier.</p>
+        </div>
+    </section><section id="s9">
+      <div class="sechead">
+        <p class="eyebrow">Stated plainly</p>
+        <span class="sec-num"></span>
+      </div>
+      <h2>Limitations</h2>
+      
+      <div class="limbox">
+        <p>Only publicly available literature was analyzed. Findings reflect only the papers screened;
+        absence of evidence ≠ evidence of absence. This report verifies citation provenance, not the
+        validity of the underlying studies. Some studies used heterogeneous methodologies, limiting
+        direct comparability. Clinical validation was not performed. It is intended for research and
+        is not a medical device.</p>
+        <p class="mono">Screened set: Antimicrobial Resistance &amp; Infection Control (2025) 10.1186/s13756-025-01662-y, African Journal of Laboratory Medicine (2016) 10.4102/ajlm.v5i1.432, PLOS ONE (2015) 10.1371/journal.pone.0145632, African Journal of Laboratory Medicine (2018) 10.4102/ajlm.v7i2.796</p>
+      </div>
+    </section><section id="s10">
+      <div class="sechead">
+        <p class="eyebrow">Per-finding, with reasons</p>
+        <span class="sec-num"></span>
+      </div>
+      <h2>Confidence Assessment</h2>
+      
+      <table class="conf"><thead><tr><th>Finding</th><th>Confidence</th><th>Reason</th></tr></thead>
+      <tbody><tr><td colspan=3>—</td></tr></tbody></table>
+      <p class="note">Framework: High = multiple independent studies, consistent results ·
+      Medium = limited studies or wide ranges · Low = sparse or single-centre data.</p>
+    </section><section id="s11">
+      <div class="sechead">
+        <p class="eyebrow">What remains unknown</p>
+        <span class="sec-num"></span>
+      </div>
+      <h2>Research Gaps</h2>
+      <ul class="gaps"><li>Northern-southern representativeness of surveillance</li><li>Standardized regional AMR national reporting lacking</li><li>Sustainable financing for national reference labs undefined</li></ul>
+    </section><section id="s12">
+      <div class="sechead">
+        <p class="eyebrow">Supporting material</p>
+        <span class="sec-num"></span>
+      </div>
+      <h2>Appendix</h2>
+      
+      <p class="eyebrow" style="margin-bottom:14px">A — Evidence data</p>
+      <table><thead><tr><th>#</th><th>Paper</th><th>Reference</th><th>Verification</th></tr></thead>
       <tbody><tr>
           <td class="row-no">01</td>
           <td class="row-paper">Strategies and challenges in containing antimicrobial resistance in East Africa: a focus on laboratory-based surveillance</td>
@@ -254,60 +368,18 @@ td{ padding:16px 12px 16px 0; border-bottom:1px solid var(--line); vertical-alig
           <td class="row-paper">A systematic review of healthcare-associated infections in Africa: An antimicrobial resistance perspective</td>
           <td class="row-ref">African Journal of Laboratory Medicine (2018) 10.4102/ajlm.v7i2.796</td>
           <td class="row-status">Verified</td>
-        </tr></tbody>
-    </table>
-  </section>
-
-  <hr class="sep">
-
-  <!-- METHODOLOGY -->
-  <section>
-    <div class="sechead">
-      <p class="eyebrow">04 — Methodology</p>
-      <span class="sec-num">Reproducible</span>
-    </div>
-    <h2>How a report is built</h2>
-    <div class="steps"><div class="step"><span class="step-n">01</span><h4>Define</h4><p>The scoped research question and the decision it informs.</p></div><div class="step"><span class="step-n">02</span><h4>Search & Screen</h4><p>PubMed and open public databases; deduplicated and screened for relevance.</p></div><div class="step"><span class="step-n">03</span><h4>Verify</h4><p>Every DOI machine-checked against Crossref metadata; unverifiable claims are dropped.</p></div><div class="step"><span class="step-n">04</span><h4>Extract</h4><p>Evidence captured row-by-row into a structured extraction table.</p></div><div class="step"><span class="step-n">05</span><h4>Review</h4><p>Human review of every row, stated limitations, stated confidence.</p></div><div class="step"><span class="step-n">06</span><h4>Deliver</h4><p>Executive summary, findings, tables, gaps, and verified references.</p></div></div>
-  </section>
-
-  <hr class="sep">
-
-  <!-- GAPS & LIMITATIONS -->
-  <section>
-    <div class="sechead">
-      <p class="eyebrow">05 — Research Gaps</p>
-      <span class="sec-num">Stated, not concealed</span>
-    </div>
-    <h2>What remains unknown</h2>
-    <ul class="gaps"><li>Northern-southern representativeness of surveillance</li><li>standardized regional AMR national reporting</li><li>sustainable financing for national reference labs.</li></ul>
-
-    <hr class="seal">
-
-    <div class="sechead">
-      <p class="eyebrow">06 — Limitations</p>
-    </div>
-    <p style="color:var(--graphite);font-size:.98rem;max-width:64ch;margin-top:20px">
-      Findings reflect only the papers screened; absence of evidence ≠ evidence of absence.
-      This report verifies citation provenance, not the validity of the underlying studies.
-      It is intended for research and is not a medical device.
-    </p>
-  </section>
-
-  <hr class="sep">
-
-  <!-- DELIVERABLES -->
-  <section>
-    <div class="sechead">
-      <p class="eyebrow">07 — Deliverables</p>
-    </div>
-    <div class="deliver">
-      <p class="eyebrow">In this volume</p>
-      <ul><li>Executive Summary</li><li>Evidence Matrix</li><li>Key Findings</li><li>Research Gaps</li><li>Limitations</li><li>References</li><li>Verification Log</li></ul>
-    </div>
-    <div class="truth">
-      <span>Verified.</span><span>Reproducible.</span><span>Traceable.</span><span>Transparent.</span>
-    </div>
-  </section>
+        </tr></tbody></table>
+      <p class="eyebrow" style="margin:34px 0 14px">B — Sources</p>
+      <ol class="srcs"><li>Antimicrobial Resistance &amp; Infection Control (2025) 10.1186/s13756-025-01662-y</li><li>African Journal of Laboratory Medicine (2016) 10.4102/ajlm.v5i1.432</li><li>PLOS ONE (2015) 10.1371/journal.pone.0145632</li><li>African Journal of Laboratory Medicine (2018) 10.4102/ajlm.v7i2.796</li></ol>
+      <p class="eyebrow" style="margin:34px 0 14px">C — Methodology notes</p>
+      <ul class="ctx"><li>AI-assisted drafting was used; every claim traces to a screened source and was human-reviewed.</li>
+      <li>Confidence framework: High = multiple independent studies/consistent results; Medium = limited studies or wide ranges; Low = sparse or single-centre data.</li>
+      <li>Full extraction table and verification log are retained in the reproducibility trail.</li></ul>
+      <p class="eyebrow" style="margin:34px 0 14px">D — Definitions</p>
+      <ul class="ctx"><li><b>BLUF</b> — Bottom Line Up Front: the conclusion leads each section.</li>
+      <li><b>Crossref verification</b> — every DOI machine-checked against Crossref metadata; unverifiable claims are dropped.</li>
+      <li><b>Confidence</b> — stated per finding, with the reason, never implied.</li></ul>
+    </section>
 
   <hr class="sep">
 
