@@ -51,6 +51,13 @@ section.seal{ border-top:1px solid var(--line); padding-top:16px; }
 .finding .f-meta{ margin-top:12px; font-family:'JetBrains Mono',monospace; font-size:.68rem; color:var(--graphite); }
 .finding .f-meta b{ color:var(--graphite); font-weight:500; letter-spacing:.16em; text-transform:uppercase; font-size:.6rem; margin-right:8px; }
 
+/* ---------- Range chart ---------- */
+.chartwrap{ border:1px solid var(--line); padding:26px 30px; margin-top:40px; }
+.chart-title{ font-family:'JetBrains Mono',monospace; font-size:.64rem; letter-spacing:.18em; text-transform:uppercase; color:var(--graphite); margin-bottom:18px; }
+.chartwrap svg{ width:100%; height:auto; }
+.chartwrap .font{ font:500 11px 'JetBrains Mono',monospace; fill:#3A4653; }
+.chart-note{ margin-top:14px; font-size:.78rem; color:var(--graphite); }
+
 /* ---------- Evidence table ---------- */
 table{ width:100%; border-collapse:collapse; margin-top:34px; }
 th{ text-align:left; font-family:'JetBrains Mono',monospace; font-weight:500; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--graphite); padding:0 12px 12px 0; border-bottom:1px solid var(--ink); }
@@ -170,6 +177,48 @@ td{ padding:16px 12px 16px 0; border-bottom:1px solid var(--line); vertical-alig
           <h3>Pathogenic bacteria in 14% of patients; first report of community-acquired ESBL Enterobacteriaceae bloodstream infections in Zanzibar; 6/7 Salmonella Typhi isolates multidrug resistant</h3>
           <p class="f-meta"><b>Evidence</b> 469 consecutively enrolled patients, Mnazi Mmoja Hospital, Zanzibar</p>
         </div>
+
+    <div class="chartwrap">
+      <p class="chart-title">Evidence range — observed values across screened studies</p>
+      <svg viewBox="0 0 720 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Horizontal bar chart of key resistance ranges from the screened evidence">
+        <style>
+          .cb{font:500 11px 'JetBrains Mono',monospace;fill:#3A4653}
+          .cl{font:400 11px 'Helvetica Neue',Arial,sans-serif;fill:#0E1722}
+          .cgrid{stroke:#E3DED2;stroke-width:1}
+          .cbar{fill:#2D6A4F} .cbar2{fill:#C6A86A}
+        </style>
+        <!-- grid -->
+        <line class="cgrid" x1="230" y1="24" x2="700" y2="24"/>
+        <line class="cgrid" x1="230" y1="64" x2="700" y2="64"/>
+        <line class="cgrid" x1="230" y1="104" x2="700" y2="104"/>
+        <line class="cgrid" x1="230" y1="144" x2="700" y2="144"/>
+        <line class="cgrid" x1="230" y1="184" x2="700" y2="184"/>
+        <line class="cgrid" x1="230" y1="224" x2="700" y2="224"/>
+        <!-- 0 and 100 labels -->
+        <text class="font" x="230" y="248" text-anchor="middle">0%</text>
+        <text class="cl" x="700" y="248" text-anchor="middle">100%</text>
+        <!-- bars (x = 230 + pct*4.7) -->
+        <text class="cl" x="220" y="39" text-anchor="end">AMR-NAP implementation</text>
+        <rect class="cbar" x="263" y="29" width="410" height="12"/>
+        <text class="cbar" x="677" y="39" text-anchor="end">7–94%</text>
+        <text class="cb" x="222" y="79" text-anchor="end">WHO checklist completion</text>
+        <rect class="cbar" x="437" y="69" width="256" height="12"/>
+        <text class="cl" x="693" y="79" text-anchor="end">44–100%</text>
+        <text class="cb" x="222" y="119" text-anchor="end">First-line drug resistance</text>
+        <rect class="cbar" x="465" y="109" width="229" height="12"/>
+        <text class="cl" x="700" y="119" text-anchor="end">50–100%</text>
+        <text class="cb" x="222" y="159" text-anchor="end">Ceftriaxone (Gram-negatives)</text>
+        <rect class="cbar" x="446" y="149" width="108" height="12"/>
+        <text class="cl" x="558" y="159" text-anchor="end">46–69%</text>
+        <text class="cb" x="222" y="199" text-anchor="end">MRSA (healthcare-associated)</text>
+        <rect class="cbar" x="248" y="189" width="130" height="12"/>
+        <text class="cl" x="383" y="199" text-anchor="end">3.9–56.8%</text>
+        <text class="cb" x="222" y="239" text-anchor="end">ESBL Gram-negative</text>
+        <rect class="cbar" x="239" y="229" width="240" height="12"/>
+        <text class="cl" x="483" y="239" text-anchor="end">1.9–53%</text>
+      </svg>
+      <p class="chart-note">Ranges as reported in the screened, Crossref-verified studies. Bar length = spread of observed values, not a single point estimate.</p>
+    </div>
   </section>
 
   <hr class="sep">
