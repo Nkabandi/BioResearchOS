@@ -1,0 +1,11 @@
+metric,claim,sources,verified,confidence,max_tier,dois
+MRSA,MRSA 2.6-4%,2,y,High,9,10.4102/ajlm.v5i1.432 10.4102/ajlm.v7i2.796
+ESBL,first report of community-acquired ESBL Enterobacteriaceae bloodstream infections in Zanzibar,2,y,High,9,10.1371/journal.pone.0145632 10.4102/ajlm.v7i2.796
+AMR,Progress on sustainable AMR-NAP implementation ranges 7% (Burundi) to 94% (Kenya),1,y,Medium,9,10.1186/s13756-025-01662-y
+WHO,WHO AMR-surveillance checklist completion 44-100%,1,y,Medium,9,10.1186/s13756-025-01662-y
+gaps lab capacity,"gaps in lab capacity, representativeness, integration and financing",1,y,Medium,9,10.1186/s13756-025-01662-y
+high resistance first,"High resistance to first-line drugs 50-100% (ampicillin, cotrimoxazole), emerging ceftriaxone resist",1,y,Medium,9,10.4102/ajlm.v5i1.432
+pathogenic bacteria patients,Pathogenic bacteria in 14% of patients,1,y,Medium,9,10.1371/journal.pone.0145632
+salmonella typhi isolates,6/7 Salmonella Typhi isolates multidrug resistant,1,y,Medium,9,10.1371/journal.pone.0145632
+HCAI,"HCAI driven by Klebsiella, S. aureus, E. coli, Pseudomonas",1,y,Medium,9,10.4102/ajlm.v7i2.796
+surveillance sparse,surveillance sparse,1,y,Medium,9,10.4102/ajlm.v7i2.796
