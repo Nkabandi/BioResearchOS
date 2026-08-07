@@ -45,6 +45,18 @@ def tier(venue: str) -> int:
 
 
 _PCT = re.compile(r"(\d{1,3}(?:\.\d+)?)(?:-(\d{1,3}(?:\.\d+)?))?%")
+_STUDY = [
+    (("meta-?analysis", "systematic review"), "meta-analysis/review"),
+    (("rct", "randomized", "randomised", "controlled trial"), "RCT"),
+    (("cohort",), "cohort"),
+    (("survey",), "survey"),
+    (("review of", "literature review"), "review"),
+]
+
+
+def study_types(seg: str) -> list[str]:
+    s = (seg or "").lower()
+    return [label for pats, label in _STUDY if any(re.search(p, s) for p in pats)] or ["other"]
 _ACR = re.compile(r"\b([A-Z][A-Z0-9]{1,12})\b")
 _WORD = re.compile(r"[a-z]{3,}")
 
@@ -83,6 +95,7 @@ def verify(ev_path: Path) -> dict:
         doi = doi_m.group(0) if doi_m else ""
         verified = checks.get(doi) == "VERIFIED"
         t = tier(src)
+        mtype = study_types(row.get("Method") or "")
         for seg in (row.get("Finding") or "").split(";"):
             seg = seg.strip()
             if not seg:
@@ -90,7 +103,8 @@ def verify(ev_path: Path) -> dict:
             acr = _acronym(seg)
             if acr:
                 metrics[acr].append({"seg": seg, "pcts": _pcts(seg), "tier": t,
-                                     "verified": verified, "doi": doi, "source": src})
+                                     "verified": verified, "doi": doi, "source": src,
+                                     "type": mtype})
 
     # Contradiction: same acronym, non-overlapping numeric ranges.
     conflicts = []
@@ -117,9 +131,13 @@ def verify(ev_path: Path) -> dict:
         verified = any(c["verified"] for c in group)
         conf = "High" if (verified and n >= 2 and acr not in conflict_acrs) \
             else ("Medium" if verified else "Low")
+        types: list[str] = []
+        for c in group:
+            types.extend(c["type"])
         claims.append({"metric": acr, "claim": group[0]["seg"], "sources": n,
                        "verified": verified, "dois": sorted({c["doi"] for c in group if c["doi"]}),
-                       "confidence": conf, "max_tier": max(c["tier"] for c in group)})
+                       "confidence": conf, "max_tier": max(c["tier"] for c in group),
+                       "study_types": sorted(set(types))})
 
     return {"claims": sorted(claims, key=lambda c: -c["sources"]), "conflicts": conflicts}
 
@@ -134,11 +152,11 @@ def main():
     out = ev_path / "verification.csv"
     with open(out, "w", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["metric", "claim", "sources", "verified", "confidence", "max_tier", "dois"])
+        w.writerow(["metric", "claim", "sources", "verified", "confidence", "max_tier", "study_types", "dois"])
         for c in result["claims"]:
             w.writerow([c["metric"], c["claim"][:100], c["sources"],
                         "y" if c["verified"] else "n", c["confidence"],
-                        c["max_tier"], " ".join(c["dois"])])
+                        c["max_tier"], " ".join(c["study_types"]), " ".join(c["dois"])])
     print(f"wrote {out}")
 
     mem_path = Path(__file__).resolve().parent / "knowledge" / "memory.json"
@@ -150,7 +168,7 @@ def main():
             continue
         mem.append({"metric": c["metric"], "claim": c["claim"][:160], "sources": c["sources"],
                     "verified": c["verified"], "confidence": c["confidence"],
-                    "dois": c["dois"]})
+                    "study_types": c["study_types"], "dois": c["dois"]})
         seen.add(key)
     mem_path.parent.mkdir(parents=True, exist_ok=True)
     mem_path.write_text(json.dumps(mem, indent=2))

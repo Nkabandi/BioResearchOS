@@ -23,13 +23,13 @@ ee = importlib.import_module("evidence_engine")
 TABLE = "Paper,Status,Reference,Sample,Method,Finding,Limitations\n"
 
 ROWS = [
-    "mrsa1,VERIFIED,African Journal of Laboratory Medicine 10.1000/mrsa1,,,MRSA resistance 40-60%",
-    "mrsa2,VERIFIED,PLOS ONE 10.1000/mrsa2,,,MRSA resistance 45-55%",
-    "esbl,VERIFIED,Lancet 10.1000/esbl1,,,ESBL resistance 40%",
-    "hdy1,VERIFIED,Nature 10.1000/hdy1,,,HDY 90-95%",
-    "hdy2,VERIFIED,Science 10.1000/hdy2,,,HDY 10-15%",
-    "trx,FAILED,blog 10.1000/trx9,,,TRX 50%",
-    "fct,VERIFIED,clinicaltrials 10.7777/fct1,,,FCT 5%",
+    "mrsa1,VERIFIED,African Journal of Laboratory Medicine 10.1000/mrsa1,,lab cohort,MRSA resistance 40-60%,small n",
+    "mrsa2,VERIFIED,PLOS ONE 10.1000/mrsa2,,,MRSA resistance 45-55%,",
+    "esbl,VERIFIED,Lancet 10.1000/esbl1,,systematic review + meta-analysis of 24 studies,ESBL resistance 40%,ok",
+    "hdy1,VERIFIED,Nature 10.1000/hdy1,,,HDY 90-95%,",
+    "hdy2,VERIFIED,Science 10.1000/hdy2,,,HDY 10-15%,",
+    "trx,FAILED,blog 10.1000/trx9,,RCT,TRX 50%,",
+    "fct,VERIFIED,clinicaltrials 10.7777/fct1,,,FCT 5%,",
 ]
 CHECKS = [
     "doi,status\n",
@@ -58,6 +58,9 @@ def main():
         assert claims["ESBL"]["verified"]
         assert claims["ESBL"]["sources"] == 1
         assert claims["ESBL"]["dois"] == ["10.1000/esbl1"]
+
+        assert "meta-analysis/review" in claims["ESBL"]["study_types"]
+        assert "RCT" in claims["TRX"]["study_types"]
 
         assert any(x["metric"] == "HDY" for x in res["conflicts"])
         hdy = next(x for x in res["conflicts"] if x["metric"] == "HDY")
