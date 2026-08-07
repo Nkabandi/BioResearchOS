@@ -180,6 +180,14 @@ def main():
                         " ".join(c["dois"])])
     print(f"wrote {out}")
 
+    conf_path = ev_path / "contradictions.csv"
+    with open(conf_path, "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["metric", "range", "sources"])
+        for x in result["conflicts"]:
+            w.writerow([x["metric"], x["range"], " | ".join(x["sources"])])
+    print(f"wrote {conf_path}")
+
     mem_path = Path(__file__).resolve().parent / "knowledge" / "memory.json"
     mem = json.loads(mem_path.read_text()) if mem_path.exists() else []
     seen = {(m["metric"], m["claim"], tuple(m["dois"])) for m in mem}
